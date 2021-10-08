@@ -1,0 +1,18 @@
+// Variables
+$website-width: 1680px;
+$main-color: #EBC250;
+$light-color: #ffffff;
+$medium-color: #ccc;
+$medium-color-overlay: rgba(72, 98, 135, 0.9);
+
+$dark-color: #31435B;
+$bg-image: url('/images/showcase.jpg');
+
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}

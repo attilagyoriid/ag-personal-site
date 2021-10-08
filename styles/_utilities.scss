@@ -1,0 +1,150 @@
+.container {
+  max-width: $website-width;
+  position: relative;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+// Buttons
+%btn-shared {
+  font-family: Nunito, Roboto, sans-serif;
+  font-size: 1.2rem;
+  font-weight:700;
+  display: inline-block;
+  padding: 0.5rem 1.8rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 8px;
+}
+
+.btn {
+  
+  
+  &-main {
+    @extend %btn-shared;
+    color: $light-color;
+    background-color: $main-color;
+    border: 3px solid $light-color;
+    &:hover,&:focus {
+      color: $dark-color;
+      
+    }
+    
+  }
+
+  &-light {
+    @extend %btn-shared;
+    color: $light-color;
+    background-color: transparent;
+    border: 3px solid $light-color;
+    &:hover,&:focus {
+      background-color: $main-color;
+      
+    }
+  }
+
+  &-dark {
+    @extend %btn-shared;
+    color: #f4f4f4;
+    background-color: $dark-color;
+    &:hover,&:focus {
+      background-color: $main-color;
+      
+    }
+  }
+}
+
+.bg {
+  &-main {
+    background: $main-color;
+    color: set-text-color($main-color);
+  }
+  &-dark {
+    background: $dark-color;
+    color: set-text-color($dark-color);
+  }
+  &-light {
+    background: $light-color;
+    color: set-text-color($light-color);
+  }
+  &-medium {
+    background: $medium-color;
+    color: set-text-color($medium-color);
+  }
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+// Padding
+.py {
+  &-1 {
+    padding: 1rem 0;
+  }
+  &-2 {
+    padding: 2rem 0;
+  }
+  &-3 {
+    padding: 3rem 0;
+  }
+  &-4 {
+    padding: 4rem 0;
+  }
+}
+
+.px {
+  &-1 {
+    padding: 0 1rem;
+  }
+  &-2 {
+    padding: 0 2rem;
+  }
+  &-3 {
+    padding: 0 3rem;
+  }
+  &-4 {
+    padding: 0 4rem;
+  }
+}
+
+// Margin
+.my {
+  &-1 {
+    margin: 1rem 0;
+  }
+  &-2 {
+    margin: 2rem 0;
+  }
+  &-3 {
+    margin: 3rem 0;
+  }
+  &-4 {
+    margin: 4rem 0;
+  }
+}
+
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: $main-color;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
