@@ -1,13 +1,14 @@
 /** @format */
-import { Fragment } from "react";
 import classes from "./hero.module.scss";
 import Typed from "typed.js";
+import { Fragment } from "react";
 import { useEffect, useRef } from "react";
-export default function Hero() {
+export default function Hero({ posts }) {
   const el = useRef(null);
   const typedTextColors = ["#EBC250", "#FFFFFF", "#EF5353"];
 
   useEffect(() => {
+    console.log(posts);
     const typed = new Typed(el.current, {
       strings: ["SDET", "Developer", "Visual Creative"],
       startDelay: 300,
@@ -33,13 +34,14 @@ export default function Hero() {
       <header className={classes.header_home}>
         <div className={`${classes.content} ${classes["px-4"]}`}>
           <h1 className={`${classes["py-2"]}`}>
-            i am <span class='bold'>attila</span> the&nbsp;
+            i am <span>attila</span> the&nbsp;
             <span ref={el}></span>
           </h1>
-          <p className={classes.lead}>
+          <div className={classes.lead}>
             <div>I specialize in software test automation,</div>
             <div>software development and creative design</div>
-          </p>
+            <div>{posts}</div>
+          </div>
           <div className={classes["button-group"]}>
             <a href='work.html' className={classes["btn-light"]}>
               About
@@ -52,4 +54,13 @@ export default function Hero() {
       </header>
     </Fragment>
   );
+}
+
+export function getStaticProps() {
+  return {
+    props: {
+      posts: "getPosts().slice(0, 6)",
+    },
+    revalidate: 1,
+  };
 }

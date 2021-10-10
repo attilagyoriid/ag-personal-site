@@ -1,0 +1,39 @@
+@import "../../styles/config";
+@import "../../styles/utilities";
+
+$bg: rgb(187, 73, 73);
+$fg: rgba(58,58,58, 1);
+$boxShadow: 0px -1px 2px blue, 1px 1px 2px yellow;
+
+.content-box {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 1rem 2rem;  
+    background-color: $bg;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 40rem;
+    border-radius:16px;
+    max-width: 25rem;
+
+}
+.content-box-thumb {
+  display: block;
+  max-width: 10rem;
+  margin: 0px auto;
+}
+.content-box-header {
+  font-size: 1rem;
+  margin: 2rem 0rem 2rem 0rem;
+}
+.content-box-blurb {
+  font-size: 0.85rem;
+  display: block;
+  display: -webkit-box;
+  margin: 0rem;
+  max-width: 100%;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -4,17 +4,16 @@ import MainNavigation from "../main-navigation/main-navigaton";
 
 export default function Layout({ title, keywords, description, children }) {
   return (
-    <>
+    <div>
       <Head>
         <title>{title}</title>
-        <meta charset='UTF-8' />
         <meta name='keywords' content={keywords} />
         <meta name='description' content={description} />
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <MainNavigation />
       <main>{children}</main>
-    </>
+    </div>
   );
 }
 
