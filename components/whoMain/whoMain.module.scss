@@ -1,0 +1,33 @@
+/** @format */
+
+@import "../../styles/config";
+@import "../../styles/utilities";
+.main-who {
+  height: 95vh;
+  background: $bg-vector-yellow center center/cover no-repeat;
+  color: $deep-dark-color;
+  font-family: Raleway, Roboto, sans-serif;
+  font-size: 1.5rem;
+
+  .about-section {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    column-gap: 5rem;
+
+    div {
+        max-width: 40%;
+
+         &.text-section {
+           p {
+
+            margin-bottom: 3rem;
+
+           }
+         
+         }
+
+    }
+
+  }
+}

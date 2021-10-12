@@ -6,17 +6,13 @@
 .specialize-section {
  
   &-a {
-    height: 100vh;
+    height: 95vh;
     .specials {
       margin-top: 3rem;
+      padding: 1rem 2rem;
       display: grid;
-      grid-gap: 2rem;
+      grid-gap: 4rem;
       grid-template-columns: repeat(3, 1fr);
-
-      .fas {
-        color: $main-color;
-        padding-bottom: 0.4rem;
-      }
     }
   }
 }

@@ -1,23 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap');
+/** @format */
 
-@import 'config';
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap");
+
+@import "config";
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+  -webkit-overflow-scrolling: touch;
 }
 
 body {
   margin: 0;
   background-color: $light-color;
   color: #252525;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   line-height: 1.6;
   position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  perspective: 1px;
+  transform-style: preserve-3d;
 }
-
 
 a {
   text-decoration: none;

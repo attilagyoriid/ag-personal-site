@@ -1,44 +1,56 @@
 /** @format */
 import Card from "../card/card";
+import TitleSection from "../titleSection/titleSection";
+
 import classes from "./specialization.module.scss";
+
+const cardList = [
+  {
+    imgSrc: "/images/services_robot.svg",
+    description: "Test Automation",
+
+    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue
+          risus, a laoreet sit condimentum nisl quis amet nascetur. Sagittis,
+          purus auctor vivamus nibh sit nisi enim. Lacus laoreet pulvinar cras
+          eget magna eu pellentesque elementum porttitor. Vitae tempus viverra
+          risus in ullamcorper etiam ut.`,
+  },
+  {
+    imgSrc: "/images/services_development.svg",
+    description: "Development",
+    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue
+          risus, a laoreet sit condimentum nisl quis amet nascetur. Sagittis,
+          purus auctor vivamus nibh sit nisi enim. Lacus laoreet pulvinar cras
+          eget magna eu pellentesque elementum porttitor. Vitae tempus viverra
+          risus in ullamcorper etiam ut.`,
+  },
+  {
+    imgSrc: "/images/services_creative.svg",
+    description: "Creative",
+    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue
+          risus, a laoreet sit condimentum nisl quis amet nascetur. Sagittis,
+          purus auctor vivamus nibh sit nisi enim. Lacus laoreet pulvinar cras
+          eget magna eu pellentesque elementum porttitor. Vitae tempus viverra
+          risus in ullamcorper etiam ut.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue.
+          `,
+  },
+];
 
 export default function SpecializationSection() {
   return (
     <section
-      className={`${classes["specialize-section-a"]} ${classes["text-center"]} ${classes["py-2"]}`}
+      className={`${classes["specialize-section-a"]} ${classes["text-center"]}`}
     >
       <div className={classes.container}>
-        <h2 className={`${classes["section-title"]}`}>I Specialize In</h2>
-        <div className={classes["bottom-line"]}></div>
-        <p className={`${classes["lead--main-color"]}`}>
-          Photography as well as creating digital masterpieces and UI/UX layouts
-          for websites and mobile applications
-        </p>
+        <TitleSection
+          title='I Specialize In'
+          subText='Photography as well as creating digital masterpieces and UI/UX layouts for websites and mobile applications'
+        />
         <div className={classes.specials}>
-          <div>
-            <i className={`fas fa-file-alt fa-2x`}></i>
-            <h3>Concepting</h3>
-
-            <Card />
-          </div>
-          <div>
-            <i className='fas fa-desktop fa-2x'></i>
-            <h3>UI/UX</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-              molestias repellat quibusdam adipisci quas sed ullam accusantium
-              aliquam numquam quidem.
-            </p>
-          </div>
-          <div>
-            <i className='fas fa-object-ungroup fa-2x'></i>
-            <h3>Visual Design</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-              molestias repellat quibusdam adipisci quas sed ullam accusantium
-              aliquam numquam quidem.
-            </p>
-          </div>
+          {cardList.map((item, index) => (
+            <Card key={item.description} cardData={item} />
+          ))}
         </div>
       </div>
     </section>

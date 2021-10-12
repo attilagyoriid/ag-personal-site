@@ -1,12 +1,15 @@
 // Variables
-$website-width: 1680px;
+$website-width: 1480px;
 $main-color: #EBC250;
 $light-color: #ffffff;
+$smoke-white: #f5f5f5;
 $medium-color: #ccc;
 $medium-color-overlay: rgba(72, 98, 135, 0.9);
 
 $dark-color: #31435B;
+$deep-dark-color: #486287;
 $bg-image: url('/images/showcase.jpg');
+$bg-vector-yellow: url('/images/background_logo_yellow.svg');
 
 // Set Text Color
 @function set-text-color($color) {

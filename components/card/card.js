@@ -1,28 +1,56 @@
 /** @format */
+import { Fragment } from "react";
+import CarouselSwipe from "../carousel/carouselSwipe";
 import classes from "./card.module.scss";
 export default function Card(props) {
+  const texts = [
+    `1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+    Nostrum odio sapiente nobis, incidunt libero, blanditiis similique,
+    laudantium placeat eum quaerat hic id! Sed eligendi corporis consequatur, quia non nisi? Quisquam.`,
+    `2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+    Nostrum odio sapiente nobis, incidunt libero, blanditiis similique,
+    laudantium placeat eum quaerat hic id! Sed eligendi corporis consequatur, quia non nisi? Quisquam. Nostrum odio sapiente nobis, incidunt libero, blanditiis similique,`,
+    `3 Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+    Nostrum odio sapiente nobis, incidunt libero, blanditiis similique,
+    laudantium placeat eum quaerat hic id! Sed eligendi corporis consequatur, quia non nisi? Quisquam.
+    Nostrum odio sapiente nobis, incidunt libero, blanditiis similique,
+    laudantium placeat eum quaerat hic id! Sed eligendi corporis consequatur, quia non nisi? 3
+    laudantium placeat eum quaerat hic id! Sed eligendi corporis consequatur, quia non nisi? 3`,
+  ];
+
+  const type = `text`;
+
+  const carouselAttributes = {
+    showArrows: false,
+    showThumbs: false,
+    swipeable: true,
+    emulateTouch: true,
+    showStatus: false,
+    autoPlay: false,
+  };
   return (
-    <div>
+    <Fragment>
       <article className={`${classes["content-box"]}`}>
         <div className={classes.inner}>
           <img
             className={`${classes["content-box-thumb"]}`}
-            src='/images/services_robot.svg'
-            alt='Test Automation'
+            src={props.cardData.imgSrc}
+            alt={props.cardData.description}
           />
           <h1 className={`${classes["content-box-header"]}`}>
-            Test Automation
+            {props.cardData.description}
           </h1>
-          <p className={`${classes["content-box-blurb"]}`}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue
-            risus, a laoreet sit condimentum nisl quis amet nascetur. Sagittis,
-            purus auctor vivamus nibh sit nisi enim. Lacus laoreet pulvinar cras
-            eget magna eu pellentesque elementum porttitor. Vitae tempus viverra
-            risus in ullamcorper etiam ut.
-          </p>
+          <div className={classes["bottom-line"]}></div>
+          <div className={`${classes["content-box-blurb"]}`}>
+            <CarouselSwipe
+              texts={texts}
+              type={type}
+              carouselAttributes={carouselAttributes}
+            />
+          </div>
         </div>
       </article>
-    </div>
+    </Fragment>
   );
 }
 
