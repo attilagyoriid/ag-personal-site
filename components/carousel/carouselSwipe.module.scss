@@ -6,14 +6,21 @@
     margin: auto;
     display: block;
     overflow: hidden;
-    // img {
-    //     width: 30px;
-    // }
+
     .carousel-content {
         max-height: 100%;
-        // background-color: red;
         overflow: hidden;
-        padding-bottom: 30px;
+        padding-bottom: 50px;
+        .img-container {
+            background-color: white;
+            border-radius: 16px;
+            margin: 0 1rem;
+        }
+        img {
+            
+            padding: 1rem;
+            width: 170px;
+        }
         &:hover{
             cursor: grab;
         }
@@ -21,3 +28,4 @@
 
     
 }
+

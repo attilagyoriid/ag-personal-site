@@ -29,7 +29,7 @@ function MainNavigation() {
 
   return (
     <nav
-      className={`${classes.main_nav} ${classes["px-4"]} ${
+      className={`${classes.main_nav} ${classes["px-8"]} ${
         visible ? "" : classes.main_nav_hidden
       }`}
     >

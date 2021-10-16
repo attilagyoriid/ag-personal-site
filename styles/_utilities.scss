@@ -55,11 +55,23 @@
 
   &-dark {
     @extend %btn-shared;
-    color: #f4f4f4;
+    color: $light-color;
     background-color: $dark-color;
     &:hover,
     &:focus {
       background-color: $main-color;
+    }
+  }
+
+  &-dark--outline {
+    @extend %btn-shared;
+    color: $dark-color; 
+    background-color: $light-color;
+    border: 3px solid $dark-color;
+    &:hover,
+    &:focus {
+      color: $light-color; 
+      background-color: $dark-color;
     }
   }
 }
@@ -133,6 +145,9 @@
   &-4 {
     padding: 0 4rem;
   }
+  &-8 {
+    padding: 0 8rem;
+  }
 }
 
 // Margin
@@ -161,8 +176,8 @@
 }
 
 .bottom-line {
-  height: 2px;
-  width: 3rem;
+  height: 3px;
+  width: 6rem;
   background: $main-color;
   display: block;
   margin: 0 auto 1rem auto;

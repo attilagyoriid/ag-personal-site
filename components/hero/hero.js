@@ -32,7 +32,7 @@ export default function Hero({ posts }) {
   return (
     <Fragment>
       <header className={classes.header_home}>
-        <div className={`${classes.content} ${classes["px-4"]}`}>
+        <div className={`${classes.content} ${classes["px-8"]}`}>
           <h1 className={`${classes["py-2"]}`}>
             i am <span>attila</span> the&nbsp;
             <span ref={el}></span>

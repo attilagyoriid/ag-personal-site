@@ -4,9 +4,10 @@
 @import "../../styles/utilities";
 
 .specialize-section {
- 
-  &-a {
+
+  &-container {
     height: 95vh;
+    margin-bottom: 4rem;
     .specials {
       margin-top: 3rem;
       padding: 1rem 2rem;

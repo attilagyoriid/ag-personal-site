@@ -6,6 +6,8 @@ import SpecializationSection from "../components/specialization/specialization";
 import styles from "../styles/Home.module.css";
 import ImageLeading from "../components/imageLeading/imageLeading";
 import WhoMain from "../components/whoMain/whoMain";
+import Projects from "../components/projects/projects";
+import Contact from "../components/contact/contact";
 
 export default function HomePage() {
   return (
@@ -15,6 +17,9 @@ export default function HomePage() {
       <ImageLeading imgUrl={"/images/me-leader55.png"} />
       <WhoMain />
       <ImageLeading imgUrl={"/images/ui-ux-unsplash2.png"} />
+      <Projects />
+      <ImageLeading imgUrl={"/images/leader-contact-main2.png"} />
+      <Contact />
     </Layout>
   );
 }

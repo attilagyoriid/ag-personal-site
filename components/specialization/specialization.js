@@ -40,7 +40,7 @@ const cardList = [
 export default function SpecializationSection() {
   return (
     <section
-      className={`${classes["specialize-section-a"]} ${classes["text-center"]}`}
+      className={`${classes["specialize-section-container"]} ${classes["text-center"]}`}
     >
       <div className={classes.container}>
         <TitleSection
