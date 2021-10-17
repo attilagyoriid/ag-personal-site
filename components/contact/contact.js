@@ -1,6 +1,6 @@
 /** @format */
 
-import TitleSection from "../titleSection/titleSection";
+import TitleOverlay from "../titleOverlay/titleOverlay";
 import classes from "./contact.module.scss";
 
 export default function Contact() {
@@ -9,10 +9,7 @@ export default function Contact() {
       className={`${classes["contact-section"]} ${classes["text-center"]}`}
     >
       <div className={classes.container}>
-        <TitleSection
-          title='Contact'
-          subText='Photography as well as creating digital masterpieces and UI/UX layouts for websites and mobile applications'
-        />
+        <TitleOverlay title='LET’S WORK TOGETHER' overlayText='CONTACT' />
       </div>
     </section>
   );
