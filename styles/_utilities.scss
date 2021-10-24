@@ -20,6 +20,14 @@
   text-transform: uppercase;
   border-radius: 8px;
 }
+
+%title-large {
+  text-transform: uppercase;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 9rem;
+}
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -65,12 +73,12 @@
 
   &-dark--outline {
     @extend %btn-shared;
-    color: $dark-color; 
+    color: $dark-color;
     background-color: $light-color;
     border: 3px solid $dark-color;
     &:hover,
     &:focus {
-      color: $light-color; 
+      color: $light-color;
       background-color: $dark-color;
     }
   }
@@ -184,8 +192,13 @@
 }
 
 .section-title {
+  position: relative;
   font-family: Raleway, Roboto, sans-ser;
   font-size: 3rem;
   font-weight: 500;
   color: $deep-dark-color;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
 }

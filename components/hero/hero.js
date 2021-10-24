@@ -3,9 +3,22 @@ import classes from "./hero.module.scss";
 import Typed from "typed.js";
 import { Fragment } from "react";
 import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
 export default function Hero({ posts }) {
-  const el = useRef(null);
+  // if (typeof window !== "undefined") {
+  //   gsap.registerPlugin(ScrollTrigger);
+  // }
+
   const typedTextColors = ["#EBC250", "#FFFFFF", "#EF5353"];
+  const el = useRef(null);
+
+  const comparisonSectionRef = useRef(null);
+  const afterImageRef = useRef(null);
+  const afterImageImgRef = useRef(null);
+  const afterImage2Ref = useRef(null);
+  const afterImage2ImgRef = useRef(null);
 
   useEffect(() => {
     console.log(posts);
@@ -24,6 +37,35 @@ export default function Hero({ posts }) {
       },
     });
 
+    // gsap starts
+    // gsap.utils.toArray(comparisonSectionRef).forEach((section) => {
+    //   let tl = gsap.timeline({
+    //     scrollTrigger: {
+    //       trigger: section,
+    //       start: "center center",
+    //       // makes the height of the scrolling (while pinning) match the width, thus the speed remains constant (vertical/horizontal)
+    //       end: () => "+=" + section.offsetWidth,
+    //       scrub: true,
+    //       pin: true,
+    //       anticipatePin: 1,
+    //     },
+    //     defaults: { ease: "none" },
+    //   });
+    //   // animate the container one way...
+    //   tl.fromTo(afterImageRef, { xPercent: 100, x: 0 }, { xPercent: 0 })
+    //     // ...and the image the opposite way (at the same time)
+    //     .fromTo(afterImageImgRef, { xPercent: -100, x: 0 }, { xPercent: 0 }, 0)
+    //     .fromTo(afterImage2Ref, { xPercent: 100, x: 0 }, { xPercent: 0 })
+    //     // ...and the image the opposite way (at the same time)
+    //     .fromTo(
+    //       afterImage2ImgRef,
+    //       { xPercent: -100, x: 0 },
+    //       { xPercent: 0 },
+    //       0
+    //     );
+    // });
+    // gsap end
+
     return () => {
       typed.destroy();
     };
@@ -32,6 +74,42 @@ export default function Hero({ posts }) {
   return (
     <Fragment>
       <header className={classes.header_home}>
+        <section
+          ref={comparisonSectionRef}
+          className={classes.comparisonSection}
+        >
+          <div
+            className={`${classes.comparisonImage} ${classes["beforeImage"]}`}
+          >
+            <img
+              className={`${classes["img-gradient"]}`}
+              src={"/images/me_code_reflection_overlay.png"}
+              alt='AG site hero image'
+            />
+          </div>
+          <div
+            ref={afterImageRef}
+            className={`${classes.comparisonImage} ${classes["afterImage"]}`}
+          >
+            <img
+              ref={afterImageImgRef}
+              className={`${classes["img-gradient"]}`}
+              src={"/images/me_sketch_24.png"}
+              alt='AG site hero image'
+            />
+          </div>
+          <div
+            ref={afterImage2Ref}
+            className={`${classes.comparisonImage} ${classes["afterImage-2"]}`}
+          >
+            <img
+              ref={afterImage2ImgRef}
+              className={`${classes["img-gradient"]}`}
+              src={"/images/me_code_reflection_overlay.png"}
+              alt='AG site hero image'
+            />
+          </div>
+        </section>
         <div className={`${classes.content} ${classes["px-8"]}`}>
           <h1 className={`${classes["py-2"]}`}>
             i am <span>attila</span> the&nbsp;

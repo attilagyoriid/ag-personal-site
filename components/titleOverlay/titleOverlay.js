@@ -15,26 +15,27 @@ function TitleOverlay({ title, overlayText }) {
       boxRef.current,
       {
         autoAlpha: 0,
+        y: 10,
       },
       {
-        duration: 3,
+        duration: 0.8,
         autoAlpha: 1,
-        ease: "none",
+        y: -90,
+        ease: "linear",
         scrollTrigger: {
           trigger: boxRef.current,
-          start: "top center+=100",
+          start: "top center+=150",
           toggleActions: "play none none reverse",
         },
       }
     );
   });
+
   return (
     <div id='overlay-title' className={classes["title-container"]}>
-      <div className={`${classes["section-title"]}`}>
-        {title}
-        <div ref={boxRef} className={`${classes["section-title--overlay"]}`}>
-          {overlayText}
-        </div>
+      <div className={`${classes["section-title"]}`}>{title}</div>
+      <div ref={boxRef} className={`${classes["section-title--overlay"]}`}>
+        {overlayText}
       </div>
     </div>
   );

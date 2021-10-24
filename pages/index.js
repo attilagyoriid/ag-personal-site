@@ -20,6 +20,7 @@ export default function HomePage() {
       <Projects />
       <ImageLeading imgUrl={"/images/leader-contact-main2.png"} />
       <Contact />
+
     </Layout>
   );
 }

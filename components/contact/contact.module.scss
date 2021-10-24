@@ -4,9 +4,185 @@
 @import "../../styles/utilities";
 
 .contact-section {
-  .container {
-    height: 95vh;
-    margin-bottom: 4rem;
+  height: 95vh;
+  z-index: -5;
+  .title-container {
+    position: relative;
+    top: 7rem;
   }
+  .contact-container {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    height: 100%;
 
+    div {
+      &.social-container {
+        display: flex;
+        flex-direction: column;
+        padding-top: 6rem;
+
+        .social-title {
+          @extend %title-large;
+          line-height: 116.9%;
+          color: rgba(217, 217, 217, 0.4);
+          font-size: 7rem;
+          letter-spacing: 1.5rem;
+          margin-right: -8rem;
+          padding-left: 2rem;
+          z-index: 10;
+        }
+        .social-icon-container {
+          display: flex;
+          text-align: center;
+          flex-direction: column;
+          padding: 2rem 0rem;
+          align-items: center;
+          justify-content: space-between;
+          background-color: $dark-color;
+          .icon-container {
+            img {
+              margin: 0.5rem 0rem;
+              width: 4rem;
+            }
+          }
+        }
+        .email-container {
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: all 0.5s ease-in-out;
+          .email-icon {
+            display: flex;
+            justify-content: space-between;
+            img {
+              width: 4rem;
+            }
+          }
+          .email-content {
+            font-family: Nunito, Roboto, sans-serif;
+
+            font-style: normal;
+            font-weight: 800;
+            font-size: 1.5rem;
+          }
+          &:hover,
+          &:focus {
+            cursor: pointer;
+            background-color: $main-color;
+            border: 3px solid $light-color;
+          }
+        }
+      }
+
+      &.form-container {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+
+        background-color: $main-color;
+        .form-content {
+          font-family: Nunito, Roboto, sans-serif;
+          font-size: 1rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          padding: 3rem;
+          width: 100%;
+          margin: 10rem 5rem 0rem 10rem;
+
+          background-color: $dark-color;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          form {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            width: 80%;
+            height: 80%;
+            textarea {
+              outline: none;
+              width: 100%;
+              height: 200px;
+              align-self: stretch;
+              border: 4px solid $light-color;
+              background-color: $dark-color;
+              color: $light-color;
+              resize: none;
+
+              margin: 2rem 0rem;
+              overflow: auto;
+              font-family: Raleway, Roboto, sans-serif;
+              font-size: 1rem;
+              font-weight: 700;
+
+              transition: all 0.25s ease-in-out;
+
+              &:hover {
+                border: 4px solid $main-color;
+              }
+            }
+
+            .input-field {
+              position: relative;
+              height: 44px;
+              line-height: 44px;
+              margin: 1rem 0rem;
+              .underline {
+                content: "";
+                display: block;
+                position: absolute;
+                bottom: 1px;
+                left: 0;
+                width: 0;
+                height: 4px;
+                background: $main-color;
+                transition: all 0.6s ease-out;
+              }
+              label {
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                color: $light-color;
+                transition: 0.2s all;
+                cursor: text;
+              }
+              input {
+                font-family: Raleway, Roboto, sans-serif;
+                font-size: 1rem;
+                font-weight: 700;
+                width: 100%;
+                border: 0;
+                outline: 0;
+                padding: 0.5rem 0;
+                border-bottom: 4px solid $light-color;
+                transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+                box-shadow: none;
+                color: $light-color;
+                background-color: $dark-color;
+                &:invalid {
+                  outline: 0;
+                }
+                &:focus {
+                  & ~ .underline {
+                    width: 100%;
+                  }
+                }
+                &:focus ~ label,
+                &:valid ~ label {
+                  font-size: 14px;
+                  top: -24px;
+                  color: $main-color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
