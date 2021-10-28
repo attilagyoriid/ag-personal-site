@@ -74,6 +74,11 @@ export default function Contact() {
                   className={classes["textarea-effect"]}
                 ></textarea>
               </div>
+              <div className={classes["btn-container"]}>
+                <a href='work.html' className={classes["btn-light"]}>
+                  Send
+                </a>
+              </div>
             </form>
           </div>
         </div>
