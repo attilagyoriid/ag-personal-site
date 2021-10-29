@@ -5,6 +5,7 @@ import { Fragment } from "react";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import ScrollButton from "../scrollButton/scrollButton";
 
 export default function Hero({ posts }) {
   // if (typeof window !== "undefined") {
@@ -129,6 +130,7 @@ export default function Hero({ posts }) {
             </a>
           </div>
         </div>
+        <ScrollButton />
       </header>
     </Fragment>
   );
