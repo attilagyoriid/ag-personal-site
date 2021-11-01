@@ -1,7 +1,8 @@
 /** @format */
 import Card from "../card/card";
 import TitleSection from "../titleSection/titleSection";
-
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 import classes from "./specialization.module.scss";
 
 const cardList = [
@@ -38,6 +39,23 @@ const cardList = [
 ];
 
 export default function SpecializationSection() {
+  const cardsRef = useRef(null);
+  const cardRef = useRef(null);
+  const cardRefsList = [];
+  useEffect(() => {
+    console.log("cardref", cardRef.current);
+    gsap.utils.toArray(cardRefsList).forEach((section, index) => {
+      gsap.from(section, {
+        scrollTrigger: section,
+        autoAlpha: 0,
+        scale: 0.5,
+        duration: 0.75,
+        stagger: 0.25,
+        delay: index * 0.3,
+      });
+    });
+  }, []);
+
   return (
     <section
       className={`${classes["specialize-section-container"]} ${classes["text-center"]}`}
@@ -47,9 +65,17 @@ export default function SpecializationSection() {
           title='I Specialize In'
           subText='Photography as well as creating digital masterpieces and UI/UX layouts for websites and mobile applications'
         />
-        <div className={classes.specials}>
+        <div ref={cardsRef} className={classes.specials}>
           {cardList.map((item, index) => (
-            <Card key={item.description} cardData={item} />
+            <div
+              ref={(el) => {
+                cardRefsList.push(el);
+              }}
+              key={item.description}
+              className={classes["card-wrapper"]}
+            >
+              <Card ref={cardRef} cardData={item} />
+            </div>
           ))}
         </div>
       </div>

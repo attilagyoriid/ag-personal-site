@@ -14,6 +14,9 @@
       display: grid;
       grid-gap: 4rem;
       grid-template-columns: repeat(3, 1fr);
+      .card-wrapper {
+         position: relative; 
+      }
     }
   }
 }
