@@ -1,23 +1,38 @@
 /** @format */
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useState, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
+// import useScrollPosition from "../../hooks/useScrollPosition";
 import Logo from "../logo/logo";
 
 import classes from "./main-navigation.module.scss";
 
-function MainNavigation() {
+const usePrevious = (value) => {
+  const ref = useRef();
+  useEffect(() => {
+    ref.current = value;
+  });
+  return ref.current;
+};
+
+function MainNavigation(props) {
+  console.log("props", props);
   const { pathname } = useRouter();
 
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(true);
+  const [scrollPositionY, setScrollPositionY] = useState();
+  const prevScrollPositionY = usePrevious(scrollPositionY);
 
   const handleScroll = () => {
-    console.log("page offset", window.pageYOffset);
-    if (window.pageYOffset > 200) {
+    if (scrollPositionY < prevScrollPositionY) {
+      console.log("invisible");
       setVisible(true);
     } else {
+      console.log("visible");
       setVisible(false);
     }
+    setScrollPositionY(window.pageYOffset);
+    console.log("page offset", scrollPositionY);
   };
 
   useEffect(() => {
@@ -25,12 +40,12 @@ function MainNavigation() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [scrollPositionY, prevScrollPositionY]);
 
   return (
     <nav
       className={`${classes.main_nav} ${classes["px-8"]} ${
-        visible ? "" : classes.main_nav_hidden
+        visible ? classes.main_nav_visible : classes.main_nav_invisible
       }`}
     >
       <Logo />

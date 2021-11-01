@@ -3,17 +3,18 @@
 @import "../../styles/config";
 @import "../../styles/utilities";
 .main_nav {
-  display: flex;
-  background: $medium-color-overlay;
-  justify-content: space-between;
   position: fixed;
   top: 0px;
+  display: flex;
+  justify-content: space-between;
+  
   font-family: "Nunito", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   align-items: center;
-  width: 100%;
-  transition: 0.5s;
-  z-index: 10;
+  width: 100vw;
+  z-index: 5;
+  padding-top: 0.3rem;
+  transition: all 0.3s ease-in-out;
 
   ul {
     display: flex;
@@ -23,6 +24,7 @@
     padding: 1rem 1.5rem;
   }
   ul {
+    display: flex;
     a {
       text-decoration: none;
       color: $light-color;
@@ -59,8 +61,14 @@
       }
     }
   }
-  &_hidden {
-    background: transparent;
+  &_invisible {
+    transform: translateY(-5rem);
+    background-color: transparent;
+  }
+
+  &_visible {
+    transform: translateY(0rem);
+    background-color: $medium-color-overlay;
   }
 }
 
