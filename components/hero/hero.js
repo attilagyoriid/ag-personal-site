@@ -1,10 +1,8 @@
 /** @format */
 import classes from "./hero.module.scss";
 import Typed from "typed.js";
-import { Fragment } from "react";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import ScrollButton from "../scrollButton/scrollButton";
 
 export default function Hero({ posts }) {
@@ -22,6 +20,7 @@ export default function Hero({ posts }) {
   const afterImage2ImgRef = useRef(null);
   const overlayRef = useRef(null);
   const overlayH1Ref = useRef(null);
+  const heroContentRef = useRef(null);
 
   useEffect(() => {
     gsap.to(overlayH1Ref.current, {
@@ -31,6 +30,26 @@ export default function Hero({ posts }) {
       y: -80,
       ease: "expo.easeInOut",
     });
+
+    gsap.from(heroContentRef.current, {
+      duration: 1,
+      delay: 3,
+      opacity: 0,
+      y: 140,
+      ease: "expo.easeInOut",
+    });
+
+    // gsap.to(heroContentRef.current, {
+    //   y: 100,
+    //   duration: 2,
+    //   ease: "bounce",
+    //   opacity: 1,
+    //   delay: 8,
+    //   scrollTrigger: {
+    //     trigger: heroContentRef.current,
+    //     markers: true,
+    //   },
+    // });
 
     gsap.to(overlayRef.current, {
       duration: 4,
@@ -131,7 +150,10 @@ export default function Hero({ posts }) {
             />
           </div>
         </section>
-        <div className={`${classes.content} ${classes["px-8"]}`}>
+        <div
+          ref={heroContentRef}
+          className={`${classes.content} ${classes["px-8"]}`}
+        >
           <h1 className={`${classes["py-2"]}`}>
             i am <span>attila</span> the&nbsp;
             <span ref={el}></span>
