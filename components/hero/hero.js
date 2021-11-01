@@ -20,8 +20,25 @@ export default function Hero({ posts }) {
   const afterImageImgRef = useRef(null);
   const afterImage2Ref = useRef(null);
   const afterImage2ImgRef = useRef(null);
+  const overlayRef = useRef(null);
+  const overlayH1Ref = useRef(null);
 
   useEffect(() => {
+    gsap.to(overlayH1Ref.current, {
+      duration: 4,
+      delay: 2,
+      opacity: 0,
+      y: -80,
+      ease: "expo.easeInOut",
+    });
+
+    gsap.to(overlayRef.current, {
+      duration: 4,
+      delay: 2,
+      top: "-100%",
+      opacity: 0,
+      ease: "expo.easeInOut",
+    });
     console.log(posts);
     const typed = new Typed(el.current, {
       strings: ["SDET", "Developer", "Visual Creative"],
@@ -73,7 +90,10 @@ export default function Hero({ posts }) {
   }, []);
 
   return (
-    <Fragment>
+    <div className={classes["home-container"]}>
+      <div className={classes.overlay} ref={overlayRef}>
+        <h1 ref={overlayH1Ref}>ATTILA GYŐRI</h1>
+      </div>
       <header className={classes.header_home}>
         <section
           ref={comparisonSectionRef}
@@ -132,7 +152,7 @@ export default function Hero({ posts }) {
         </div>
         <ScrollButton />
       </header>
-    </Fragment>
+    </div>
   );
 }
 
