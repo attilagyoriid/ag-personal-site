@@ -1,0 +1,75 @@
+/** @format */
+
+@import "../../styles/config";
+@import "../../styles/utilities";
+
+.btn-container {
+    position: relative;
+    text-align: center;
+
+}
+
+.dnbtn {
+  border: 3px solid $deep-dark-color;
+  border-radius: 8px;
+  position: absolute;
+  color: $deep-dark-color;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90px;
+  height: 50px;
+  text-decoration: none;
+  transition: 0.3s;
+
+  padding: 1.5rem 1.8rem;
+}
+
+.dnbtn:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f381";
+  font-size: 2rem;
+  font-weight: 700;
+  color: $deep-dark-color;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+
+.dnbtn:hover:before {
+  display: none;
+}
+
+.dnbtn:hover:after {
+  font-family: Nunito, Roboto, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  content: "DOWNLOAD";
+  color: $deep-dark-color;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  animation: fadein 0.3s;
+}
+
+.dnbtn:hover {
+  width: 160px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

@@ -10,8 +10,10 @@
     "debug": "NODE_OPTIONS='--inspect' next dev"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "classnames": "^2.3.1",
     "gsap": "^3.8.0",
+    "ionicons": "^5.5.4",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",

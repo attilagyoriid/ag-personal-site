@@ -3,31 +3,58 @@
 @import "../../styles/config";
 @import "../../styles/utilities";
 .main-who {
-  height: 95vh;
-  background: $bg-vector-yellow center center/cover no-repeat;
+  height: 100vh;
+  position: relative;
   color: $deep-dark-color;
   font-family: Raleway, Roboto, sans-serif;
   font-size: 1.5rem;
-
+  .img-bkg {
+    z-index: -20;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
   .about-section {
+    position: relative;
     margin-top: 6rem;
     display: flex;
     justify-content: center;
     column-gap: 5rem;
 
-    div {
-        max-width: 40%;
-
-         &.text-section {
-           p {
-
-            margin-bottom: 3rem;
-
-           }
-         
-         }
-
+    .skill-sphere-section {
+      p {
+        height: 100%;
+      }
     }
 
+    div {
+      max-width: 40%;
+
+      &.text-section {
+        p {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
