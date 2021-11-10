@@ -4,9 +4,12 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import classes from "./whoMain.module.scss";
 import DownloadButton from "../downloadButton/downloadButton";
+import WordCloud from "../wordCloud/wordCloud";
 
 export default function WhoMain() {
   const bkgImgRef = useRef(null);
+  const textSectionRef = useRef(null);
+  const sphereSectionRef = useRef(null);
 
   useEffect(() => {
     gsap.from(bkgImgRef.current, {
@@ -18,7 +21,25 @@ export default function WhoMain() {
       scale: 1.2,
       duration: 1,
       ease: "expo.easeInOut",
-      delay: 0.5,
+      delay: 0.3,
+    });
+
+    gsap.from(textSectionRef.current, {
+      scrollTrigger: textSectionRef.current,
+      autoAlpha: 0,
+      scale: 0.5,
+      duration: 2,
+      ease: "expo.easeInOut",
+      delay: 0.8,
+    });
+    gsap.from(sphereSectionRef.current, {
+      scrollTrigger: sphereSectionRef.current,
+      autoAlpha: 0,
+      x: -500,
+      duration: 2,
+      stagger: 0.25,
+      ease: "expo.easeInOut",
+      delay: 1,
     });
   }, []);
   return (
@@ -35,15 +56,12 @@ export default function WhoMain() {
         className='lead--deep-dark-color'
       />
       <div className={classes["about-section"]}>
-        <div className={classes["skill-sphere-section"]}>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-            molestias repellat quibusdam adipisci quas sed ullam accusantium
-            aliquam numquam quidem.
-          </p>
+        <div ref={sphereSectionRef} className={classes["skill-sphere-section"]}>
+          <WordCloud />
           <DownloadButton />
         </div>
-        <div className={classes["text-section"]}>
+
+        <div ref={textSectionRef} className={classes["text-section"]}>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
             molestias repellat quibusdam adipisci quas sed ullam accusantium
