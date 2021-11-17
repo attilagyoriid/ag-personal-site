@@ -11,7 +11,7 @@
 
 .dnbtn {
   border: 3px solid $deep-dark-color;
-  border-radius: 8px;
+  border-radius: 40px;
   position: absolute;
   color: $deep-dark-color;
   top: 50%;
@@ -20,9 +20,9 @@
   width: 90px;
   height: 50px;
   text-decoration: none;
-  transition: 0.3s;
+  transition: 0.3s all ease-in-out;
 
-  padding: 1.5rem 1.8rem;
+  padding: 1.4rem 1rem;
 }
 
 .dnbtn:before {
@@ -33,7 +33,7 @@
   color: $deep-dark-color;
   position: absolute;
   transform: translate(-50%, -50%);
-  transition: 0.3s;
+  transition: 0.3s all ease-in-out;
 }
 
 .dnbtn:hover:before {
@@ -48,12 +48,13 @@
   color: $deep-dark-color;
   position: absolute;
   transform: translate(-50%, -50%);
-  transition: 0.3s;
-  animation: fadein 0.3s;
+  transition: 0.3s all ease-in-out;
+  animation: fadein 1.4s;
 }
 
 .dnbtn:hover {
   width: 160px;
+  border-radius: 8px;
 }
 
 @keyframes fadein {

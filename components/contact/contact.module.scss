@@ -44,7 +44,13 @@
             img {
               margin: 0.5rem 0rem;
               width: 4rem;
+              transition: all 0.2s ease-in-out;
+              &:hover {
+                transform: scale(1.2);
+                cursor: pointer;
+              }
             }
+           
           }
         }
         .email-container {
