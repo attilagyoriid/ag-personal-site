@@ -4,6 +4,7 @@ import TitleSection from "../titleSection/titleSection";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import classes from "./specialization.module.scss";
+import ParticlesBkg from "../particlesBkg/particlesBkg";
 
 const cardList = [
   {
@@ -79,6 +80,7 @@ export default function SpecializationSection() {
           ))}
         </div>
       </div>
+      <ParticlesBkg />
     </section>
   );
 }

@@ -4,8 +4,9 @@
 @import "../../styles/utilities";
 
 .specialize-section {
-
+  position: relative;
   &-container {
+    position: relative;
     height: 95vh;
     margin-bottom: 4rem;
     .specials {
@@ -15,7 +16,7 @@
       grid-gap: 4rem;
       grid-template-columns: repeat(3, 1fr);
       .card-wrapper {
-         position: relative; 
+        position: relative;
       }
     }
   }
