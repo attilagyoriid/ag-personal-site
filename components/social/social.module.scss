@@ -1,0 +1,54 @@
+/** @format */
+
+@import "../../styles/config";
+@import "../../styles/utilities";
+
+%social-icon-container {
+
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0rem;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $dark-color;
+}
+
+%img-base {
+  img {
+
+    margin: 0.5rem 0rem;
+    width: 4rem;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+  }
+}
+
+.social-icon-container-vertical {
+  @extend %social-icon-container;
+  .icon-container {
+    @extend %img-base;
+  }
+}
+
+.social-icon-container-horizontal {
+  @extend %social-icon-container;
+  flex-direction: row;
+  padding: 0rem 0rem;
+  background-color: transparent;
+  .icon-container {
+    align-self: center;
+    @extend %img-base;
+    img {
+  
+      transform: scale(0.4);
+      margin: 0 -.5rem;
+      &:hover {
+
+        transform: scale(0.6);
+      }
+    }
+  }
+}

@@ -32,27 +32,7 @@
           padding-left: 2rem;
           z-index: 10;
         }
-        .social-icon-container {
-          display: flex;
-          text-align: center;
-          flex-direction: column;
-          padding: 2rem 0rem;
-          align-items: center;
-          justify-content: space-between;
-          background-color: $dark-color;
-          .icon-container {
-            img {
-              margin: 0.5rem 0rem;
-              width: 4rem;
-              transition: all 0.2s ease-in-out;
-              &:hover {
-                transform: scale(1.2);
-                cursor: pointer;
-              }
-            }
-           
-          }
-        }
+        
         .email-container {
           height: 100%;
           display: flex;

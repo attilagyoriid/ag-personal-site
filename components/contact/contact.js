@@ -1,5 +1,6 @@
 /** @format */
 
+import Social from "../social/social";
 import TitleOverlay from "../titleOverlay/titleOverlay";
 import classes from "./contact.module.scss";
 
@@ -14,29 +15,7 @@ export default function Contact() {
       <div className={classes["contact-container"]}>
         <div className={classes["social-container"]}>
           <div className={classes["social-title"]}>Social</div>
-          <div className={classes["social-icon-container"]}>
-            <div className={classes["icon-container"]}>
-              <img src='/images/social-icons/linked.svg' alt='Linked In Icon' />
-            </div>
-            <div className={classes["icon-container"]}>
-              <img src='/images/social-icons/git.svg' alt='Linked In Icon' />
-            </div>
-            <div className={classes["icon-container"]}>
-              <img src='/images/social-icons/yout.svg' alt='Linked In Icon' />
-            </div>
-            <div className={classes["icon-container"]}>
-              <img
-                src='/images/social-icons/dribble.svg'
-                alt='Linked In Icon'
-              />
-            </div>
-            <div className={classes["icon-container"]}>
-              <img src='/images/social-icons/face.svg' alt='Linked In Icon' />
-            </div>
-            <div className={classes["icon-container"]}>
-              <img src='/images/social-icons/insta.svg' alt='Linked In Icon' />
-            </div>
-          </div>
+          <Social />
           <div className={classes["email-container"]}>
             <div className={classes["email-icon"]}>
               <img src='/images/social-icons/mail.svg' alt='Email Icon' />
