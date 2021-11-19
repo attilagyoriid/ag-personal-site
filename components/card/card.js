@@ -1,7 +1,13 @@
 /** @format */
 import { Fragment } from "react";
+import { useEffect, useState, lazy } from "react";
+import Lottie from "react-lottie-player";
 import CarouselSwipe from "../carousel/carouselSwipe";
 import classes from "./card.module.scss";
+import service_creative_animation from "./service_creative_animation.json";
+import service_dev_animation from "./service_dev_animation.json";
+import service_robot_animation from "./service_robot_animation.json";
+
 export default function Card(props) {
   const texts = [
     `1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
@@ -28,15 +34,37 @@ export default function Card(props) {
     showStatus: false,
     autoPlay: false,
   };
+
   return (
     <Fragment>
       <article className={`${classes["content-box"]}`}>
         <div className={classes.inner}>
-          <img
-            className={`${classes["content-box-thumb"]}`}
-            src={props.cardData.imgSrc}
-            alt={props.cardData.description}
-          />
+          {props.cardData.animation.dev && (
+            <Lottie
+              animationData={service_dev_animation}
+              loop
+              play
+              style={{ height: 200 }}
+            />
+          )}
+          {props.cardData.animation.sdet && (
+            <Lottie
+              loop
+              animationData={service_robot_animation}
+              play
+              style={{ height: 200 }}
+            />
+          )}
+
+          {props.cardData.animation.creative && (
+            <Lottie
+              loop
+              animationData={service_creative_animation}
+              play
+              style={{ height: 200 }}
+            />
+          )}
+
           <h1 className={`${classes["content-box-header"]}`}>
             {props.cardData.description}
           </h1>

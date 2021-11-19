@@ -9,6 +9,7 @@ import ParticlesBkg from "../particlesBkg/particlesBkg";
 const cardList = [
   {
     imgSrc: "/images/services_robot.svg",
+    animation: { sdet: true },
     description: "Test Automation",
 
     text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue
@@ -19,6 +20,7 @@ const cardList = [
   },
   {
     imgSrc: "/images/services_development.svg",
+    animation: { dev: true },
     description: "Development",
     text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue
           risus, a laoreet sit condimentum nisl quis amet nascetur. Sagittis,
@@ -28,6 +30,7 @@ const cardList = [
   },
   {
     imgSrc: "/images/services_creative.svg",
+    animation: { creative: true },
     description: "Creative",
     text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue
           risus, a laoreet sit condimentum nisl quis amet nascetur. Sagittis,

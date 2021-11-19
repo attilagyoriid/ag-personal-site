@@ -21,6 +21,8 @@
   max-width: 23rem;
   transition: all 0.2s ease-in-out;
 
+
+
   &:hover,
   &:focus {
     transform: scale(1.05) translateY(-10px);
@@ -38,19 +40,19 @@
   font-weight: 500;
 }
 .bottom-line {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
-.content-box-blurb {    
+.content-box-blurb {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 0.85rem;
-    padding: .5rem .5rem;
+  padding: 0.5rem 0.5rem;
   margin: 0rem;
   max-width: 100%;
-  max-width:100%;
+  max-width: 100%;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
