@@ -31,6 +31,9 @@
       text-transform: uppercase;
       position: relative;
       padding-bottom: 0.5rem;
+      &:hover {
+        cursor: pointer;
+      }
 
       &:before {
         content: "";
@@ -51,6 +54,7 @@
         visibility: visible;
         transform: scaleX(1);
         border-color: $main-color;
+       
       }
 
       &.current {

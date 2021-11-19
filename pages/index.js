@@ -1,5 +1,5 @@
 /** @format */
-
+import { Element } from "react-scroll";
 import Hero from "../components/hero/hero";
 import Layout from "../components/layout/layout";
 import SpecializationSection from "../components/specialization/specialization";
@@ -13,13 +13,21 @@ export default function HomePage() {
   return (
     <Layout>
       <Hero />
-      <SpecializationSection />
+      <Element name='specialization'>
+        <SpecializationSection />
+      </Element>
       <ImageLeading imgUrl={"/images/me-leader55.png"} />
-      <WhoMain />
+      <Element name='whoami'>
+        <WhoMain />
+      </Element>
       <ImageLeading imgUrl={"/images/ui-ux-unsplash2.png"} />
-      <Projects />
+      <Element name='projects'>
+        <Projects />
+      </Element>
       <ImageLeading imgUrl={"/images/leader-contact-main2.png"} />
-      <Contact />
+      <Element name='contact'>
+        <Contact />
+      </Element>
       <Footer />
     </Layout>
   );

@@ -1,7 +1,15 @@
 /** @format */
-import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState, useRef, useEffect } from "react";
+import {
+  Link,
+  DirectLink,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from "react-scroll";
 // import useScrollPosition from "../../hooks/useScrollPosition";
 import Logo from "../logo/logo";
 
@@ -37,10 +45,25 @@ function MainNavigation(props) {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
+    Events.scrollEvent.register("begin", function (to, element) {
+      console.log("begin", to, element, arguments);
+    });
+
+    Events.scrollEvent.register("end", function (to, element) {
+      console.log("end", to, element, arguments);
+    });
+
+    scrollSpy.update();
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      Events.scrollEvent.remove("begin");
+      Events.scrollEvent.remove("end");
     };
   }, [scrollPositionY, prevScrollPositionY]);
+
+  const handleSetActive = (to) => {
+    console.log("set active", to);
+  };
 
   return (
     <nav
@@ -56,16 +79,31 @@ function MainNavigation(props) {
           </Link>
         </li>
         <li>
-          <Link href='/contact'>About</Link>
+          <Link
+            to='whoami'
+            spy={true}
+            smooth={true}
+            duration={1500}
+            onSetActive={handleSetActive}
+            hashSpy={true}
+          >
+            About
+          </Link>
         </li>
         <li>
-          <Link href='/posts'>Experience</Link>
+          <Link to='specialization' spy={true} smooth={true} duration={1500}>
+            Experience
+          </Link>
         </li>
         <li>
-          <Link href='/posts'>Work</Link>
+          <Link to='projects' spy={true} smooth={true} duration={1500}>
+            Work
+          </Link>
         </li>
         <li>
-          <Link href='/contact'>Contact</Link>
+          <Link to='contact' spy={true} smooth={true} duration={1500}>
+            Contact
+          </Link>
         </li>
       </ul>
     </nav>
