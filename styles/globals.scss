@@ -26,7 +26,6 @@ body {
   position: relative;
   overflow-y: scroll;
   overflow-x: hidden;
-
 }
 
 a {
@@ -54,7 +53,7 @@ li {
     linear,
     left bottom,
     left top,
-    color-stop(0.44,$main-color-dark),
+    color-stop(0.44, $main-color-dark),
     color-stop(0.72, $main-color),
     color-stop(0.86, $main-color-light)
   );
@@ -64,10 +63,9 @@ li {
   background: rgb(55, 37, 105);
 }
 
-
 #tsparticles {
   position: absolute;
-  opacity: .3;
+  opacity: 0.3;
   top: 0;
   left: 0;
   height: 100%;
@@ -75,4 +73,11 @@ li {
   padding: 0;
   margin: 0;
   z-index: -10;
+}
+
+a.active {
+  width: 100%;
+  padding: 7px 12px;
+  background: $main-color;
+  border-radius: 5px;
 }

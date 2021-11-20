@@ -12,20 +12,25 @@ import Footer from "../components/footer/footer";
 export default function HomePage() {
   return (
     <Layout>
-      <Hero />
+      <Element name='home'>
+        <Hero />
+      </Element>
       <Element name='specialization'>
         <SpecializationSection />
       </Element>
-      <ImageLeading imgUrl={"/images/me-leader55.png"} />
       <Element name='whoami'>
+        <ImageLeading imgUrl={"/images/me-leader55.png"} />
+
         <WhoMain />
       </Element>
-      <ImageLeading imgUrl={"/images/ui-ux-unsplash2.png"} />
       <Element name='projects'>
+        <ImageLeading imgUrl={"/images/ui-ux-unsplash2.png"} />
+
         <Projects />
       </Element>
-      <ImageLeading imgUrl={"/images/leader-contact-main2.png"} />
       <Element name='contact'>
+        <ImageLeading imgUrl={"/images/leader-contact-main2.png"} />
+
         <Contact />
       </Element>
       <Footer />

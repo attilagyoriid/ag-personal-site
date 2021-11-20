@@ -74,7 +74,15 @@ function MainNavigation(props) {
       <Logo />
       <ul>
         <li>
-          <Link href='/posts'>
+          <Link
+            to='home'
+            spy={true}
+            smooth={true}
+            duration={1500}
+            onSetActive={handleSetActive}
+            hashSpy={true}
+            activeClass='active'
+          >
             <a className={classes.current}>Home</a>
           </Link>
         </li>
@@ -86,22 +94,41 @@ function MainNavigation(props) {
             duration={1500}
             onSetActive={handleSetActive}
             hashSpy={true}
+            activeClass='active'
           >
             About
           </Link>
         </li>
         <li>
-          <Link to='specialization' spy={true} smooth={true} duration={1500}>
+          <Link
+            activeClass='active'
+            to='specialization'
+            spy={true}
+            smooth={true}
+            duration={1500}
+          >
             Experience
           </Link>
         </li>
         <li>
-          <Link to='projects' spy={true} smooth={true} duration={1500}>
+          <Link
+            activeClass='active'
+            to='projects'
+            spy={true}
+            smooth={true}
+            duration={1500}
+          >
             Work
           </Link>
         </li>
         <li>
-          <Link to='contact' spy={true} smooth={true} duration={1500}>
+          <Link
+            activeClass='active'
+            to='contact'
+            spy={true}
+            smooth={true}
+            duration={1500}
+          >
             Contact
           </Link>
         </li>

@@ -7,7 +7,7 @@
   top: 0px;
   display: flex;
   justify-content: space-between;
-  
+
   font-family: "Nunito", sans-serif;
   font-size: 1rem;
   align-items: center;
@@ -31,6 +31,8 @@
       text-transform: uppercase;
       position: relative;
       padding-bottom: 0.5rem;
+      transition: all 0.3 ease-in-out;
+
       &:hover {
         cursor: pointer;
       }
@@ -45,30 +47,23 @@
         background: $main-color;
         visibility: hidden;
         border-radius: 5px;
-        transform: scaleX(0);
+        transform: scaleX(0) translateY(-4px);
         transition: 0.25s linear;
       }
 
-      &:hover:not(.current):before,
-      &:focus:not(.current):before {
+      &:hover:not(.active):before,
+      &:focus:not(.active):before {
         visibility: visible;
-        transform: scaleX(1);
+        transform: scaleX(1) translateY(-4px);
         border-color: $main-color;
-       
       }
 
-      &.current {
-        width: 100%;
-        padding: 7px 12px;
-        background: $main-color;
-        border-radius: 5px;
-      }
+
     }
   }
   &_invisible {
     transform: translateY(-20rem);
     opacity: 0;
-
   }
 
   &_visible {
@@ -77,5 +72,3 @@
     background-color: $medium-color-overlay;
   }
 }
-
-
