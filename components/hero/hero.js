@@ -11,7 +11,7 @@ export default function Hero({ posts }) {
   //   gsap.registerPlugin(ScrollTrigger);
   // }
 
-  const typedTextColors = ["#EBC250", "#FFFFFF", "#EF5353"];
+  const typedTextColors = ["#EBC250", "#FFFFFF", "#7198ca"];
   const el = useRef(null);
 
   const comparisonSectionRef = useRef(null);
