@@ -4,6 +4,7 @@ import Typed from "typed.js";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import ScrollButton from "../scrollButton/scrollButton";
+import VideoIntro from "../videoIntro/videoIntro";
 
 export default function Hero({ posts }) {
   // if (typeof window !== "undefined") {
@@ -53,7 +54,7 @@ export default function Hero({ posts }) {
 
     gsap.to(overlayRef.current, {
       duration: 4,
-      delay: 2,
+      delay: 6,
       top: "-100%",
       opacity: 0,
       ease: "expo.easeInOut",
@@ -111,7 +112,7 @@ export default function Hero({ posts }) {
   return (
     <div className={classes["home-container"]}>
       <div className={classes.overlay} ref={overlayRef}>
-        <h1 ref={overlayH1Ref}>ATTILA GYŐRI</h1>
+        <VideoIntro />
       </div>
       <header className={classes.header_home}>
         <section
