@@ -106,6 +106,7 @@ function MainNavigation(props) {
             spy={true}
             smooth={true}
             duration={1500}
+            hashSpy={true}
           >
             Experience
           </Link>
@@ -117,6 +118,7 @@ function MainNavigation(props) {
             spy={true}
             smooth={true}
             duration={1500}
+            hashSpy={true}
           >
             Work
           </Link>
@@ -128,6 +130,7 @@ function MainNavigation(props) {
             spy={true}
             smooth={true}
             duration={1500}
+            hashSpy={true}
           >
             Contact
           </Link>
