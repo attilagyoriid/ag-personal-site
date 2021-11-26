@@ -31,17 +31,23 @@ export default function Contact() {
             <form action='' autoComplete='off'>
               <div className={classes["input-field"]}>
                 <input type='text' id='name' required />
-                <label for='name'>name</label>
+                <label className={classes["disable-select"]} for='name'>
+                  name
+                </label>
                 <span className={classes["underline"]}></span>
               </div>
               <div className={classes["input-field"]}>
                 <input type='text' id='email' required />
-                <label for='email'>email</label>
+                <label className={classes["disable-select"]} for='email'>
+                  email
+                </label>
                 <span className={classes["underline"]}></span>
               </div>
               <div className={classes["input-field"]}>
                 <input type='text' id='subject' required />
-                <label for='subject'>subject</label>
+                <label className={classes["disable-select"]} for='subject'>
+                  subject
+                </label>
                 <span className={classes["underline"]}></span>
               </div>
               <div className={classes["textarea"]}>
