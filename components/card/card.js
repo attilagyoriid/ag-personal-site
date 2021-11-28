@@ -1,6 +1,5 @@
 /** @format */
 import { Fragment } from "react";
-import { useEffect, useState, lazy } from "react";
 import Lottie from "react-lottie-player";
 import CarouselSwipe from "../carousel/carouselSwipe";
 import classes from "./card.module.scss";

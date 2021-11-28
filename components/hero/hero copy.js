@@ -5,6 +5,8 @@ import Typed from "typed.js";
 import { useEffect, useState, useRef } from "react";
 import { gsap } from "gsap";
 import ScrollButton from "../scrollButton/scrollButton";
+import VideoIntro from "../videoIntro/videoIntro";
+import Loading from "../loading/loading";
 
 export default function Hero({ posts }) {
   // if (typeof window !== "undefined") {
@@ -19,6 +21,7 @@ export default function Hero({ posts }) {
   const afterImageImgRef = useRef(null);
   const afterImage2Ref = useRef(null);
   const afterImage2ImgRef = useRef(null);
+  const overlayRef = useRef(null);
   const overlayH1Ref = useRef(null);
   const heroContentRef = useRef(null);
 
@@ -57,6 +60,20 @@ export default function Hero({ posts }) {
     //   },
     // });
 
+    gsap.to(overlayRef.current, {
+      duration: 0.5,
+      delay: 6,
+
+      opacity: 0,
+      ease: "expo.easeInOut",
+    });
+    gsap.to(overlayRef.current, {
+      duration: 4,
+      delay: 8,
+      top: "-100%",
+      opacity: 0,
+      ease: "expo.easeInOut",
+    });
     const typed = new Typed(el.current, {
       strings: ["SDET", "Developer", "Visual Creative"],
       startDelay: 300,
@@ -108,6 +125,9 @@ export default function Hero({ posts }) {
 
   return (
     <div className={classes["home-container"]}>
+      <div className={classes.overlay} ref={overlayRef}>
+        <VideoIntro />
+      </div>
       <header className={classes.header_home}>
         <section
           ref={comparisonSectionRef}
