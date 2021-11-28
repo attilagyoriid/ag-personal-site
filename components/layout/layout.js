@@ -1,7 +1,6 @@
 /** @format */
 import Head from "next/head";
 import MainNavigation from "../main-navigation/main-navigaton";
-import classes from "./layout.module.scss";
 
 export default function Layout({ title, keywords, description, children }) {
   return (
