@@ -24,7 +24,6 @@ const usePrevious = (value) => {
 };
 
 function MainNavigation(props) {
-  console.log("props", props);
   const { pathname } = useRouter();
 
   const [visible, setVisible] = useState(true);
@@ -33,14 +32,11 @@ function MainNavigation(props) {
 
   const handleScroll = () => {
     if (scrollPositionY < prevScrollPositionY) {
-      console.log("invisible");
       setVisible(true);
     } else {
-      console.log("visible");
       setVisible(false);
     }
     setScrollPositionY(window.pageYOffset);
-    console.log("page offset", scrollPositionY);
   };
 
   useEffect(() => {
