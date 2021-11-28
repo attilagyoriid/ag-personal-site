@@ -1,6 +1,7 @@
 /** @format */
 import Head from "next/head";
 import { useEffect, useRef } from "react";
+// import "./jquery.svg3dtagcloud.min";
 
 export default function WordCloud() {
   const entries = [
@@ -239,14 +240,15 @@ export default function WordCloud() {
   };
 
   useEffect(() => {
-    const cloud = SVG3DTagCloud(document.getElementById("holder"), settings);
-    console.log("useeffect");
+    const scriptLoaded = () => {
+      const cloud = SVG3DTagCloud(document.getElementById("holder"), settings);
+    };
+    const script = document.createElement("script");
+    script.src = "/js/jquery.svg3dtagcloud.min.js";
+    script.async = true;
+    script.onload = () => scriptLoaded();
+
+    document.body.appendChild(script);
   }, []);
-  return (
-    <div id='holder'>
-      <Head>
-        <script src='js/jquery.svg3dtagcloud.min.js'></script>
-      </Head>
-    </div>
-  );
+  return <div id='holder'></div>;
 }
