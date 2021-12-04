@@ -81,10 +81,14 @@ export default function Projects() {
           <div className={classes["project-carousel-section-content"]}>
             <CarouselSwipe
               texts={[
-                "/images/services_robot.svg",
-                "/images/services_robot.svg",
-                "/images/services_robot.svg",
-                "/images/services_robot.svg",
+                "/images/projects/ch.png",
+                "/images/projects/electron.png",
+                "/images/projects/graphic_design.png",
+                "/images/projects/java_algo.png",
+                "/images/projects/python_algo.png",
+                "/images/projects/selenium.png",
+                "/images/projects/web_design.png",
+                "/images/projects/zbrush.png",
               ]}
               type={"img"}
               carouselAttributes={carouselAttributes}
