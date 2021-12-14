@@ -61,17 +61,6 @@ export default function Projects() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
             molestias repellat quibusdam adipisci quas sed ullam accusantium
             aliquam numquam quidem.Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Officiis, molestias repellat quibusdam adipisci
-            quas sed ullam accusantium aliquam numquam quidem.Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Officiis, molestias repellat
-            quibusdam adipisci quas sed ullam accusantium aliquam numquam
-            quidem.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Officiis, molestias repellat quibusdam adipisci quas sed ullam
-            accusantium aliquam numquam quidem.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Officiis, molestias repellat quibusdam
-            adipisci quas accusantium aliquam numquam quidem.Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Officiis, molestias repellat
-            quibusdam adipisci quas
           </p>
         </div>
         <div
