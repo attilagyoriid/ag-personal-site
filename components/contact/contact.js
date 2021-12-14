@@ -3,8 +3,10 @@
 import Social from "../social/social";
 import TitleOverlay from "../titleOverlay/titleOverlay";
 import classes from "./contact.module.scss";
+import { Formik, Form, ErrorMessage, Field } from "formik";
+import { emailFormSchema } from "../../schemas/emailFormSchema";
 
-export default function Contact() {
+export default function Contact(props) {
   return (
     <section
       className={`${classes["contact-section"]} ${classes["text-center"]}`}
@@ -28,43 +30,126 @@ export default function Contact() {
 
         <div className={classes["form-container"]}>
           <div className={classes["form-content"]}>
-            <form action='' autoComplete='off'>
-              <div className={classes["input-field"]}>
-                <input type='text' id='name' required />
-                <label className={classes["disable-select"]} for='name'>
-                  name
-                </label>
-                <span className={classes["underline"]}></span>
-              </div>
-              <div className={classes["input-field"]}>
-                <input type='text' id='email' required />
-                <label className={classes["disable-select"]} for='email'>
-                  email
-                </label>
-                <span className={classes["underline"]}></span>
-              </div>
-              <div className={classes["input-field"]}>
-                <input type='text' id='subject' required />
-                <label className={classes["disable-select"]} for='subject'>
-                  subject
-                </label>
-                <span className={classes["underline"]}></span>
-              </div>
-              <div className={classes["textarea"]}>
-                <textarea
-                  id='w3review'
-                  name='w3review'
-                  rows='4'
-                  cols='50'
-                  className={classes["textarea-effect"]}
-                ></textarea>
-              </div>
-              <div className={classes["btn-container"]}>
-                <a href='work.html' className={classes["btn-light"]}>
-                  Send
-                </a>
-              </div>
-            </form>
+            <Formik
+              initialValues={{
+                name: "",
+                subject: "",
+                email: "",
+                message: "",
+              }}
+              validationSchema={emailFormSchema}
+              onSubmit={(values) => {
+                console.log(values);
+              }}
+            >
+              {({ touched, errors, isSubmitting, values, isValid }) => (
+                <Form autoComplete='off'>
+                  <div className={classes["input-field"]}>
+                    <Field
+                      type='text'
+                      id='name'
+                      name='name'
+                      required
+                      autoComplete='off'
+                    />
+                    <ErrorMessage
+                      component='div'
+                      name='name'
+                      className={classes["error"]}
+                    />
+                    <label
+                      className={`${classes["disable-select"]} ${
+                        touched.name && errors.name ? classes["invalid"] : ""
+                      }`}
+                      htmlFor='name'
+                    >
+                      name
+                    </label>
+                    <span
+                      className={`${classes["underline"]} ${
+                        touched.name && errors.name ? classes["invalid"] : ""
+                      }`}
+                    ></span>
+                  </div>
+                  <div className={classes["input-field"]}>
+                    <Field
+                      type='text'
+                      id='email'
+                      name='email'
+                      required
+                      autoComplete='off'
+                    />
+                    <ErrorMessage
+                      component='div'
+                      name='email'
+                      className={classes["error"]}
+                    />
+                    <label
+                      className={`${classes["disable-select"]} ${
+                        touched.email && errors.email ? classes["invalid"] : ""
+                      }`}
+                      htmlFor='email'
+                    >
+                      email
+                    </label>
+                    <span className={classes["underline"]}></span>
+                  </div>
+                  <div className={classes["input-field"]}>
+                    <Field
+                      type='text'
+                      id='subject'
+                      name='subject'
+                      required
+                      autoComplete='off'
+                    />
+                    <ErrorMessage
+                      component='div'
+                      name='subject'
+                      className={classes["error"]}
+                    />
+                    <label
+                      className={`${classes["disable-select"]} ${
+                        touched.subject && errors.subject
+                          ? classes["invalid"]
+                          : ""
+                      }`}
+                      htmlFor='subject'
+                    >
+                      subject
+                    </label>
+                    <span className={classes["underline"]}></span>
+                  </div>
+                  <div className={classes["textarea"]}>
+                    <Field
+                      component='textarea'
+                      id='message'
+                      name='message'
+                      rows='4'
+                      cols='50'
+                      className={`${classes["disable-select"]} ${
+                        touched.message && errors.message
+                          ? classes["invalid"]
+                          : ""
+                      }`}
+                    ></Field>
+                    <ErrorMessage
+                      component='div'
+                      name='message'
+                      className={classes["error"]}
+                    />
+                  </div>
+                  <div className={classes["btn-container"]}>
+                    <button
+                      disabled={!isValid || isSubmitting}
+                      className={classes["btn-light"]}
+                      type='submit'
+                    >
+                      Send
+                    </button>
+                  </div>
+                </Form>
+              )}
+            </Formik>
           </div>
         </div>
       </div>
