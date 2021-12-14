@@ -51,6 +51,7 @@ export default function Contact(props) {
                       name='name'
                       required
                       autoComplete='off'
+                      spellCheck='false'
                     />
                     <ErrorMessage
                       component='div'
@@ -78,6 +79,7 @@ export default function Contact(props) {
                       name='email'
                       required
                       autoComplete='off'
+                      spellCheck='false'
                     />
                     <ErrorMessage
                       component='div'
@@ -101,6 +103,7 @@ export default function Contact(props) {
                       name='subject'
                       required
                       autoComplete='off'
+                      spellCheck='false'
                     />
                     <ErrorMessage
                       component='div'
@@ -122,6 +125,8 @@ export default function Contact(props) {
                   <div className={classes["textarea"]}>
                     <Field
                       component='textarea'
+                      spellCheck='false'
+                      autocomplete='off'
                       id='message'
                       name='message'
                       rows='4'
