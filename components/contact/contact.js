@@ -1,16 +1,63 @@
 /** @format */
 
+import axios from "axios";
+import { Formik, Form, ErrorMessage, Field } from "formik";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Social from "../social/social";
 import TitleOverlay from "../titleOverlay/titleOverlay";
+import { emailSchema } from "../../schemas/emailSchema";
 import classes from "./contact.module.scss";
-import { Formik, Form, ErrorMessage, Field } from "formik";
-import { emailFormSchema } from "../../schemas/emailFormSchema";
 
-export default function Contact(props) {
+export default function Contact() {
+  const handleSubmit = (values, { resetForm }) => {
+    axios
+      .post("/api/email", values)
+      .then((response) => {
+        toast.success(response.data.message, {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+        resetForm({});
+      })
+      .catch((error) => {
+        console.log("ejjor" + JSON.stringify(error));
+        let erroMessage = "Error sending email!";
+        if (error.response) {
+          erroMessage = error.response.data.message;
+        }
+        toast.error(erroMessage, {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+      });
+  };
+
   return (
     <section
       className={`${classes["contact-section"]} ${classes["text-center"]}`}
     >
+      <ToastContainer
+        position='top-center'
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
       <div className={classes["title-container"]}>
         <TitleOverlay title='LET’S WORK TOGETHER' overlayText='CONTACT' />
       </div>
@@ -37,12 +84,17 @@ export default function Contact(props) {
                 email: "",
                 message: "",
               }}
-              validationSchema={emailFormSchema}
-              onSubmit={(values) => {
-                console.log(values);
-              }}
+              validationSchema={emailSchema}
+              onSubmit={handleSubmit}
             >
-              {({ touched, errors, isSubmitting, values, isValid }) => (
+              {({
+                touched,
+                errors,
+                isSubmitting,
+                values,
+                isValid,
+                resetForm,
+              }) => (
                 <Form autoComplete='off'>
                   <div className={classes["input-field"]}>
                     <Field
