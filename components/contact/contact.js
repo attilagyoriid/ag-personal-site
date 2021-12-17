@@ -9,6 +9,7 @@ import TitleOverlay from "../titleOverlay/titleOverlay";
 import { emailSchema } from "../../schemas/emailSchema";
 import classes from "./contact.module.scss";
 
+
 export default function Contact() {
   const handleSubmit = (values, { resetForm }) => {
     axios
@@ -87,14 +88,7 @@ export default function Contact() {
               validationSchema={emailSchema}
               onSubmit={handleSubmit}
             >
-              {({
-                touched,
-                errors,
-                isSubmitting,
-                values,
-                isValid,
-                resetForm,
-              }) => (
+              {({ touched, errors, isSubmitting, dirty, isValid }) => (
                 <Form autoComplete='off'>
                   <div className={classes["input-field"]}>
                     <Field
@@ -197,7 +191,7 @@ export default function Contact() {
                   </div>
                   <div className={classes["btn-container"]}>
                     <button
-                      disabled={!isValid || isSubmitting}
+                      disabled={!dirty || !isValid || isSubmitting}
                       className={classes["btn-light"]}
                       type='submit'
                     >
