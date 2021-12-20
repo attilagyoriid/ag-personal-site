@@ -2,6 +2,7 @@
 
 import { gsap } from "gsap";
 import { useEffect, useRef } from "react";
+import Link from "next/link";
 import CarouselSwipe from "../carousel/carouselSwipe";
 import TitleSection from "../titleSection/titleSection";
 import classes from "./projects.module.scss";
@@ -85,9 +86,9 @@ export default function Projects() {
             />
           </div>
           <div>
-            <a href='work.html' className={`${classes["btn-dark--outline"]}`}>
-              More
-            </a>
+            <Link href='/projects'>
+              <a className={`${classes["btn-dark--outline"]}`}>More</a>
+            </Link>
           </div>
         </div>
       </div>
