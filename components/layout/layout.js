@@ -1,10 +1,11 @@
 /** @format */
 import Head from "next/head";
 import MainNavigation from "../main-navigation/main-navigaton";
+import classes from "./layout.module.scss";
 
 export default function Layout({ title, keywords, description, children }) {
   return (
-    <div>
+    <div className={classes["main-container"]}>
       <Head>
         <title>{title}</title>
         <meta name='keywords' content={keywords} />
