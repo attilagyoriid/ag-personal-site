@@ -1,0 +1,13 @@
+@import "../../styles/config";
+@import "../../styles/utilities";
+
+.title-container{
+    position: relative;
+    .overlay-container {
+
+       position: absolute;
+       top: 50%;
+       left:50%;
+       
+    }
+}
