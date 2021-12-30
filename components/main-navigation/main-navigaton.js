@@ -40,6 +40,7 @@ function MainNavigation(props) {
       setVisible(true);
     } else {
       setVisible(false);
+      handleMenuClose();
     }
     setScrollPositionY(window.pageYOffset);
   };
