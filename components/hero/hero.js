@@ -31,7 +31,7 @@ export default function Hero({ posts }) {
     // ScrollTrigger.refresh();
     ScrollTrigger.matchMedia({
       // desktop
-      "(min-width: 1024px)": function () {
+      "(min-width: 1024px) and (orientation: landscape)": function () {
         gsap.utils.toArray(comparisonSectionRef.current).forEach((section) => {
           // ScrollTrigger.create({
           //   trigger: section,
