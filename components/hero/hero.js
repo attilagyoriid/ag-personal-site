@@ -3,15 +3,17 @@ import Image from "next/image";
 import classes from "./hero.module.scss";
 import Typed from "typed.js";
 import { useEffect, useState, useRef } from "react";
-import { gsap } from "gsap";
+import { gsap } from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import ScrollButton from "../scrollButton/scrollButton";
 
 export default function Hero({ posts }) {
+  gsap.registerPlugin(ScrollTrigger);
   // if (typeof window !== "undefined") {
   //   gsap.registerPlugin(ScrollTrigger);
   // }
 
-  const typedTextColors = ["#EBC250", "#FFFFFF", "#7198ca"];
+  const typedTextColors = ["#EBC250", "#FFFFFF", "#2283bb"];
   const el = useRef(null);
 
   const comparisonSectionRef = useRef(null);
@@ -21,8 +23,67 @@ export default function Hero({ posts }) {
   const afterImage2ImgRef = useRef(null);
   const overlayH1Ref = useRef(null);
   const heroContentRef = useRef(null);
+  const containerRef = useRef(null);
 
   const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // ScrollTrigger.refresh();
+    ScrollTrigger.matchMedia({
+      // desktop
+      "(min-width: 1024px)": function () {
+        gsap.utils.toArray(comparisonSectionRef.current).forEach((section) => {
+          // ScrollTrigger.create({
+          //   trigger: section,
+          //   markers: true,
+          //   start: "center center",
+          //   // makes the height of the scrolling (while pinning) match the width, thus the speed remains constant (vertical/horizontal)
+          //   end: () => "+=" + section.offsetWidth,
+          //   scrub: true,
+          //   pin: true,
+          //   anticipatePin: 1,
+          // });
+          let tl = gsap.timeline({
+            scrollTrigger: {
+              trigger: section,
+              start: "top top",
+              // makes the height of the scrolling (while pinning) match the width, thus the speed remains constant (vertical/horizontal)
+              end: () => "+=" + section.offsetWidth,
+              scrub: true,
+              pin: containerRef.current,
+              anticipatePin: 1,
+            },
+            defaults: { ease: "none" },
+          });
+          // animate the container one way...
+          tl.fromTo(
+            afterImageRef.current,
+            { xPercent: 100, x: 0 },
+            { xPercent: 0 }
+          )
+            // ...and the image the opposite way (at the same time)
+            .fromTo(
+              afterImageImgRef.current,
+              { xPercent: -100, x: 0 },
+              { xPercent: 0 },
+              0
+            )
+            .fromTo(
+              afterImage2Ref.current,
+              { xPercent: 100, x: 0 },
+              { xPercent: 0 }
+            )
+            // ...and the image the opposite way (at the same time)
+            .fromTo(
+              afterImage2ImgRef.current,
+              { xPercent: -100, x: 0 },
+              { xPercent: 0 },
+              0
+            );
+        });
+      },
+    });
+  }, []);
 
   useEffect(() => {
     setLoading(false);
@@ -107,7 +168,7 @@ export default function Hero({ posts }) {
   }, []);
 
   return (
-    <div className={classes["home-container"]}>
+    <div className={classes["home-container"]} ref={containerRef}>
       <header className={classes.header_home}>
         <section
           ref={comparisonSectionRef}
@@ -130,6 +191,7 @@ export default function Hero({ posts }) {
               ref={afterImageImgRef}
               className={`${classes["img-gradient"]}`}
               alt='AG site hero image'
+              src={"/images/me_sketch_24_opt_blue_.png"}
             />
           </div>
           <div
@@ -139,8 +201,8 @@ export default function Hero({ posts }) {
             <img
               ref={afterImage2ImgRef}
               className={`${classes["img-gradient"]}`}
-              src={"/images/me_code_reflection_overlay.png"}
               alt='AG site hero image'
+              src={"/images/me_code_reflection_overlay.png"}
             />
           </div>
         </section>

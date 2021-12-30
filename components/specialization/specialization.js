@@ -78,7 +78,7 @@ export default function SpecializationSection() {
               key={item.description}
               className={classes["card-wrapper"]}
             >
-              <Card ref={cardRef} cardData={item} />
+              <Card ref={cardRef} cardData={item} linkUrl='/experience' />
             </div>
           ))}
         </div>
