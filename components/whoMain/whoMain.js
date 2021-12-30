@@ -5,6 +5,7 @@ import { gsap } from "gsap";
 import classes from "./whoMain.module.scss";
 import DownloadButton from "../downloadButton/downloadButton";
 import WordCloud from "../wordCloud/wordCloud";
+import Link from "next/link";
 
 export default function WhoMain() {
   const bkgImgRef = useRef(null);
@@ -76,9 +77,9 @@ export default function WhoMain() {
             consectetur adipisicing elit. Officiis, molestias repellat quibusdam
             adipisci quas
           </p>
-          <a href='work.html' className={classes["btn-main"]}>
-            About
-          </a>
+          <Link href='/about'>
+            <a className={classes["btn-main"]}>About</a>
+          </Link>
         </div>
       </div>
     </section>
