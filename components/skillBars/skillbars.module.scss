@@ -1,0 +1,46 @@
+/** @format */
+
+@import "../../styles/config";
+@import "../../styles/utilities";
+
+.skill-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  margin-top: 200px;
+  .left,
+  .right {
+    display: flex;
+    flex-flow: column;
+    width: 47.5%;
+
+    .skillbar-container {
+      width: 100%;
+      margin-bottom: 25px;
+      .skillbar-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5px;
+      }
+      .skillbar-title h5 {
+        font-weight: 400;
+        font-size: 16px;
+      }
+      .skillbar-outer {
+        height: 15px;
+        background-color: #d9d9d9;
+        border-radius: 50px;
+        overflow: hidden;
+        .skillbar-inner {
+          height: 100%;
+          width: 0;
+          background-color: #2f9be7;
+          box-shadow: 0px 0px 5px rgba(43, 43, 43, 0.5);
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+}
