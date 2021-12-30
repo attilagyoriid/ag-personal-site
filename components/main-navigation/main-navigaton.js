@@ -9,6 +9,7 @@ import {
   animateScroll as scroll,
   scrollSpy,
   scroller,
+  Scroll,
 } from "react-scroll";
 // import useScrollPosition from "../../hooks/useScrollPosition";
 import Logo from "../logo/logo";
@@ -24,11 +25,15 @@ const usePrevious = (value) => {
 };
 
 function MainNavigation(props) {
-  const { pathname } = useRouter();
+  const router = useRouter();
+  console.log("router " + router.pathname);
 
   const [visible, setVisible] = useState(true);
   const [scrollPositionY, setScrollPositionY] = useState();
   const prevScrollPositionY = usePrevious(scrollPositionY);
+  const [click, setClick] = useState(false);
+  const handleMenuClick = () => setClick(!click);
+  const handleMenuClose = () => setClick(false);
 
   const handleScroll = () => {
     if (scrollPositionY < prevScrollPositionY) {
@@ -63,12 +68,18 @@ function MainNavigation(props) {
 
   return (
     <nav
-      className={`${classes.main_nav} ${classes["px-8"]} ${
+      className={`${classes.main_nav}  ${
         visible ? classes.main_nav_visible : classes.main_nav_invisible
       }`}
     >
       <Logo />
-      <ul>
+      <ul
+        className={
+          click
+            ? `${classes["nav-menu"]} ${classes["active"]}`
+            : `${classes["nav-menu"]} `
+        }
+      >
         <li>
           <Link
             to='home'
@@ -78,6 +89,7 @@ function MainNavigation(props) {
             onSetActive={handleSetActive}
             hashSpy={true}
             activeClass='active'
+            onClick={handleMenuClose}
           >
             <a className={classes.current}>Home</a>
           </Link>
@@ -91,6 +103,7 @@ function MainNavigation(props) {
             onSetActive={handleSetActive}
             hashSpy={true}
             activeClass='active'
+            onClick={handleMenuClose}
           >
             About
           </Link>
@@ -103,6 +116,7 @@ function MainNavigation(props) {
             smooth={true}
             duration={1500}
             hashSpy={true}
+            onClick={handleMenuClose}
           >
             Experience
           </Link>
@@ -115,6 +129,7 @@ function MainNavigation(props) {
             smooth={true}
             duration={1500}
             hashSpy={true}
+            onClick={handleMenuClose}
           >
             Work
           </Link>
@@ -127,11 +142,15 @@ function MainNavigation(props) {
             smooth={true}
             duration={1500}
             hashSpy={true}
+            onClick={handleMenuClose}
           >
             Contact
           </Link>
         </li>
       </ul>
+      <div className={classes["nav-icon"]} onClick={handleMenuClick}>
+        <i className={click ? "fa fa-times" : "fa fa-bars"}></i>
+      </div>
     </nav>
   );
 }
