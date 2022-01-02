@@ -16,7 +16,7 @@ export default function Footer() {
         <div className={classes["date"]}>&copy;2021</div>
       </div>
       <div className={classes["social-block"]}>
-        <Social layout='landscape' />
+        <Social layout="landscape" />
       </div>
     </div>
   );

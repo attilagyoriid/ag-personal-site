@@ -250,5 +250,5 @@ export default function WordCloud() {
 
     document.body.appendChild(script);
   }, []);
-  return <div id='holder'></div>;
+  return <div id="holder"></div>;
 }

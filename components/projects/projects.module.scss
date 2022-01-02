@@ -14,7 +14,6 @@
     display: flex;
     align-items: center;
 
-
     margin-left: 4rem;
     .description-section {
       font-family: Nunito, Roboto, sans-serif;
@@ -33,19 +32,18 @@
       flex-direction: column;
       position: relative;
       top: 4rem;
-      
-      align-items: flex-start;  
+
+      align-items: flex-start;
       justify-content: center;
-      z-index:5;  
-      
+      z-index: 5;
+
       height: 25rem;
-      .project-carousel-section-content{
+      .project-carousel-section-content {
         padding: 2rem 0;
         background-color: $medium-color-overlay;
         color: $light-color;
         border-radius: 16px 0px 0px 16px;
         margin-bottom: 4rem;
-
       }
     }
   }

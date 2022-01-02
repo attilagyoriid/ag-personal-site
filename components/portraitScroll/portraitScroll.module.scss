@@ -1,14 +1,13 @@
 .portrait-container {
-    display: flex;
-    position: relative;
-    height: 1080px;
-    .img-scale {
-        width: 10%;
-        height: 10%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform-origin: 50% 50%;
-      }
+  display: flex;
+  position: relative;
+  height: 1080px;
+  .img-scale {
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 50%;
   }
-  
+}

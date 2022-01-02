@@ -66,8 +66,8 @@ export default function SpecializationSection() {
     >
       <div className={classes.container}>
         <TitleSection
-          title='I Specialize In'
-          subText='Photography as well as creating digital masterpieces and UI/UX layouts for websites and mobile applications'
+          title="I Specialize In"
+          subText="Photography as well as creating digital masterpieces and UI/UX layouts for websites and mobile applications"
         />
         <div ref={cardsRef} className={classes.specials}>
           {cardList.map((item, index) => (
@@ -78,7 +78,7 @@ export default function SpecializationSection() {
               key={item.description}
               className={classes["card-wrapper"]}
             >
-              <Card ref={cardRef} cardData={item} linkUrl='/experience' />
+              <Card ref={cardRef} cardData={item} linkUrl="/experience" />
             </div>
           ))}
         </div>

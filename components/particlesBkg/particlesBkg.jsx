@@ -9,5 +9,5 @@ export default function ParticlesBkg() {
     tsParticles.load("tsparticles", preset);
   }, []);
 
-  return <div id='tsparticles'></div>;
+  return <div id="tsparticles"></div>;
 }

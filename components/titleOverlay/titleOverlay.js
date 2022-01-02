@@ -32,7 +32,7 @@ function TitleOverlay({ title, overlayText }) {
   });
 
   return (
-    <div id='overlay-title' className={classes["title-container"]}>
+    <div id="overlay-title" className={classes["title-container"]}>
       <div className={`${classes["section-title"]}`}>{title}</div>
       <div ref={boxRef} className={`${classes["section-title--overlay"]}`}>
         {overlayText}

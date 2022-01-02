@@ -18,7 +18,7 @@ export default function Skillbars() {
   const skills2 = [{ type: "Test", level: 95 }];
   const skills3 = [{ type: "Design", level: 70 }];
   return (
-    <div id='program-skills' className={classes["skill-container"]}>
+    <div id="program-skills" className={classes["skill-container"]}>
       <div className={classes["left"]}>
         <div>Software Development</div>
 

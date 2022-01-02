@@ -49,12 +49,12 @@ export default function WhoMain() {
         ref={bkgImgRef}
         className={`${classes["img-bkg"]}`}
         src={"/images/background_logo_yellow.svg"}
-        alt='AG site logo image'
+        alt="AG site logo image"
       />
       <TitleSection
-        title='WHO AM I'
-        subText='Seasoned Software Developer with more than 17 years experience and passion for visual design and creative creation'
-        className='lead--deep-dark-color'
+        title="WHO AM I"
+        subText="Seasoned Software Developer with more than 17 years experience and passion for visual design and creative creation"
+        className="lead--deep-dark-color"
       />
       <div className={classes["about-section"]}>
         <div ref={sphereSectionRef} className={classes["skill-sphere-section"]}>
@@ -77,7 +77,7 @@ export default function WhoMain() {
             consectetur adipisicing elit. Officiis, molestias repellat quibusdam
             adipisci quas
           </p>
-          <Link href='/about'>
+          <Link href="/about">
             <a className={classes["btn-main"]}>About</a>
           </Link>
         </div>

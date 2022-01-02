@@ -4,30 +4,28 @@
 @import "../../styles/utilities";
 
 .title-container {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
   z-index: 4;
   margin-top: -1rem;
   .section-title {
-    
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -150%);
     z-index: 6;
-   
   }
   .section-title--overlay {
     @extend %title-large;
-  z-index: 5;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  
-  line-height: 116.9%;
-  color: rgba(217, 217, 217, 0.4);
-}
+    z-index: 5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    line-height: 116.9%;
+    color: rgba(217, 217, 217, 0.4);
+  }
 }

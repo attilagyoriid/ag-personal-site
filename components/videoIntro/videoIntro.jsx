@@ -22,9 +22,9 @@ export default function VideoIntro({ title, keywords, description, children }) {
     <div className={classes["video-container"]}>
       <Head>
         <title>{title}</title>
-        <meta name='keywords' content={keywords} />
-        <meta name='description' content={description} />
-        <link rel='icon' href='/favicon.ico' />
+        <meta name="keywords" content={keywords} />
+        <meta name="description" content={description} />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <LoadingSpinner isLoading={isLoading} />
       <video
@@ -41,7 +41,7 @@ export default function VideoIntro({ title, keywords, description, children }) {
           router.push("/home");
         }}
       >
-        <source src='/video/intro.mp4' type='video/mp4'></source>
+        <source src="/video/intro.mp4" type="video/mp4"></source>
       </video>
     </div>
   );

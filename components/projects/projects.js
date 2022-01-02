@@ -49,9 +49,9 @@ export default function Projects() {
   return (
     <section className={classes["main-projects"]}>
       <TitleSection
-        title='PUBLIC PROJECTS'
-        subText='Seasoned Software Developer with more than 17 years experience and passion for visual design and creative creation'
-        className='lead--deep-dark-color'
+        title="PUBLIC PROJECTS"
+        subText="Seasoned Software Developer with more than 17 years experience and passion for visual design and creative creation"
+        className="lead--deep-dark-color"
       />
       <div className={classes["projects-section"]}>
         <div
@@ -86,7 +86,7 @@ export default function Projects() {
             />
           </div>
           <div>
-            <Link href='/projects'>
+            <Link href="/projects">
               <a className={`${classes["btn-dark--outline"]}`}>More</a>
             </Link>
           </div>

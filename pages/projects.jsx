@@ -8,7 +8,7 @@ import Works from "../components/work/works";
 export default function Projects() {
   return (
     <Layout>
-      <ImageLeadingWithTitle url='/images/intro-projects.png' title='WORKS' />
+      <ImageLeadingWithTitle url="/images/intro-projects.png" title="WORKS" />
       <Works />
       <Footer />
     </Layout>

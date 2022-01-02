@@ -7,7 +7,7 @@ export default function ImageLeadingWithTitle({ url, title }) {
     <div className={classes["title-container"]}>
       <ImageLeading imgUrl={url} />
       <div className={classes["overlay-container"]}>
-        <TitleOverlay title='' overlayText={title} />
+        <TitleOverlay title="" overlayText={title} />
       </div>
     </div>
   );

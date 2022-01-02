@@ -45,23 +45,23 @@ const SpecializationSection = dynamic(
 function Home() {
   return (
     <Layout>
-      <Element name='home'>
+      <Element name="home">
         <Hero />
       </Element>
-      <Element name='specialization'>
+      <Element name="specialization">
         <SpecializationSection />
       </Element>
-      <Element name='whoami'>
+      <Element name="whoami">
         <ImageLeading imgUrl={"/images/me-leader_main.png"} />
 
         <WhoMain />
       </Element>
-      <Element name='projects'>
+      <Element name="projects">
         <ImageLeading imgUrl={"/images/ui-ux-unsplash_main.png"} />
 
         <Projects />
       </Element>
-      <Element name='contact'>
+      <Element name="contact">
         <ImageLeading imgUrl={"/images/leader-contact-main2.png"} />
 
         <Contact />

@@ -9,7 +9,6 @@ import TitleOverlay from "../titleOverlay/titleOverlay";
 import { emailSchema } from "../../schemas/emailSchema";
 import classes from "./contact.module.scss";
 
-
 export default function Contact() {
   const handleSubmit = (values, { resetForm }) => {
     axios
@@ -49,7 +48,7 @@ export default function Contact() {
       className={`${classes["contact-section"]} ${classes["text-center"]}`}
     >
       <ToastContainer
-        position='top-center'
+        position="top-center"
         autoClose={5000}
         hideProgressBar={false}
         newestOnTop={false}
@@ -60,7 +59,7 @@ export default function Contact() {
         pauseOnHover
       />
       <div className={classes["title-container"]}>
-        <TitleOverlay title='LET’S WORK TOGETHER' overlayText='CONTACT' />
+        <TitleOverlay title="LET’S WORK TOGETHER" overlayText="CONTACT" />
       </div>
       <div className={classes["contact-container"]}>
         <div className={classes["social-container"]}>
@@ -68,7 +67,7 @@ export default function Contact() {
           <Social />
           <div className={classes["email-container"]}>
             <div className={classes["email-icon"]}>
-              <img src='/images/social-icons/mail.svg' alt='Email Icon' />
+              <img src="/images/social-icons/mail.svg" alt="Email Icon" />
             </div>
             <div className={classes["email-content"]}>
               gyoriattila@yahoo.com
@@ -89,26 +88,26 @@ export default function Contact() {
               onSubmit={handleSubmit}
             >
               {({ touched, errors, isSubmitting, dirty, isValid }) => (
-                <Form autoComplete='off'>
+                <Form autoComplete="off">
                   <div className={classes["input-field"]}>
                     <Field
-                      type='text'
-                      id='name'
-                      name='name'
+                      type="text"
+                      id="name"
+                      name="name"
                       required
-                      autoComplete='off'
-                      spellCheck='false'
+                      autoComplete="off"
+                      spellCheck="false"
                     />
                     <ErrorMessage
-                      component='div'
-                      name='name'
+                      component="div"
+                      name="name"
                       className={classes["error"]}
                     />
                     <label
                       className={`${classes["disable-select"]} ${
                         touched.name && errors.name ? classes["invalid"] : ""
                       }`}
-                      htmlFor='name'
+                      htmlFor="name"
                     >
                       name
                     </label>
@@ -120,23 +119,23 @@ export default function Contact() {
                   </div>
                   <div className={classes["input-field"]}>
                     <Field
-                      type='text'
-                      id='email'
-                      name='email'
+                      type="text"
+                      id="email"
+                      name="email"
                       required
-                      autoComplete='off'
-                      spellCheck='false'
+                      autoComplete="off"
+                      spellCheck="false"
                     />
                     <ErrorMessage
-                      component='div'
-                      name='email'
+                      component="div"
+                      name="email"
                       className={classes["error"]}
                     />
                     <label
                       className={`${classes["disable-select"]} ${
                         touched.email && errors.email ? classes["invalid"] : ""
                       }`}
-                      htmlFor='email'
+                      htmlFor="email"
                     >
                       email
                     </label>
@@ -144,16 +143,16 @@ export default function Contact() {
                   </div>
                   <div className={classes["input-field"]}>
                     <Field
-                      type='text'
-                      id='subject'
-                      name='subject'
+                      type="text"
+                      id="subject"
+                      name="subject"
                       required
-                      autoComplete='off'
-                      spellCheck='false'
+                      autoComplete="off"
+                      spellCheck="false"
                     />
                     <ErrorMessage
-                      component='div'
-                      name='subject'
+                      component="div"
+                      name="subject"
                       className={classes["error"]}
                     />
                     <label
@@ -162,7 +161,7 @@ export default function Contact() {
                           ? classes["invalid"]
                           : ""
                       }`}
-                      htmlFor='subject'
+                      htmlFor="subject"
                     >
                       subject
                     </label>
@@ -170,13 +169,13 @@ export default function Contact() {
                   </div>
                   <div className={classes["textarea"]}>
                     <Field
-                      component='textarea'
-                      spellCheck='false'
-                      autocomplete='off'
-                      id='message'
-                      name='message'
-                      rows='4'
-                      cols='50'
+                      component="textarea"
+                      spellCheck="false"
+                      autocomplete="off"
+                      id="message"
+                      name="message"
+                      rows="4"
+                      cols="50"
                       className={`${classes["disable-select"]} ${
                         touched.message && errors.message
                           ? classes["invalid"]
@@ -184,8 +183,8 @@ export default function Contact() {
                       }`}
                     ></Field>
                     <ErrorMessage
-                      component='div'
-                      name='message'
+                      component="div"
+                      name="message"
                       className={classes["error"]}
                     />
                   </div>
@@ -193,7 +192,7 @@ export default function Contact() {
                     <button
                       disabled={!dirty || !isValid || isSubmitting}
                       className={classes["btn-light"]}
-                      type='submit'
+                      type="submit"
                     >
                       Send
                     </button>

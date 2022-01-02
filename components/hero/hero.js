@@ -180,7 +180,7 @@ export default function Hero({ posts }) {
             <img
               className={`${classes["img-gradient"]}`}
               src={"/images/me_code_reflection_overlay.png"}
-              alt='AG site hero image'
+              alt="AG site hero image"
             />
           </div>
           <div
@@ -190,7 +190,7 @@ export default function Hero({ posts }) {
             <img
               ref={afterImageImgRef}
               className={`${classes["img-gradient"]}`}
-              alt='AG site hero image'
+              alt="AG site hero image"
               src={"/images/me_sketch_24_opt_blue_.png"}
             />
           </div>
@@ -201,7 +201,7 @@ export default function Hero({ posts }) {
             <img
               ref={afterImage2ImgRef}
               className={`${classes["img-gradient"]}`}
-              alt='AG site hero image'
+              alt="AG site hero image"
               src={"/images/me_code_reflection_overlay.png"}
             />
           </div>
@@ -220,10 +220,10 @@ export default function Hero({ posts }) {
             <div>{posts}</div>
           </div>
           <div className={classes["button-group"]}>
-            <a href='work.html' className={classes["btn-light"]}>
+            <a href="work.html" className={classes["btn-light"]}>
               About
             </a>
-            <a href='work.html' className={classes["btn-main"]}>
+            <a href="work.html" className={classes["btn-main"]}>
               Contact
             </a>
           </div>

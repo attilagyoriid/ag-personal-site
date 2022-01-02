@@ -10,7 +10,7 @@ import Works from "../components/work/works";
 export default function About() {
   return (
     <Layout>
-      <ImageLeadingWithTitle url='/images/intro-whoami9.png' title='Who Am I' />
+      <ImageLeadingWithTitle url="/images/intro-whoami9.png" title="Who Am I" />
       <Works />
       <PortraitScroll />
       <Skillbars />

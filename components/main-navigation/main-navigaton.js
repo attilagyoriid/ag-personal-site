@@ -83,13 +83,13 @@ function MainNavigation(props) {
       >
         <li>
           <Link
-            to='home'
+            to="home"
             spy={true}
             smooth={true}
             duration={1500}
             onSetActive={handleSetActive}
             hashSpy={true}
-            activeClass='active'
+            activeClass="active"
             onClick={handleMenuClose}
           >
             <a className={classes.current}>Home</a>
@@ -97,13 +97,13 @@ function MainNavigation(props) {
         </li>
         <li>
           <Link
-            to='whoami'
+            to="whoami"
             spy={true}
             smooth={true}
             duration={1500}
             onSetActive={handleSetActive}
             hashSpy={true}
-            activeClass='active'
+            activeClass="active"
             onClick={handleMenuClose}
           >
             About
@@ -111,8 +111,8 @@ function MainNavigation(props) {
         </li>
         <li>
           <Link
-            activeClass='active'
-            to='specialization'
+            activeClass="active"
+            to="specialization"
             spy={true}
             smooth={true}
             duration={1500}
@@ -124,8 +124,8 @@ function MainNavigation(props) {
         </li>
         <li>
           <Link
-            activeClass='active'
-            to='projects'
+            activeClass="active"
+            to="projects"
             spy={true}
             smooth={true}
             duration={1500}
@@ -137,8 +137,8 @@ function MainNavigation(props) {
         </li>
         <li>
           <Link
-            activeClass='active'
-            to='contact'
+            activeClass="active"
+            to="contact"
             spy={true}
             smooth={true}
             duration={1500}

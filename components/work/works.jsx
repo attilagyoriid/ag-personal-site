@@ -4,17 +4,17 @@ import TitleSection from "../titleSection/titleSection";
 import classes from "./works.module.scss";
 export default function Works() {
   return (
-    <section id='work'>
+    <section id="work">
       <TitleSection
-        title='PUBLIC PROJECTS'
-        subText='Some of my public projects available'
-        className='lead--deep-dark-color'
+        title="PUBLIC PROJECTS"
+        subText="Some of my public projects available"
+        className="lead--deep-dark-color"
       />
       <div className={classes["container"]}>
         <div className={classes["items"]}>
           <div className={classes["item"]}>
             <div className={classes["item-image"]}>
-              <img src='/images/works/item1.png' alt='' />
+              <img src="/images/works/item1.png" alt="" />
             </div>
             <div className={classes["item-text"]}>
               <div className={classes["item-text-wrap"]}>
@@ -25,7 +25,7 @@ export default function Works() {
           </div>
           <div className={classes["item"]}>
             <div className={classes["item-image"]}>
-              <img src='/images/works/item2.png' alt='' />
+              <img src="/images/works/item2.png" alt="" />
             </div>
             <div className={classes["item-text"]}>
               <div className={classes["item-text-wrap"]}>
@@ -36,7 +36,7 @@ export default function Works() {
           </div>
           <div className={classes["item"]}>
             <div className={classes["item-image"]}>
-              <img src='/images/works/item3.png' alt='' />
+              <img src="/images/works/item3.png" alt="" />
             </div>
             <div className={classes["item-text"]}>
               <div className={classes["item-text-wrap"]}>
@@ -49,7 +49,7 @@ export default function Works() {
           </div>
           <div className={classes["item"]}>
             <div className={classes["item-image"]}>
-              <img src='/images/works/item4.png' alt='' />
+              <img src="/images/works/item4.png" alt="" />
             </div>
             <div className={classes["item-text"]}>
               <div className={classes["item-text-wrap"]}>
@@ -60,7 +60,7 @@ export default function Works() {
           </div>
           <div className={classes["item"]}>
             <div className={classes["item-image"]}>
-              <img src='/images/works/item5.png' alt='' />
+              <img src="/images/works/item5.png" alt="" />
             </div>
             <div className={classes["item-text"]}>
               <div className={classes["item-text-wrap"]}>
@@ -75,7 +75,7 @@ export default function Works() {
           </div>
           <div className={classes["item"]}>
             <div className={classes["item-image"]}>
-              <img src='/images/works/item6.png' alt='' />
+              <img src="/images/works/item6.png" alt="" />
             </div>
             <div className={classes["item-text"]}>
               <div className={classes["item-text-wrap"]}>
@@ -86,7 +86,7 @@ export default function Works() {
           </div>
           <div className={classes["item"]}>
             <div className={classes["item-image"]}>
-              <img src='/images/works/item7.png' alt='' />
+              <img src="/images/works/item7.png" alt="" />
             </div>
             <div className={classes["item-text"]}>
               <div className={classes["item-text-wrap"]}>
@@ -97,7 +97,7 @@ export default function Works() {
           </div>
           <div className={classes["item"]}>
             <div className={classes["item-image"]}>
-              <img src='/images/works/item8.png' alt='' />
+              <img src="/images/works/item8.png" alt="" />
             </div>
             <div className={classes["item-text"]}>
               <div className={classes["item-text-wrap"]}>
@@ -110,7 +110,7 @@ export default function Works() {
           </div>
           <div className={classes["item"]}>
             <div className={classes["item-image"]}>
-              <img src='/images/works/item9.png' alt='' />
+              <img src="/images/works/item9.png" alt="" />
             </div>
             <div className={classes["item-text"]}>
               <div className={classes["item-text-wrap"]}>

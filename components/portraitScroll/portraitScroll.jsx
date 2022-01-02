@@ -32,10 +32,10 @@ export default function PortraitScroll() {
         <Image
           width={1920}
           height={1080}
-          layout='responsive'
+          layout="responsive"
           src={"/images/me-leader.png"}
-          alt='Attila Portrait'
-          objectFit='cover'
+          alt="Attila Portrait"
+          objectFit="cover"
         />
       </div>
     </div>
