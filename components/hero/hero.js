@@ -9,12 +9,9 @@ import ScrollButton from "../scrollButton/scrollButton";
 
 export default function Hero({ posts }) {
   gsap.registerPlugin(ScrollTrigger);
-  // if (typeof window !== "undefined") {
-  //   gsap.registerPlugin(ScrollTrigger);
-  // }
 
   const typedTextColors = ["#EBC250", "#FFFFFF", "#2283bb"];
-  const el = useRef(null);
+  const typeEl = useRef(null);
 
   const comparisonSectionRef = useRef(null);
   const afterImageRef = useRef(null);
@@ -28,26 +25,14 @@ export default function Hero({ posts }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // ScrollTrigger.refresh();
     ScrollTrigger.matchMedia({
-      // desktop
       "(min-width: 1024px) and (orientation: landscape)": function () {
         gsap.utils.toArray(comparisonSectionRef.current).forEach((section) => {
-          // ScrollTrigger.create({
-          //   trigger: section,
-          //   markers: true,
-          //   start: "center center",
-          //   // makes the height of the scrolling (while pinning) match the width, thus the speed remains constant (vertical/horizontal)
-          //   end: () => "+=" + section.offsetWidth,
-          //   scrub: true,
-          //   pin: true,
-          //   anticipatePin: 1,
-          // });
           let tl = gsap.timeline({
             scrollTrigger: {
               trigger: section,
               start: "top top",
-              // makes the height of the scrolling (while pinning) match the width, thus the speed remains constant (vertical/horizontal)
+
               end: () => "+=" + section.offsetWidth,
               scrub: true,
               pin: containerRef.current,
@@ -55,13 +40,13 @@ export default function Hero({ posts }) {
             },
             defaults: { ease: "none" },
           });
-          // animate the container one way...
+
           tl.fromTo(
             afterImageRef.current,
             { xPercent: 100, x: 0 },
             { xPercent: 0 }
           )
-            // ...and the image the opposite way (at the same time)
+
             .fromTo(
               afterImageImgRef.current,
               { xPercent: -100, x: 0 },
@@ -73,7 +58,7 @@ export default function Hero({ posts }) {
               { xPercent: 100, x: 0 },
               { xPercent: 0 }
             )
-            // ...and the image the opposite way (at the same time)
+
             .fromTo(
               afterImage2ImgRef.current,
               { xPercent: -100, x: 0 },
@@ -106,20 +91,8 @@ export default function Hero({ posts }) {
       ease: "expo.easeInOut",
     });
 
-    // gsap.to(heroContentRef.current, {
-    //   y: 100,
-    //   duration: 2,
-    //   ease: "bounce",
-    //   opacity: 1,
-    //   delay: 8,
-    //   scrollTrigger: {
-    //     trigger: heroContentRef.current,
-    //     markers: true,
-    //   },
-    // });
-
-    const typed = new Typed(el.current, {
-      strings: ["SDET", "Developer", "Visual Creative"],
+    const typed = new Typed(typeEl.current, {
+      strings: ["SDET", "Developer", "Creative"],
       startDelay: 300,
       typeSpeed: 100,
       backSpeed: 100,
@@ -128,39 +101,10 @@ export default function Hero({ posts }) {
       loop: true,
       showCursor: true,
       preStringTyped: function (pos, self) {
-        el.current.style.color =
+        typeEl.current.style.color =
           typedTextColors[Math.floor(Math.random() * typedTextColors.length)];
       },
     });
-
-    // gsap starts
-    // gsap.utils.toArray(comparisonSectionRef).forEach((section) => {
-    //   let tl = gsap.timeline({
-    //     scrollTrigger: {
-    //       trigger: section,
-    //       start: "center center",
-    //       // makes the height of the scrolling (while pinning) match the width, thus the speed remains constant (vertical/horizontal)
-    //       end: () => "+=" + section.offsetWidth,
-    //       scrub: true,
-    //       pin: true,
-    //       anticipatePin: 1,
-    //     },
-    //     defaults: { ease: "none" },
-    //   });
-    //   // animate the container one way...
-    //   tl.fromTo(afterImageRef, { xPercent: 100, x: 0 }, { xPercent: 0 })
-    //     // ...and the image the opposite way (at the same time)
-    //     .fromTo(afterImageImgRef, { xPercent: -100, x: 0 }, { xPercent: 0 }, 0)
-    //     .fromTo(afterImage2Ref, { xPercent: 100, x: 0 }, { xPercent: 0 })
-    //     // ...and the image the opposite way (at the same time)
-    //     .fromTo(
-    //       afterImage2ImgRef,
-    //       { xPercent: -100, x: 0 },
-    //       { xPercent: 0 },
-    //       0
-    //     );
-    // });
-    // gsap end
 
     return () => {
       typed.destroy();
@@ -178,7 +122,6 @@ export default function Hero({ posts }) {
             className={`${classes.comparisonImage} ${classes["beforeImage"]}`}
           >
             <img
-              className={`${classes["img-gradient"]}`}
               src={"/images/me_code_reflection_overlay.png"}
               alt="AG site hero image"
             />
@@ -206,13 +149,16 @@ export default function Hero({ posts }) {
             />
           </div>
         </section>
-        <div
-          ref={heroContentRef}
-          className={`${classes.content} ${classes["px-8"]}`}
-        >
-          <h1 className={`${classes["py-2"]}`}>
-            i am <span>attila</span> the&nbsp;
-            <span ref={el}></span>
+        <div ref={heroContentRef} className={`${classes.content}`}>
+          <h1 className={classes["typed-text__container"]}>
+            <span className={classes["typed-text__leader"]}>
+              i am attila the&nbsp;
+            </span>
+
+            <span
+              className={classes["typed-text__typewright"]}
+              ref={typeEl}
+            ></span>
           </h1>
           <div className={classes.lead}>
             <div>I specialize in software test automation,</div>

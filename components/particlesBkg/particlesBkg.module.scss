@@ -1,0 +1,19 @@
+.tsparticles-main {
+  position: absolute;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: -50;
+}
+
+.particles-wrapper {
+  
+  canvas[style] {
+   position: absolute !important;
+}
+}
+

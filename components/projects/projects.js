@@ -6,6 +6,7 @@ import Link from "next/link";
 import CarouselSwipe from "../carousel/carouselSwipe";
 import TitleSection from "../titleSection/titleSection";
 import classes from "./projects.module.scss";
+import ParticlesBkg from "../particlesBkg/particlesBkg";
 export default function Projects() {
   const projectDescriptionRef = useRef(null);
   const projectCarouselSectionRef = useRef(null);
@@ -92,6 +93,10 @@ export default function Projects() {
           </div>
         </div>
       </div>
+      <ParticlesBkg
+        presetName="bubble"
+        elementId="projectsParticlesBkg"
+      />
     </section>
   );
 }

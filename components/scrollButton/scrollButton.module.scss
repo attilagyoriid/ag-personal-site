@@ -2,8 +2,16 @@
 
 @import "../../styles/config";
 @import "../../styles/utilities";
+@import "../../styles/media";
 
 .scrollButton-container {
+  @include respond(phone-small) {
+    display: none;
+  }
+    @include respond(phone-long) {
+    display: block;
+  }
+
   section {
     position: relative;
     width: 100%;

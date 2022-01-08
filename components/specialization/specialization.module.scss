@@ -2,20 +2,34 @@
 
 @import "../../styles/config";
 @import "../../styles/utilities";
+@import "../../styles/media";
 
 .specialize-section {
+  display: block;
+  height: 100vh;
+  overflow: hidden;
+
   &-container {
-    position: relative;
-    height: 95vh;
+    height: 100%;
     margin-bottom: 4rem;
+    position: relative;
     .specials {
       margin-top: 3rem;
       padding: 1rem 2rem;
       display: grid;
-      grid-gap: 4rem;
+      grid-gap: 1rem;
       grid-template-columns: repeat(3, 1fr);
       .card-wrapper {
         position: relative;
+      }
+      @include respond(desktop) {
+        grid-gap: 4rem;
+      }
+      @include respond(phone) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 2.8rem;
       }
     }
   }

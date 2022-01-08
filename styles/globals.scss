@@ -18,14 +18,15 @@
 }
 
 body {
+  height: 100%;
   margin: 0;
   background-color: $light-color;
   color: #252525;
   font-family: "Raleway", sans-serif;
   line-height: 1.6;
-  position: relative;
   overflow-y: scroll;
   overflow-x: hidden;
+
 }
 
 a {

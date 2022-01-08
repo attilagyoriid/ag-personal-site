@@ -1,0 +1,22 @@
+@import "../../styles/config";
+@import "../../styles/utilities";
+@import "../../styles/media";
+.parallax-container {
+  display: block;
+
+  overflow: hidden;
+  .parallax-item {
+    height: 600px;
+    width: auto;
+    @include respond(phone) {
+      margin-bottom: -300px;
+    }
+  }
+
+  img.parallax-bg {
+    @include respond(phone) {
+        height: 600px !important;
+      left: -10% !important;
+    }
+  }
+}

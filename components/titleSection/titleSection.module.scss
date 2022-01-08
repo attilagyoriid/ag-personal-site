@@ -1,9 +1,13 @@
 @import "../../styles/config";
 @import "../../styles/utilities";
+@import "../../styles/media";
 
 .title-container {
   position: relative;
   text-align: center;
 
   padding-top: 1rem;
+  @include respond(phone) {
+    margin-bottom: 2rem;
+  }
 }

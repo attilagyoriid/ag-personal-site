@@ -19,14 +19,14 @@
 
   transition: all 0.5s ease-in-out;
 
-  @include respond(tab-port) {
+  @include respond(phone) {
     padding: 0 2rem;
   }
 
   .nav-icon {
     display: none;
 
-    @include respond(tab-port) {
+    @include respond(phone) {
       display: block;
       position: absolute;
       top: 0;
@@ -43,7 +43,7 @@
   }
   .nav-menu {
     display: flex;
-    @include respond(tab-port) {
+    @include respond(phone) {
       flex-direction: column;
       text-align: center;
       width: 100%;

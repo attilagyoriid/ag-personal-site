@@ -83,7 +83,10 @@ export default function SpecializationSection() {
           ))}
         </div>
       </div>
-      <ParticlesBkg />
+      <ParticlesBkg
+        presetName="matrix"
+        elementId="specializationParticlesBkg"
+      />
     </section>
   );
 }

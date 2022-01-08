@@ -1,6 +1,7 @@
 // Header
 @import "../../styles/config";
 @import "../../styles/utilities";
+@import "../../styles/media";
 
 .footer-container {
   display: flex;
@@ -12,6 +13,9 @@
   align-items: center;
 
   background-color: $deep-dark-color;
+   @include respond(phone) {
+        padding: 0rem 1rem;
+      }
   .logo {
     transform: scale(0.8);
   }
@@ -25,6 +29,9 @@
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+     @include respond(phone) {
+        display: none;
+      }
     .by {
       font-size: 0.5rem;
     }
