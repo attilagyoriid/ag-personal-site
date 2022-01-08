@@ -1,22 +1,10 @@
 /** @format */
-// import dynamic from "next/dynamic";
-import Head from "next/head";
+
+
 import { Element } from "react-scroll";
-import { useEffect, useState } from "react";
-// import Hero from "../components/hero/hero";
-// import Layout from "../components/layout/layout";
-import ImageLeading from "../components/imageLeading/imageLeading";
-import WhoMain from "../components/whoMain/whoMain";
-import Projects from "../components/projects/projects";
-import Contact from "../components/contact/contact";
-import Footer from "../components/footer/footer";
-// import Hero from "../components/hero/hero";
 import dynamic from "next/dynamic";
 import LoadingSpinner from "../components/loadingSpinner/loadingSpinner";
 
-// import SpecializationSection from "../components/specialization/specialization";
-// Loading StickerForm component, showing spinner while fetching the component
-// Use it like you're use to <StickerForm />
 const Layout = dynamic(() => import("../components/layout/layout"), {
   loading: () => <LoadingSpinner isLoading={true} />,
 });
@@ -31,16 +19,27 @@ const SpecializationSection = dynamic(
   }
 );
 
-// const WhoMain = dynamic(() => import("../components/whoMain/whoMain"), {
-//   loading: () => <Loading />,
-// });
-// const ImageLeading = dynamic(() =>
-//   import("../components/imageLeading/imageLeading")
-// );
+const ImageLeading = dynamic(
+  () => import("../components/imageLeading/imageLeading"),
+  {
+    loading: () => <LoadingSpinner isLoading={true} />,
+  }
+);
 
-// const Hero2 = dynamic(() => import("../components/hero/hero"), {
-//   loading: () => <p>loading...</p>,
-// });
+const WhoMain = dynamic(() => import("../components/whoMain/whoMain"), {
+  loading: () => <LoadingSpinner isLoading={true} />,
+});
+
+const Projects = dynamic(() => import("../components/projects/projects"), {
+  loading: () => <LoadingSpinner isLoading={true} />,
+});
+
+const Contact = dynamic(() => import("../components/contact/contact"), {
+  loading: () => <LoadingSpinner isLoading={true} />,
+});
+const Footer = dynamic(() => import("../components/footer/footer"), {
+  loading: () => <LoadingSpinner isLoading={true} />,
+});
 
 function Home() {
   return (
@@ -61,11 +60,7 @@ function Home() {
 
         <Projects />
       </Element>
-      <Element name="contact">
-        <ImageLeading imgUrl={"/images/leader-contact-main2.png"} />
 
-        <Contact />
-      </Element>
       <Footer />
     </Layout>
   );
