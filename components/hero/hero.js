@@ -122,7 +122,7 @@ export default function Hero({ posts }) {
             className={`${classes.comparisonImage} ${classes["beforeImage"]}`}
           >
             <img
-              src={"/images/me_code_reflection_overlay.png"}
+              src={"/images/me_code_reflection_overlay.jpg"}
               alt="AG site hero image"
             />
           </div>
@@ -134,7 +134,7 @@ export default function Hero({ posts }) {
               ref={afterImageImgRef}
               className={`${classes["img-gradient"]}`}
               alt="AG site hero image"
-              src={"/images/me_sketch_24_opt_blue_.png"}
+              src={"/images/me_sketch_24_opt_blue_.jpg"}
             />
           </div>
           <div
@@ -145,7 +145,7 @@ export default function Hero({ posts }) {
               ref={afterImage2ImgRef}
               className={`${classes["img-gradient"]}`}
               alt="AG site hero image"
-              src={"/images/me_code_reflection_overlay.png"}
+              src={"/images/me_code_reflection_overlay.jpg"}
             />
           </div>
         </section>
