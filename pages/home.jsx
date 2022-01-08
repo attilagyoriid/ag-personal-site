@@ -51,7 +51,7 @@ function Home() {
         <SpecializationSection />
       </Element>
       <Element name="whoami">
-        <ImageLeading imgUrl={"/images/me-leader_main.png"} />
+        <ImageLeading imgUrl={"/images/me-leader_main.jpg"} />
 
         <WhoMain />
       </Element>
