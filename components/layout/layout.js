@@ -21,6 +21,6 @@ export default function Layout({ title, keywords, description, children }) {
 Layout.defaultProps = {
   title: "Attila Győri | SDET & Developer, Designer and Photographer",
   keywords:
-    "development, coding, programming, design, graphic, illustration, animation, qa, sdet, test automation",
+    "development, developer, software, software developer, software engineer, coding, programming, design, graphic, illustration, animation, qa, sdet, test automation, software test automation, software development engineer in test, Attila Győri, AG, Attila Gyori, Gyori Attila, Győri Attila",
   description: "Attila Győri Developer personal site",
 };

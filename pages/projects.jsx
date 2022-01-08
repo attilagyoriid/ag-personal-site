@@ -7,10 +7,15 @@ import Works from "../components/work/works";
 
 export default function Projects() {
   return (
-    <Layout>
+    <Layout
+      title="Attila Győri | Projects"
+      keywords="development, developer, software, software developer, software engineer, coding, programming, design, graphic, illustration, animation, qa, sdet, test automation, software test automation, software development engineer in test, Attila Győri, AG, Attila Gyori, Gyori Attila, Győri Attila, work, project, projects"
+      description="Attila Győri Software Developer personal site | Projects"
+    >
       <ImageLeadingWithTitle url="/images/intro-projects.png" title="WORKS" />
       <Works />
       <Footer />
     </Layout>
   );
+
 }
