@@ -36,3 +36,4 @@ yarn-error.log*
 
 # local env
 .env.local
+.vscode/settings.json
