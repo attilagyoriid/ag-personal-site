@@ -13,7 +13,7 @@ export default function Footer() {
       <div className={classes["text"]}>
         <div>MANUFACTURED</div>
         <div className={classes["by"]}>by attila győri</div>
-        <div className={classes["date"]}>&copy;2021</div>
+        <div className={classes["date"]}>&copy;2022</div>
       </div>
       <div className={classes["social-block"]}>
         <Social layout="landscape" />
