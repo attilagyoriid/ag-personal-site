@@ -1,6 +1,5 @@
 /** @format */
 
-
 import { Element } from "react-scroll";
 import dynamic from "next/dynamic";
 import LoadingSpinner from "../components/loadingSpinner/loadingSpinner";
@@ -56,11 +55,13 @@ function Home() {
         <WhoMain />
       </Element>
       <Element name="projects">
-        <ImageLeading imgUrl={"/images/ui-ux-unsplash_main.png"} />
+        <ImageLeading imgUrl={"/images/ui-ux-unsplash_main.jpg"} />
 
         <Projects />
       </Element>
-
+      <Element name="contact">
+        <Contact />
+      </Element>
       <Footer />
     </Layout>
   );

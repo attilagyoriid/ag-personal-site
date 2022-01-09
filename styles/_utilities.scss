@@ -20,7 +20,6 @@
   text-transform: uppercase;
   border-radius: 8px;
   @include respond(phone) {
-    
     margin: 2rem 0rem;
   }
 }
@@ -31,6 +30,9 @@
   font-style: normal;
   font-weight: 800;
   font-size: 9rem;
+  @include respond(phone) {
+    font-size: 4.5rem;
+  }
 }
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
@@ -117,18 +119,17 @@
   &--main-color {
     color: $main-color;
     @include respond(phone) {
-    font-size: 1rem;
-    padding: 0rem 2rem;
-  }
+      font-size: 1rem;
+      padding: 0rem 2rem;
+    }
   }
   &--deep-dark-color {
     color: $deep-dark-color;
     @include respond(phone) {
-    font-size: 1rem;
-    padding: 0rem 2rem;
+      font-size: 1rem;
+      padding: 0rem 2rem;
+    }
   }
-  }
-  
 }
 
 .text-center {
@@ -196,7 +197,7 @@
   font-weight: 500;
   color: $deep-dark-color;
   @include respond(phone) {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
