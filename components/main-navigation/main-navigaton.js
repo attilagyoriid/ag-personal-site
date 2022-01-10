@@ -18,6 +18,7 @@ import classes from "./main-navigation.module.scss";
 
 const usePrevious = (value) => {
   const ref = useRef();
+
   useEffect(() => {
     ref.current = value;
   });
@@ -26,14 +27,18 @@ const usePrevious = (value) => {
 
 function MainNavigation(props) {
   const router = useRouter();
-  console.log("router " + router.pathname);
 
   const [visible, setVisible] = useState(true);
+
   const [scrollPositionY, setScrollPositionY] = useState();
   const prevScrollPositionY = usePrevious(scrollPositionY);
   const [click, setClick] = useState(false);
   const handleMenuClick = () => setClick(!click);
   const handleMenuClose = () => setClick(false);
+
+  const isPageHome = () => {
+    return router.pathname.includes("home");
+  };
 
   const handleScroll = () => {
     if (scrollPositionY < prevScrollPositionY) {
@@ -45,11 +50,13 @@ function MainNavigation(props) {
     setScrollPositionY(window.pageYOffset);
   };
 
+  const handleRouteChange = () => {
+    setVisible(true);
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    Events.scrollEvent.register("begin", function (to, element) {
-      console.log("begin", to, element, arguments);
-    });
+    Events.scrollEvent.register("begin", function (to, element) {});
 
     Events.scrollEvent.register("end", function (to, element) {
       console.log("end", to, element, arguments);
@@ -65,6 +72,12 @@ function MainNavigation(props) {
 
   const handleSetActive = (to) => {
     console.log("set active", to);
+  };
+
+  const handleClickOnPageDifferentThanHome = (event) => {
+    if (!isPageHome()) {
+      router.push("/home");
+    }
   };
 
   return (
@@ -90,64 +103,81 @@ function MainNavigation(props) {
             onSetActive={handleSetActive}
             hashSpy={true}
             activeClass="active"
-            onClick={handleMenuClose}
+            onClick={(event) => {
+              handleMenuClose(event);
+              handleClickOnPageDifferentThanHome(event);
+            }}
           >
             <a className={classes.current}>Home</a>
           </Link>
         </li>
-        <li>
-          <Link
-            to="whoami"
-            spy={true}
-            smooth={true}
-            duration={1500}
-            onSetActive={handleSetActive}
-            hashSpy={true}
-            activeClass="active"
-            onClick={handleMenuClose}
-          >
-            About
-          </Link>
-        </li>
-        <li>
-          <Link
-            activeClass="active"
-            to="specialization"
-            spy={true}
-            smooth={true}
-            duration={1500}
-            hashSpy={true}
-            onClick={handleMenuClose}
-          >
-            Experience
-          </Link>
-        </li>
-        <li>
-          <Link
-            activeClass="active"
-            to="projects"
-            spy={true}
-            smooth={true}
-            duration={1500}
-            hashSpy={true}
-            onClick={handleMenuClose}
-          >
-            Work
-          </Link>
-        </li>
-        <li>
-          <Link
-            activeClass="active"
-            to="contact"
-            spy={true}
-            smooth={true}
-            duration={1500}
-            hashSpy={true}
-            onClick={handleMenuClose}
-          >
-            Contact
-          </Link>
-        </li>
+        {isPageHome() && (
+          <>
+            <li>
+              <Link
+                ref={(link) => (currentLinkClicked = link)}
+                to="whoami"
+                spy={true}
+                smooth={true}
+                duration={1500}
+                onSetActive={handleSetActive}
+                hashSpy={true}
+                activeClass="active"
+                onClick={(event) => {
+                  handleMenuClose(event);
+                }}
+              >
+                About
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                activeClass="active"
+                to="specialization"
+                spy={true}
+                smooth={true}
+                duration={1500}
+                hashSpy={true}
+                onClick={() => {
+                  handleMenuClose();
+                }}
+              >
+                Experience
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                to="projects"
+                spy={true}
+                smooth={true}
+                duration={1500}
+                hashSpy={true}
+                onClick={() => {
+                  handleMenuClose();
+                }}
+              >
+                Work
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                duration={1500}
+                hashSpy={true}
+                onClick={() => {
+                  handleMenuClose();
+                }}
+              >
+                Contact
+              </Link>
+            </li>
+          </>
+        )}
       </ul>
       <div className={classes["nav-icon"]} onClick={handleMenuClick}>
         <i className={click ? "fa fa-times" : "fa fa-bars"}></i>
