@@ -17,4 +17,7 @@ module.exports = {
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
+  images: {
+    imageSizes: [400, 800, 704, 900, 1200, 1400, 1800],
+  },
 };

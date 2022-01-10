@@ -1,23 +1,31 @@
 /** @format */
 
-import { Parallax } from "react-parallax";
-import { useMediaQuery } from "react-responsive";
+import { Parallax, Background } from "react-parallax";
 import classes from "./imageLeading.module.scss";
 export default function ImageLeading({ imgUrl }) {
   const insideStyles = {
     background: "white",
   };
-  const isBigScreen = useMediaQuery({ query: "(min-width: 1024px)" });
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1024px)" });
+
   return (
     <div className={classes["parallax-container"]}>
-      <Parallax
-        bgImage={imgUrl}
-        strength={500}
-        className={classes["parallax-item"]}
-        bgClassName={classes["parallax-bg"]}
-      >
-        <div style={{ height: 500 }}>
+      <Parallax strength={500} className={classes["parallax-item"]}>
+        <Background className={classes["parallax-bg"]}>
+          <picture>
+            <source
+              media="(max-width: 700px)"
+              srcSet={`${imgUrl}-700w.jpg`}
+              alt="Image Leading"
+            />
+            <source
+              media="(min-width: 700px)"
+              srcSet={`${imgUrl}-1920w.jpg`}
+              alt="Image Leading"
+            />
+            <img src={`${imgUrl}.jpg`} alt="Image Leading" />
+          </picture>
+        </Background>
+        <div style={{ height: 600 }}>
           <div style={insideStyles}></div>
         </div>
       </Parallax>

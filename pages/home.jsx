@@ -50,12 +50,12 @@ function Home() {
         <SpecializationSection />
       </Element>
       <Element name="whoami">
-        <ImageLeading imgUrl={"/images/me-leader_main.jpg"} />
+        <ImageLeading imgUrl={"/images/me-leader_main"} />
 
         <WhoMain />
       </Element>
       <Element name="projects">
-        <ImageLeading imgUrl={"/images/ui-ux-unsplash_main.jpg"} />
+        <ImageLeading imgUrl={"/images/ui-ux-unsplash_main"} />
 
         <Projects />
       </Element>

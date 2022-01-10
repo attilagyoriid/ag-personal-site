@@ -11,6 +11,19 @@
     @include respond(phone) {
       margin-bottom: -300px;
     }
+    div[class~="react-parallax-background-children"] {
+      width: 100% !important;
+    }
+    .react-parallax-background-children {
+      width: 100%;
+    }
+    .parallax-bg {
+      width: 100%;
+      img{
+
+        width: 100%;
+      }
+    }
   }
 
   img.parallax-bg {
@@ -18,5 +31,17 @@
         height: 600px !important;
       left: -10% !important;
     }
+    
   }
 }
+
+.bg-class{
+  width: 100% !important;
+}
+ .parallax-bg {
+      width: 100% ;
+      img{
+
+        width: 100%;
+      }
+    }

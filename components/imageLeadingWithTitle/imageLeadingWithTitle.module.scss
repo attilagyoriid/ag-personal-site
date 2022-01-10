@@ -1,7 +1,9 @@
 @import "../../styles/config";
 @import "../../styles/utilities";
+@import "../../styles/media";
 
 .title-container {
+  overflow: hidden;
   position: relative;
   .overlay-container {
     position: relative;
