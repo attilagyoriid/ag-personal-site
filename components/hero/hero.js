@@ -3,6 +3,7 @@ import Image from "next/image";
 import classes from "./hero.module.scss";
 import Typed from "typed.js";
 import { useEffect, useState, useRef } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import ScrollButton from "../scrollButton/scrollButton";
@@ -174,7 +175,18 @@ export default function Hero({ posts }) {
             </a>
           </div>
         </div>
-        <ScrollButton />
+        <li>
+          <Link
+            to="whoami"
+            spy={true}
+            smooth={true}
+            duration={1500}
+            hashSpy={true}
+            activeClass="active"
+          >
+            <ScrollButton />
+          </Link>
+        </li>
       </header>
     </div>
   );
