@@ -115,7 +115,6 @@ function MainNavigation(props) {
           <>
             <li>
               <Link
-                ref={(link) => (currentLinkClicked = link)}
                 to="whoami"
                 spy={true}
                 smooth={true}
