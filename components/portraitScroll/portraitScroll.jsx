@@ -65,7 +65,19 @@ export default function PortraitScroll() {
   return (
     <div ref={portraitContainer} className={classes["portrait-container"]}>
       <div ref={imageScale} className={classes["img-scale"]}>
-        <img ref={imageRef} src={"/images/me.png"} alt="Attila Portrait" />
+        <picture ref={imageRef}>
+          <source
+            media="(max-width: 700px)"
+            srcSet={"/images/me-700w.png"}
+            alt="Attila Gyori Portrait"
+          />
+          <source
+            media="(min-width: 700px)"
+            srcSet={"/images/me-1920w.png"}
+            alt="Attila Gyori Portrait"
+          />
+          <img src={"/images/me.png"} alt="Image Leading" />
+        </picture>
       </div>
     </div>
   );

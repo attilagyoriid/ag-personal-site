@@ -1,0 +1,32 @@
+@import "../../styles/config";
+@import "../../styles/utilities";
+@import "../../styles/media";
+
+.introduction-container {
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  height: 100vh;
+  gap: 2rem;
+  @include respond(phone) {
+    height: auto;
+  }
+  align-items: center;
+  .introduction-text {
+    display: block;
+    margin-top: 10rem;
+    color: $deep-dark-color;
+    @extend %title-lead--main-color;
+    max-width: 60%;
+    @include respond(phone) {
+      max-width: 80%;
+      margin: 2rem 0;
+    }
+  }
+  div[class*="bottom-line"] {
+    margin-top: 8rem;
+    @include respond(phone) {
+       margin-top: 4rem;
+    }
+  }
+}
