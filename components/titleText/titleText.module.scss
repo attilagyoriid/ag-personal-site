@@ -1,0 +1,29 @@
+@import "../../styles/config";
+@import "../../styles/utilities";
+@import "../../styles/media";
+
+.title-text__container {
+  display: block;
+  position: relative;
+  padding: 2rem;
+  .title-text--big {
+    position: relative;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    @extend %title-large--light;
+
+    font-size: 4rem;
+    span {
+        font-weight: 800;
+    }
+    .title-text--small {
+      font-size: 2rem;
+      left: 50%;
+      top: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      z-index: 5;
+    }
+  }
+}
