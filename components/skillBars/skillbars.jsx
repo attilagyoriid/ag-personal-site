@@ -8,7 +8,8 @@ const SkillBar = dynamic(() => import("react-skillbars"), {
 
 export default function Skillbars() {
   const colors = {
-    bar: "red",
+    bar: "#e9ce84",
+    background: "#31435b",
     title: {
       text: "#abc123",
       background: "#fff",
@@ -19,21 +20,21 @@ export default function Skillbars() {
   const skills3 = [{ type: "Design", level: 70 }];
   return (
     <div id="program-skills" className={classes["skill-container"]}>
-      <div className={classes["left"]}>
-        <div>Software Development</div>
+      <div className={classes["skill-description"]}>Software Development</div>
 
-        {typeof window !== "undefined" ? (
-          <SkillBar skills={skills1} colors={colors} height={35} />
-        ) : null}
-        <div>Software Development Engineer in Test</div>
-        {typeof window !== "undefined" ? (
-          <SkillBar skills={skills2} colors={colors} height={35} />
-        ) : null}
-        <div>Graphic Design</div>
-        {typeof window !== "undefined" ? (
-          <SkillBar skills={skills3} colors={colors} height={35} />
-        ) : null}
+      {typeof window !== "undefined" ? (
+        <SkillBar skills={skills1} colors={colors} height={25} />
+      ) : null}
+      <div className={classes["skill-description"]}>
+        Software Development Engineer in Test
       </div>
+      {typeof window !== "undefined" ? (
+        <SkillBar skills={skills2} colors={colors} height={25} />
+      ) : null}
+      <div className={classes["skill-description"]}>Graphic Design</div>
+      {typeof window !== "undefined" ? (
+        <SkillBar skills={skills3} colors={colors} height={25} />
+      ) : null}
     </div>
   );
 }
