@@ -21,6 +21,10 @@
       grid-template-columns: repeat(3, 1fr);
       .card-wrapper {
         position: relative;
+        margin: 0 auto;
+        @include respond(phone) {
+          margin: unset;
+        }
       }
       @include respond(desktop) {
         grid-gap: 4rem;
