@@ -1,0 +1,14 @@
+@import "../../styles/config";
+@import "../../styles/utilities";
+@import "../../styles/media";
+
+
+.gallery_container{
+    display:block;
+    position: relative;
+
+    img[class*="image-gallery-thumbnail-image"] {
+        cursor: pointer;
+    }
+}
+
