@@ -54,7 +54,6 @@ export default function PortraitScroll() {
             scrub: true,
             stagger: 0.2,
             toggleActions: "play none none none",
-            markers: true,
             once: true,
           },
         });
