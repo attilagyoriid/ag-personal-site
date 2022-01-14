@@ -31,8 +31,20 @@
   font-weight: 800;
   font-size: 9rem;
   @include respond(phone) {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
   }
+}
+%title-large--light {
+  @extend %title-large;
+  text-transform:lowercase;
+  font-weight: 300;
+}
+%title-lead--main-color {
+  @extend %title-large;
+  text-transform:lowercase;
+  font-weight: 400;
+  color: $main-color;
+  font-size: 2rem;
 }
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
@@ -220,4 +232,13 @@
   -khtml-user-select: none; /* Konqueror HTML */
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.button-group {
+  display: flex;
+  gap: 20%;
+  @include respond(phone) {
+    justify-content: space-between;
+    gap: unset;
+  }
 }
