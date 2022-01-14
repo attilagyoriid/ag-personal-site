@@ -168,26 +168,30 @@ export default function Hero({ posts }) {
             <div>{posts}</div>
           </div>
           <div className={classes["button-group"]}>
-            <Link
-              to="whoami"
-              spy={true}
-              smooth={true}
-              duration={1500}
-              hashSpy={true}
-              activeClass="active"
-            >
-              <a className={classes["btn-light"]}>About</a>
-            </Link>
-            <Link
-              to="contact"
-              spy={true}
-              smooth={true}
-              duration={1500}
-              hashSpy={true}
-              activeClass="active"
-            >
-              <a className={classes["btn-main"]}>Contact</a>
-            </Link>
+            <div className={classes["btn-light__container"]}>
+              <Link
+                to="whoami"
+                spy={true}
+                smooth={true}
+                duration={1500}
+                hashSpy={true}
+                activeClass="active"
+              >
+                <a className={classes["btn-light"]}>About</a>
+              </Link>
+            </div>
+            <div className={classes["btn-main__container"]}>
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                duration={1500}
+                hashSpy={true}
+                activeClass="active"
+              >
+                <a className={classes["btn-main"]}>Contact</a>
+              </Link>
+            </div>
           </div>
         </div>
         <li>

@@ -29,6 +29,7 @@
     @include respond(phone) {
       display: block;
       position: absolute;
+      margin-right: 1rem;
       top: 0;
       right: 0;
       transform: translate(-200%, 20%);

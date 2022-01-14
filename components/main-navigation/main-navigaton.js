@@ -86,7 +86,7 @@ function MainNavigation(props) {
         visible ? classes.main_nav_visible : classes.main_nav_invisible
       }`}
     >
-      <Logo />
+      <Logo width="60px" />
       <ul
         className={
           click
