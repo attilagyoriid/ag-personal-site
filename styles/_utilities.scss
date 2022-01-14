@@ -236,9 +236,12 @@
 
 .button-group {
   display: flex;
+  flex-direction: row;
   gap: 20%;
   @include respond(phone) {
-    justify-content: space-between;
+    width: 100%;
     gap: unset;
+    justify-content: space-between;
+    
   }
 }
