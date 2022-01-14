@@ -1,0 +1,65 @@
+@import "../../styles/config";
+@import "../../styles/utilities";
+@import "../../styles/media";
+
+.more__container {
+  display: flex;
+  position: relative;
+  width: 80vw;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  justify-content: center;
+  gap: 3%;
+  @include respond(tab-land) {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+  .more_text__container {
+    display: flex;
+    flex-direction: column;
+
+
+    .more_text--lead {
+      @extend %title-large--light;
+      font-size: 4rem;
+      color: $deep-dark-color;
+    }
+    .more_text {
+      font-size: 1.5rem;
+      color: $deep-dark-color;
+      @include respond(tab-land) {
+        max-width: 100%;
+      }
+    }
+  }
+  .more_gallery {
+    max-width: 50%;
+    // div[class="image-gallery-thumbnails"] {
+    //     overflow: unset;
+    // }
+    @include respond(tab-land) {
+      max-width: 100%;
+    }
+    .more_gallery__container {
+      position: relative;
+      .more_gallery__img_container {
+        position: absolute;
+
+        img {
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+      }
+      .img_gallery {
+        display: block;
+        position: relative;
+
+        div[class="image-gallery-bullets"] {
+          z-index: 12;
+        }
+      }
+    }
+  }
+}
