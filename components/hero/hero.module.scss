@@ -29,7 +29,7 @@
     &_home {
       overflow: hidden;
       position: relative;
-      background-color: red;
+      background-color: white;
       width: auto;
       height: 100vh;
       color: #fff;
@@ -110,14 +110,7 @@
             }
           }
         }
-        .button-group {
-          display: flex;
-          gap: 20%;
-          @include respond(phone) {
-            align-self: center;
-            gap: 20px;
-          }
-        }
+        
 
         .lead {
           padding: 0;

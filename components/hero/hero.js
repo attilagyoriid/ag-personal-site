@@ -13,6 +13,7 @@ export default function Hero({ posts }) {
 
   const typedTextColors = ["#EBC250", "#FFFFFF", "#2283bb"];
   const typeEl = useRef(null);
+  
 
   const comparisonSectionRef = useRef(null);
   const afterImageRef = useRef(null);
@@ -167,12 +168,26 @@ export default function Hero({ posts }) {
             <div>{posts}</div>
           </div>
           <div className={classes["button-group"]}>
-            <a href="work.html" className={classes["btn-light"]}>
-              About
-            </a>
-            <a href="work.html" className={classes["btn-main"]}>
-              Contact
-            </a>
+            <Link
+              to="whoami"
+              spy={true}
+              smooth={true}
+              duration={1500}
+              hashSpy={true}
+              activeClass="active"
+            >
+              <a className={classes["btn-light"]}>About</a>
+            </Link>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={1500}
+              hashSpy={true}
+              activeClass="active"
+            >
+              <a className={classes["btn-main"]}>Contact</a>
+            </Link>
           </div>
         </div>
         <li>
