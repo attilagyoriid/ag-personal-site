@@ -8,10 +8,9 @@
   height: auto;
   position: relative;
   overflow: hidden;
+
   .img-scale {
     img {
-      width: 80%;
-      height: 80%;
       object-fit: cover;
       @include respond(phone) {
         width: 100%;
