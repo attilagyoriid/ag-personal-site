@@ -1,0 +1,37 @@
+@import "../../styles/config";
+@import "../../styles/utilities";
+@import "../../styles/media";
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  position: relative;
+  background: radial-gradient(
+    85.9% 169.88% at 85.9% 24.17%,
+    #486287 0%,
+    #94a3b9 50.98%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  .skills-container-details {
+    display: flex;
+    height: auto;
+    width: 100%;
+    position: relative;
+    @include respond(phone) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .skill-bar {
+      padding: 2rem;
+      width: 100%;
+    }
+    .skill-image {
+      padding: 2rem;
+      opacity: 0.1;
+      width: 100%;
+    }
+  }
+}
