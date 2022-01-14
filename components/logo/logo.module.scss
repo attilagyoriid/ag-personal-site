@@ -1,5 +1,7 @@
 /** @format */
-
+@import "../../styles/config";
+@import "../../styles/utilities";
+@import "../../styles/media";
 .logo_img {
   width: 60px;
   height: 60px;
@@ -7,5 +9,9 @@
   display: block;
   &:hover {
     cursor: pointer;
+  }
+   @include respond(phone) {
+    width: 40px;
+  height: 40px;
   }
 }
