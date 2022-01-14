@@ -11,8 +11,22 @@ export default function Social({ layout }) {
     layout === "landscape"
       ? "social-icon-container-horizontal"
       : "social-icon-container-vertical";
+
   return (
     <div className={classes[orientation]}>
+      {layout === "landscape" ? (
+        <div className={classes["icon-container"]}>
+          <a
+            target="_blank"
+            href="mailto:gyoriattila@yahoo.com"
+            rel="noopener noreferrer"
+          >
+            <img src="/images/social-icons/email.svg" alt="Email Icon" />
+          </a>
+        </div>
+      ) : (
+        ""
+      )}
       <div className={classes["icon-container"]}>
         <a target="_blank" href={socialUrls.linkedin} rel="noopener noreferrer">
           <img src="/images/social-icons/linked.svg" alt="Linked In Icon" />

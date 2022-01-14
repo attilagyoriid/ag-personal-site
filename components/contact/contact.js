@@ -65,13 +65,17 @@ export default function Contact() {
         <div className={classes["social-container"]}>
           <div className={classes["social-title"]}>Social</div>
           <Social />
+
           <div className={classes["email-container"]}>
             <div className={classes["email-icon"]}>
               <img src="/images/social-icons/mail.svg" alt="Email Icon" />
             </div>
-            <div className={classes["email-content"]}>
+            <a
+              href="mailto:gyoriattila@yahoo.com"
+              className={classes["email-content"]}
+            >
               gyoriattila@yahoo.com
-            </div>
+            </a>
           </div>
         </div>
 
