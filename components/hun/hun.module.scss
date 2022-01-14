@@ -1,0 +1,27 @@
+@import "../../styles/config";
+@import "../../styles/utilities";
+@import "../../styles/media";
+
+.hun-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  .hun-text {
+      @extend %title-lead--main-color;
+
+  }
+  .hun-image {
+    width: 80px;
+    height: 80px;
+    position: relative;
+  
+    
+    img {
+    
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
