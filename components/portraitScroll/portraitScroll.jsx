@@ -30,7 +30,7 @@ export default function PortraitScroll() {
             scrub: true,
             stagger: 0.2,
             toggleActions: "play none none none",
-            once: true,
+
           },
         });
       },
@@ -53,7 +53,7 @@ export default function PortraitScroll() {
             scrub: true,
             stagger: 0.2,
             toggleActions: "play none none none",
-            once: true,
+    
           },
         });
       },
