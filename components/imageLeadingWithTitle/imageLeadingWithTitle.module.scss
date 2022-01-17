@@ -6,8 +6,16 @@
   overflow: hidden;
   position: relative;
   .overlay-container {
-    position: relative;
     display: block;
     transform: translateY(50%);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    @include respond(phone) {
+      transform: translateY(80%);
+
+    }
   }
 }
