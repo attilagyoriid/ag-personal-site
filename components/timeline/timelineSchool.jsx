@@ -24,7 +24,7 @@ function TimelineSchool() {
               key={element.key}
               date={element.date}
               dateClassName="date"
-              iconStyle={{ background: "#06D6A0" }}
+              iconStyle={{ background: "#577194" }}
               icon={<SchoolIcon />}
               className={classes["vertical-timeline-element"]}
             >

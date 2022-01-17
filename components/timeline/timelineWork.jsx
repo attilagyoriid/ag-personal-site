@@ -24,7 +24,7 @@ function TimelineWork() {
               key={element.key}
               date={element.date}
               dateClassName="date"
-              iconStyle={{ background: "#06D6A0" }}
+              iconStyle={{ background: "#e9ce84" }}
               icon={<WorkIcon />}
               className={classes["vertical-timeline-element"]}
             >
