@@ -35,7 +35,7 @@ export default function FunFacts() {
         </div>
         <img
           src="/images/fun-facts-main.svg"
-          alt="Few facts about me"
+          alt="Few Facts about me"
           ref={funFactsImgRef}
         />
       </div>
