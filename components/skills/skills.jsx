@@ -8,15 +8,25 @@ import TitleText from "../titleText/titleText";
 
 export default function Skills() {
   const skillImgRef = useRef(null);
+  const buttonGroupRef = useRef(null);
   useEffect(() => {
     gsap.from(skillImgRef.current, {
       scrollTrigger: skillImgRef.current,
       autoAlpha: 0,
       x: -500,
-      duration: 2,
+      duration: 1.5,
       stagger: 0.25,
       ease: "expo.easeInOut",
-      delay: 1,
+      delay: 0.5,
+    });
+    gsap.from(buttonGroupRef.current, {
+      scrollTrigger: skillImgRef.current,
+      autoAlpha: 0,
+      y: +100,
+      duration: 1,
+      stagger: 0.25,
+      ease: "expo.easeInOut",
+      delay: 4,
     });
   }, []);
   return (
@@ -32,7 +42,7 @@ export default function Skills() {
         </div>
         <div className={classes["skill-bar"]}>
           <Skillbars />
-          <div className={classes["button-group"]}>
+          <div className={classes["button-group"]} ref={buttonGroupRef}>
             <Link href="/projects">
               <a className={classes["btn-main"]}>Work</a>
             </Link>
