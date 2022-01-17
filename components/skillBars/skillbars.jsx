@@ -1,5 +1,5 @@
 /** @format */
-
+import { useEffect, useState, useRef } from "react";
 import dynamic from "next/dynamic";
 import classes from "./skillbars.module.scss";
 const SkillBar = dynamic(() => import("react-skillbars"), {
@@ -11,19 +11,28 @@ export default function Skillbars() {
     bar: "#e9ce84",
     background: "#31435b",
     title: {
-      text: "#abc123",
-      background: "#fff",
+      text: "#f5e7bf",
+      background: "#597193",
     },
   };
-  const skills1 = [{ type: "Development", level: 85 }];
-  const skills2 = [{ type: "Test", level: 95 }];
+  const skillBarRef = useRef(null);
+  const skills1 = [{ type: "Dev", level: 85 }];
+  const skills2 = [{ type: "SDET", level: 95 }];
   const skills3 = [{ type: "Design", level: 70 }];
+  useEffect(() => {
+    console.dir("stajl: " + skillBarRef.current.style);
+  }, []);
   return (
     <div id="program-skills" className={classes["skill-container"]}>
       <div className={classes["skill-description"]}>Software Development</div>
 
       {typeof window !== "undefined" ? (
-        <SkillBar skills={skills1} colors={colors} height={25} />
+        <SkillBar
+          skills={skills1}
+          colors={colors}
+          height={25}
+          ref={skillBarRef}
+        />
       ) : null}
       <div className={classes["skill-description"]}>
         Software Development Engineer in Test

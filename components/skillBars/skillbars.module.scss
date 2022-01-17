@@ -16,6 +16,9 @@
     }
   .skill-description {
     color: $smoke-white;
+     @include respond(phone) {
+      color: $dark-color;
+    }
   }
 
   .skillbar-container {
@@ -51,13 +54,15 @@
   div[class="skillbar"] {
     background: $medium-color-light !important;
     overflow: hidden;
+
   }
   div[class*="skillbar-bar"] {
 
-    left:110px;
+
+    
     
   }
   div[class*="skillbar-title"] {
-    display: none;
+    
   }
 }
