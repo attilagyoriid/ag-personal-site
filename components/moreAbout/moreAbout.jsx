@@ -9,20 +9,16 @@ export default function MoreAbout() {
     gsap.from(moreTextRef.current, {
       scrollTrigger: moreTextRef.current,
       autoAlpha: 0,
-
       x: -200,
       duration: 1.5,
-      stagger: 0.25,
       ease: "expo.easeInOut",
       delay: 0.5,
     });
     gsap.from(moreGalleryRef.current, {
       scrollTrigger: moreGalleryRef.current,
       autoAlpha: 0,
-
-      x: 200,
+      y: 200,
       duration: 1.5,
-      stagger: 0.25,
       ease: "expo.easeInOut",
       delay: 0.5,
     });

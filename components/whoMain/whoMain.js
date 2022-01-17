@@ -19,10 +19,9 @@ export default function WhoMain() {
         start: "top 50%",
       },
       autoAlpha: 0,
-      scale: 1.2,
-      duration: 1,
+      duration: 3,
       ease: "expo.easeInOut",
-      delay: 0.3,
+      delay: 1,
     });
 
     gsap.from(textSectionRef.current, {
