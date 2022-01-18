@@ -13,7 +13,6 @@ export default function Hero({ posts }) {
 
   const typedTextColors = ["#EBC250", "#FFFFFF", "#2283bb"];
   const typeEl = useRef(null);
-  
 
   const comparisonSectionRef = useRef(null);
   const afterImageRef = useRef(null);
@@ -174,7 +173,6 @@ export default function Hero({ posts }) {
                 spy={true}
                 smooth={true}
                 duration={1500}
-                hashSpy={true}
                 activeClass="active"
               >
                 <a className={classes["btn-light"]}>About</a>
@@ -186,7 +184,6 @@ export default function Hero({ posts }) {
                 spy={true}
                 smooth={true}
                 duration={1500}
-                hashSpy={true}
                 activeClass="active"
               >
                 <a className={classes["btn-main"]}>Contact</a>
@@ -200,7 +197,6 @@ export default function Hero({ posts }) {
             spy={true}
             smooth={true}
             duration={1500}
-            hashSpy={true}
             activeClass="active"
           >
             <ScrollButton />

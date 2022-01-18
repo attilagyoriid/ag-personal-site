@@ -101,7 +101,6 @@ function MainNavigation(props) {
             smooth={true}
             duration={1500}
             onSetActive={handleSetActive}
-            hashSpy={true}
             activeClass="active"
             onClick={(event) => {
               handleMenuClose(event);
@@ -120,7 +119,6 @@ function MainNavigation(props) {
                 smooth={true}
                 duration={1500}
                 onSetActive={handleSetActive}
-                hashSpy={true}
                 activeClass="active"
                 onClick={(event) => {
                   handleMenuClose(event);
@@ -137,7 +135,6 @@ function MainNavigation(props) {
                 spy={true}
                 smooth={true}
                 duration={1500}
-                hashSpy={true}
                 onClick={() => {
                   handleMenuClose();
                 }}
@@ -152,7 +149,6 @@ function MainNavigation(props) {
                 spy={true}
                 smooth={true}
                 duration={1500}
-                hashSpy={true}
                 onClick={() => {
                   handleMenuClose();
                 }}
@@ -167,7 +163,6 @@ function MainNavigation(props) {
                 spy={true}
                 smooth={true}
                 duration={1500}
-                hashSpy={true}
                 onClick={() => {
                   handleMenuClose();
                 }}
