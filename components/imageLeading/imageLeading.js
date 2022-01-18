@@ -2,7 +2,7 @@
 
 import { Parallax, Background } from "react-parallax";
 import classes from "./imageLeading.module.scss";
-export default function ImageLeading({ imgUrl }) {
+export default function ImageLeading({ imgUrl, height }) {
   const insideStyles = {
     background: "white",
   };
@@ -25,10 +25,13 @@ export default function ImageLeading({ imgUrl }) {
             <img src={`${imgUrl}.jpg`} alt="Image Leading" />
           </picture>
         </Background>
-        <div style={{ height: 600 }}>
+        <div style={{ height: height }}>
           <div style={insideStyles}></div>
         </div>
       </Parallax>
     </div>
   );
 }
+ImageLeading.defaultProps = {
+  height: 600,
+};
