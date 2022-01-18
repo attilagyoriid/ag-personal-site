@@ -16,11 +16,11 @@ export default function Experience() {
       title="Attila Győri | Experience"
       description="Attila Győri Developer personal site | Experience"
     >
-      <ImageLeadingWithTitle url="/images/intro-path" title="Experience" />
+      <ImageLeadingWithTitle url="/images/intro-path.jpg" title="Experience" />
       <SpecializationSection withoutThreeDotsLink={false} />
-      <ImageLeadingWithTitle url="/images/intro-study" title="Studies" />
+      <ImageLeadingWithTitle url="/images/intro-study.jpg" title="Studies" />
       <TimelineSchool />
-      <ImageLeadingWithTitle url="/images/illustration-work" title="Work" />
+      <ImageLeadingWithTitle url="/images/illustration-work.jpg" title="Work" />
       <TimelineWork />
       <Footer />
     </Layout>

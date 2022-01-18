@@ -7,6 +7,11 @@ export default function ImageLeading({ imgUrl, height }) {
     background: "white",
   };
 
+  const getFileInfo = (file) => {
+    const info = file.split(".");
+    return { path: info[0], extension: info[1] };
+  };
+
   return (
     <div className={classes["parallax-container"]}>
       <Parallax strength={500} className={classes["parallax-item"]}>
@@ -14,15 +19,19 @@ export default function ImageLeading({ imgUrl, height }) {
           <picture>
             <source
               media="(max-width: 700px)"
-              srcSet={`${imgUrl}-700w.jpg`}
+              srcSet={`${getFileInfo(imgUrl).path}-700w.${
+                getFileInfo(imgUrl).extension
+              }`}
               alt="Image Leading"
             />
             <source
               media="(min-width: 700px)"
-              srcSet={`${imgUrl}-1920w.jpg`}
+              srcSet={`${getFileInfo(imgUrl).path}-1920w.${
+                getFileInfo(imgUrl).extension
+              }`}
               alt="Image Leading"
             />
-            <img src={`${imgUrl}.jpg`} alt="Image Leading" />
+            <img src={`${imgUrl}`} alt="Image Leading" />
           </picture>
         </Background>
         <div style={{ height: height }}>

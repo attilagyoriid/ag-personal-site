@@ -11,7 +11,7 @@ export default function About() {
       keywords="development, contact, email, developer, software, software developer, software engineer, coding, programming, design, graphic, illustration, animation, qa, sdet, test automation, software test automation, software development engineer in test, Attila Győri, AG, Attila Gyori, Gyori Attila, Győri Attila, about, story"
       description="Attila Győri Software Developer personal site | Contact"
     >
-      <ImageLeadingWithTitle url="/images/intro-whoami" title="CONTACT" />
+      <ImageLeadingWithTitle url="/images/illustration-contact.png" />
       <Contact />
       <Footer />
     </Layout>

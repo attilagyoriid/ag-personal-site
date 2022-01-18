@@ -4,6 +4,7 @@ import { Element } from "react-scroll";
 import dynamic from "next/dynamic";
 import LoadingSpinner from "../components/loadingSpinner/loadingSpinner";
 
+
 const Layout = dynamic(() => import("../components/layout/layout"), {
   loading: () => <LoadingSpinner isLoading={true} />,
 });
@@ -50,16 +51,17 @@ function Home() {
         <SpecializationSection />
       </Element>
       <Element name="whoami">
-        <ImageLeading imgUrl={"/images/me-leader_main"} />
+        <ImageLeading imgUrl={"/images/me-leader_main.jpg"} />
 
         <WhoMain />
       </Element>
       <Element name="projects">
-        <ImageLeading imgUrl={"/images/ui-ux-unsplash_main"} />
+        <ImageLeading imgUrl={"/images/ui-ux-unsplash_main.jpg"} />
 
         <Projects />
       </Element>
       <Element name="contact">
+        <ImageLeading imgUrl={"/images/illustration-contact-main.png"} />
         <Contact />
       </Element>
       <Footer />
