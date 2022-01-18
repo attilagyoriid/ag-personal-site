@@ -17,7 +17,7 @@ export default function Experience() {
       description="Attila Győri Developer personal site | Experience"
     >
       <ImageLeadingWithTitle url="/images/intro-path.jpg" title="Experience" />
-      <SpecializationSection withoutThreeDotsLink={false} />
+      <SpecializationSection withThreeDotsLink={false} />
       <ImageLeadingWithTitle url="/images/intro-study.jpg" title="Studies" />
       <TimelineSchool />
       <ImageLeadingWithTitle url="/images/illustration-work.jpg" title="Work" />

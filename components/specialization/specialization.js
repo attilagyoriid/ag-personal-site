@@ -43,7 +43,7 @@ const cardList = [
   },
 ];
 
-export default function SpecializationSection({ withoutThreeDotsLink }) {
+export default function SpecializationSection({ withThreeDotsLink }) {
   const cardsRef = useRef(null);
   const cardRef = useRef(null);
   const cardRefsList = [];
@@ -83,7 +83,7 @@ export default function SpecializationSection({ withoutThreeDotsLink }) {
             </div>
           ))}
         </div>
-        {withoutThreeDotsLink && <Dots url="/experience" />}
+        {withThreeDotsLink && <Dots url="/experience" />}
       </div>
       <ParticlesBkg
         presetName="matrix"
@@ -94,5 +94,5 @@ export default function SpecializationSection({ withoutThreeDotsLink }) {
 }
 
 SpecializationSection.defaultProps = {
-  withoutThreeDotsLink: true,
+  withThreeDotsLink: true,
 };
