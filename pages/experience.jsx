@@ -20,7 +20,7 @@ export default function Experience() {
       <SpecializationSection withoutThreeDotsLink={false} />
       <ImageLeadingWithTitle url="/images/intro-study" title="Studies" />
       <TimelineSchool />
-      <ImageLeadingWithTitle url="/images/career_final_2" title="Work" />
+      <ImageLeadingWithTitle url="/images/illustration-work" title="Work" />
       <TimelineWork />
       <Footer />
     </Layout>
