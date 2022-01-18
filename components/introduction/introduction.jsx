@@ -17,7 +17,7 @@ function Introduction() {
         provide real value to the end user.
       </div>
       <div>
-        <Link href="/home#contact" passHref scroll={true}>
+        <Link href="/contact">
           <a className={classes["btn-dark--outline"]}>Contact</a>
         </Link>
       </div>
