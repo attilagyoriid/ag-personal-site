@@ -174,7 +174,13 @@ function MainNavigation(props) {
         )}
       </ul>
       <div className={classes["nav-icon"]} onClick={handleMenuClick}>
-        <i className={click ? "fa fa-times" : "fa fa-bars"}></i>
+        <div
+          className={`${classes["menu-btn"]} ${click ? classes["close"] : ""}`}
+        >
+          <div className={classes["btn-line"]}></div>
+          <div className={classes["btn-line"]}></div>
+          <div className={classes["btn-line"]}></div>
+        </div>
       </div>
     </nav>
   );
