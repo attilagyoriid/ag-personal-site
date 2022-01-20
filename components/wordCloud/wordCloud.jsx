@@ -174,7 +174,7 @@ export default function WordCloud() {
       tooltip: "Veniam isictus",
     },
     {
-      image: "/images/icons/jenkins-plain.svg",
+      image: "/images/icons/jenkins-color.svg",
       width: "50",
       height: "50",
       url: "http://jquery-plugins.net/",
