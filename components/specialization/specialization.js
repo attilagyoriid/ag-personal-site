@@ -7,43 +7,7 @@ import classes from "./specialization.module.scss";
 import ParticlesBkg from "../particlesBkg/particlesBkg";
 import Dots from "../dots/dots";
 
-const cardList = [
-  {
-    imgSrc: "/images/services_robot.svg",
-    animation: { sdet: true },
-    description: "Test Automation",
-
-    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue
-          risus, a laoreet sit condimentum nisl quis amet nascetur. Sagittis,
-          purus auctor vivamus nibh sit nisi enim. Lacus laoreet pulvinar cras
-          eget magna eu pellentesque elementum porttitor. Vitae tempus viverra
-          risus in ullamcorper etiam ut.`,
-  },
-  {
-    imgSrc: "/images/services_development.svg",
-    animation: { dev: true },
-    description: "Development",
-    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue
-          risus, a laoreet sit condimentum nisl quis amet nascetur. Sagittis,
-          purus auctor vivamus nibh sit nisi enim. Lacus laoreet pulvinar cras
-          eget magna eu pellentesque elementum porttitor. Vitae tempus viverra
-          risus in ullamcorper etiam ut.`,
-  },
-  {
-    imgSrc: "/images/services_creative.svg",
-    animation: { creative: true },
-    description: "Creative",
-    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue
-          risus, a laoreet sit condimentum nisl quis amet nascetur. Sagittis,
-          purus auctor vivamus nibh sit nisi enim. Lacus laoreet pulvinar cras
-          eget magna eu pellentesque elementum porttitor. Vitae tempus viverra
-          risus in ullamcorper etiam ut.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue.
-          `,
-  },
-];
-
-export default function SpecializationSection({ withThreeDotsLink }) {
+export default function SpecializationSection({ withThreeDotsLink, data }) {
   const cardsRef = useRef(null);
   const cardRef = useRef(null);
   const cardRefsList = [];
@@ -71,7 +35,7 @@ export default function SpecializationSection({ withThreeDotsLink }) {
           subText="Photography as well as creating digital masterpieces and UI/UX layouts for websites and mobile applications"
         />
         <div ref={cardsRef} className={classes.specials}>
-          {cardList.map((item, index) => (
+          {data.map((item, index) => (
             <div
               ref={(el) => {
                 cardRefsList.push(el);

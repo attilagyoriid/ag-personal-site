@@ -8,6 +8,7 @@ import Layout from "../components/layout/layout";
 import SpecializationSection from "../components/specialization/specialization";
 import TimelineSchool from "../components/timeline/timelineSchool";
 import TimelineWork from "../components/timeline/timelineWork";
+import dataSpecDescription from "../components/specialization/dataIconsList.js";
 
 export default function Experience() {
   return (
@@ -17,7 +18,10 @@ export default function Experience() {
       description="Attila Győri Developer personal site | Experience"
     >
       <ImageLeadingWithTitle url="/images/intro-path.jpg" title="Experience" />
-      <SpecializationSection withThreeDotsLink={false} />
+      <SpecializationSection
+        withThreeDotsLink={false}
+        data={dataSpecDescription}
+      />
       <ImageLeadingWithTitle url="/images/intro-study.jpg" title="Studies" />
       <TimelineSchool />
       <ImageLeadingWithTitle url="/images/illustration-work.jpg" title="Work" />

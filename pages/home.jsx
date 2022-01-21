@@ -3,7 +3,7 @@
 import { Element } from "react-scroll";
 import dynamic from "next/dynamic";
 import LoadingSpinner from "../components/loadingSpinner/loadingSpinner";
-
+import dataSpecDescription from "../components/specialization/dataSpecDescription.js";
 
 const Layout = dynamic(() => import("../components/layout/layout"), {
   loading: () => <LoadingSpinner isLoading={true} />,
@@ -48,7 +48,7 @@ function Home() {
         <Hero />
       </Element>
       <Element name="specialization">
-        <SpecializationSection />
+        <SpecializationSection data={dataSpecDescription} />
       </Element>
       <Element name="whoami">
         <ImageLeading imgUrl={"/images/me-leader_main.jpg"} />

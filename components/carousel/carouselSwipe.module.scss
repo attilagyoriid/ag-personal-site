@@ -22,13 +22,28 @@
       height: 200px;
       overflow: hidden;
     }
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-    }
-    &:hover {
-      cursor: grab;
+    .img-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 2rem;
+
+      margin: 1rem 3rem;
+      .logo-container {
+        position: relative;
+
+        .img-wrapper {
+          position: relative;
+          display: block;
+        }
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      &:hover {
+        cursor: grab;
+      }
     }
   }
 }
