@@ -29,4 +29,26 @@
        margin-top: 4rem;
     }
   }
+  .button-container {
+
+    display: flex;
+    gap: 30%;
+    justify-content: center;
+    align-items: center;
+    @include respond(phone-small) {
+      margin: 0rem 4rem;
+      margin-top: 1rem;
+      gap: 20%;
+    }
+    @include respond(phone) {
+      margin: 0rem 4rem;
+      margin-top: 1rem;
+      gap: 20%;
+    }
+    @include respond(phone-long) {
+      margin: 0rem 4rem;
+      margin-top: 1rem;
+      gap: 20%;
+    }
+  }
 }

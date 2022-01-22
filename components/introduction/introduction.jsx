@@ -16,10 +16,20 @@ function Introduction() {
         for web design. I enjoy developing simple, clean and slick websites that
         provide real value to the end user.
       </div>
-      <div>
-        <Link href="/contact">
-          <a className={classes["btn-dark--outline"]}>Contact</a>
-        </Link>
+
+      <div className={classes["button-container"]}>
+        <div className={classes["btn-light__container"]}>
+          <Link href="/doc/Attila_Gyori_2021.pdf">
+            <a className={classes["btn-dark--outline"]} target="_blank">
+              Resume
+            </a>
+          </Link>
+        </div>
+        <div className={classes["btn-main__container"]}>
+          <Link href="/contact">
+            <a className={classes["btn-main"]}>Contact</a>
+          </Link>
+        </div>
       </div>
       <div className={classes["bottom-line"]}></div>
     </div>
