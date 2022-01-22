@@ -1,10 +1,10 @@
 /** @format */
-
+import Link from "next/link";
 import TitleSection from "../titleSection/titleSection";
 import classes from "./works.module.scss";
 export default function Works() {
   return (
-    <section id="work">
+    <section id="work" className={classes["work-container"]}>
       <TitleSection
         title="PUBLIC PROJECTS"
         subText="Some of my public projects available"
@@ -121,6 +121,20 @@ export default function Works() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className={classes["button-container"]}>
+        <div className={classes["btn-light__container"]}>
+          <Link href="/doc/Attila_Gyori_2021.pdf">
+            <a className={classes["btn-dark--outline"]} target="_blank">
+              Resume
+            </a>
+          </Link>
+        </div>
+        <div className={classes["btn-main__container"]}>
+          <Link href="/contact">
+            <a className={classes["btn-main"]}>Contact</a>
+          </Link>
         </div>
       </div>
     </section>
