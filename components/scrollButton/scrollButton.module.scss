@@ -6,7 +6,7 @@
 
 .scrollButton-container {
   @include respond(phone-small) {
-    display: none;
+    margin-top: 2rem;
   }
     @include respond(phone-long) {
     display: block;
