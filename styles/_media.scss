@@ -5,7 +5,7 @@
     } //400px
   }
    @if $breakpoint == phone-long {
-    @media only screen and (min-height: 50em) {
+    @media only screen and (max-width: 44em) and (min-height: 50em) {
       @content;
     } //800px
   }

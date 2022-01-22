@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import Link from "next/link";
 import classes from "./timelineSchool.module.scss";
 import SchoolIcon from "../../public/images/icons/school.svg";
 import timelineElementsSchool from "./timelineElementsSchool.js";
@@ -44,6 +45,20 @@ function TimelineSchool() {
           );
         })}
       </VerticalTimeline>
+      <div className={classes["button-container"]}>
+        <div className={classes["btn-light__container"]}>
+          <Link href="/doc/Attila_Gyori_2021.pdf">
+            <a className={classes["btn-dark--outline"]} target="_blank">
+              Resume
+            </a>
+          </Link>
+        </div>
+        <div className={classes["btn-main__container"]}>
+          <Link href="/contact">
+            <a className={classes["btn-main"]}>Contact</a>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

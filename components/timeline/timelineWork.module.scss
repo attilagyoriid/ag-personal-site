@@ -16,12 +16,10 @@
   h3 {
     padding-top: 0.25em;
   }
-   .vertical-timeline::before{
+  .vertical-timeline::before {
     @include respond(phone) {
-         left: 34px;
-      }
-    
-
+      left: 34px;
+    }
   }
 
   .vertical-timeline-element-content {
@@ -30,12 +28,11 @@
     padding: 2em 3em !important;
   }
 
-  .vertical-timeline-element{
+  .vertical-timeline-element {
     opacity: 0.8;
-     @include respond(phone) {
-         margin: 2rem 1rem;
-      }
-   
+    @include respond(phone) {
+      margin: 2rem 1rem;
+    }
   }
 
   .date {
@@ -67,6 +64,29 @@
 
   .schoolButton:hover {
     background-color: #f3bc3c;
+  }
+  .button-container {
+    margin: 2rem;
+    margin-top: 4rem;
+    display: flex;
+    gap: 30%;
+    justify-content: center;
+    align-items: center;
+    @include respond(phone-small) {
+      margin: 0rem 4rem;
+      margin-top: 1rem;
+      gap: 20%;
+    }
+    @include respond(phone) {
+      margin: 0rem 4rem;
+      margin-top: 1rem;
+      gap: 20%;
+    }
+    @include respond(phone-long) {
+      margin: 0rem 4rem;
+      margin-top: 1rem;
+      gap: 20%;
+    }
   }
 }
 

@@ -247,4 +247,13 @@
     justify-content: space-between;
     
   }
+
+  @include respond(phone-long) {
+    position: relative;
+    top: 4rem;
+    width: 100%;
+    gap: unset;
+    justify-content: space-between;
+    
+  }
 }

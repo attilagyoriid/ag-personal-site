@@ -4,7 +4,8 @@
 .timeline-container {
   background: url(/images/bkg-wave_main.jpg) no-repeat center center fixed;
   @include respond(phone) {
-    background: url(/images/bkg-wave_main-700w.jpg) no-repeat center center fixed;
+    background: url(/images/bkg-wave_main-700w.jpg) no-repeat center center
+      fixed;
   }
   background-size: cover;
 
@@ -66,6 +67,29 @@
 
   .schoolButton:hover {
     background-color: #f3bc3c;
+  }
+  .button-container {
+    margin: 2rem;
+     margin-top: 4rem;
+    display: flex;
+    gap: 30%;
+    justify-content: center;
+    align-items: center;
+    @include respond(phone-small) {
+      margin: 0rem 4rem;
+      margin-top: 1rem;
+      gap: 20%;
+    }
+    @include respond(phone) {
+      margin: 0rem 4rem;
+      margin-top: 1rem;
+      gap: 20%;
+    }
+    @include respond(phone-long) {
+      margin: 0rem 4rem;
+      margin-top: 1rem;
+      gap: 20%;
+    }
   }
 }
 
