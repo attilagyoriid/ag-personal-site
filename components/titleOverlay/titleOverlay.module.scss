@@ -15,6 +15,9 @@
     left: 50%;
     transform: translate(-50%, -150%);
     z-index: 6;
+    @include respond(phone) {
+      color: white;
+    }
   }
   .section-title--overlay {
     @extend %title-large;
