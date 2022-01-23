@@ -1,4 +1,5 @@
 import { useState } from "react";
+import RippleButton from "../rippleButton/rippleButton";
 import classes from "./cardFlip.module.scss";
 import cardList from "./dataIconsList.js";
 
@@ -25,12 +26,14 @@ export default function CardFlip() {
               >
                 <div className={`${classes["inner"]}`}>
                   <p>{item.description}</p>
+
                   <div className={`${classes["img-grid"]}`}>
                     {item.icons.map((icon) => (
                       <img src={`${iconBaseUrl}${icon}`} key={icon} />
                     ))}
                   </div>
                 </div>
+                <RippleButton />
               </div>
               <div className={`${classes["back"]}`}>
                 <div className={`${classes["inner"]}`}>

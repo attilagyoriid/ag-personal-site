@@ -178,8 +178,8 @@
   margin-bottom: 1rem;
   position: relative;
   @include respond(phone) {
-        margin-top: -2rem;
-        }
+    margin-top: -2rem;
+  }
 }
 
 .front .inner p:after {
@@ -193,7 +193,6 @@
   right: 0;
   margin: 0 auto;
   bottom: -0.75rem;
-
 }
 
 .front .inner span {
@@ -212,6 +211,10 @@
 
       margin: 1rem 3rem;
       margin-top: 3rem;
+       @include respond(phone) {
+          column-gap: .5rem;
+           row-gap: .5rem;
+        }
 
       img {
         height: 100%;
@@ -219,10 +222,10 @@
         object-fit: cover;
         opacity: 0.5;
         @include respond(phone) {
-         height: 58px;
-        width: 58px;
-        align-self: center;
-        justify-self: center;
+          height: 90px;
+          width: 90px;
+          align-self: center;
+          justify-self: center;
         }
       }
     }
@@ -257,7 +260,6 @@
   width: 85%;
   display: flex;
   justify-content: center;
-  
 }
 
 .card__details {
