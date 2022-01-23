@@ -1,10 +1,18 @@
+@import "../../styles/media";
 .wrapper {
   width: 90vw;
   padding: 4rem;
-  height: auto;
+  height: 90wv;
   margin: 0 auto;
   position: relative;
   max-width: 90vw;
+     @include respond(tab-land) {
+    padding: 0rem;
+  }
+  @include respond(phone) {
+    padding: 0rem;
+  }
+
   h1 {
     font-size: 2.5rem;
     font-family: Nunito, Roboto, sans-serif;
@@ -30,6 +38,12 @@
   width: calc(25% - 2rem);
   margin: 1rem;
   cursor: pointer;
+  @include respond(semi-big-desktop) {
+    width: calc(33% - 2rem);
+  }
+  @include respond(phone) {
+    width: 100%;
+  }
 }
 
 .container {
@@ -45,12 +59,12 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   background-position: center;
-  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  -o-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1),
-    -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: -webkit-transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -o-transition: transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 1s cubic-bezier(0.4, 0.2, 0.2, 1),
+    -webkit-transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   text-align: center;
@@ -97,12 +111,12 @@
 }
 .container:hover .front,
 .container:hover .back {
-  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  -o-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1),
-    -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: -webkit-transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -o-transition: transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 1s cubic-bezier(0.4, 0.2, 0.2, 1),
+    -webkit-transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
 
 .back {
@@ -126,6 +140,9 @@
   -webkit-perspective: inherit;
   perspective: inherit;
   z-index: 2;
+  @include respond(semi-big-desktop) {
+    padding: 0rem;
+  }
 }
 
 .container .back {
@@ -196,8 +213,7 @@
         height: 100%;
         width: 100%;
         object-fit: cover;
-        opacity: .5;
-
+        opacity: 0.5;
       }
     }
   }
@@ -244,28 +260,28 @@
 .card__details ul li {
   text-align: center;
   font-size: 1rem;
-  padding: 1rem;
+  padding: 0.6rem;
 }
 
 .card__details ul li:not(:last-child) {
   border-bottom: 1px solid #eee;
 }
 
-@media screen and (max-width: 64rem) {
-  .col {
-    width: calc(33.333333% - 2rem);
-  }
-}
+// @media screen and (max-width: 64rem) {
+//   .col {
+//     width: calc(33.333333% - 2rem);
+//   }
+// }
 
-@media screen and (max-width: 48rem) {
-  .col {
-    width: calc(50% - 2rem);
-  }
-}
+// @media screen and (max-width: 48rem) {
+//   .col {
+//     width: calc(50% - 2rem);
+//   }
+// }
 
-@media screen and (max-width: 32rem) {
-  .col {
-    width: 100%;
-    margin: 0 0 2rem 0;
-  }
-}
+// @media screen and (max-width: 32rem) {
+//   .col {
+//     width: 100%;
+//     margin: 0 0 2rem 0;
+//   }
+// }
