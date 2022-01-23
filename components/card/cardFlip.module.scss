@@ -1,7 +1,7 @@
 .wrapper {
   width: 90vw;
-  padding-top: 2rem;
-  height: 100vh;
+  padding: 4rem;
+  height: auto;
   margin: 0 auto;
   position: relative;
   max-width: 90vw;
@@ -205,7 +205,7 @@
 
 .card__title {
   height: 8rem;
-  padding: 2rem 1rem 1rem;
+  padding: 2rem 0.5rem 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,11 +222,13 @@
 }
 .card__heading {
   font-size: 2rem;
+  text-align: center;
+  margin: 0 auto;
   font-weight: 300;
   text-transform: uppercase;
   text-align: center;
   color: #fff;
-  width: 75%;
+  width: 85%;
 }
 
 .card__details {
