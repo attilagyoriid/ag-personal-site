@@ -5,10 +5,9 @@
 import Footer from "../components/footer/footer";
 import ImageLeadingWithTitle from "../components/imageLeadingWithTitle/imageLeadingWithTitle";
 import Layout from "../components/layout/layout";
-import SpecializationSection from "../components/specialization/specialization";
 import TimelineSchool from "../components/timeline/timelineSchool";
 import TimelineWork from "../components/timeline/timelineWork";
-import dataSpecDescription from "../components/specialization/dataIconsList.js";
+import CardFlip from "../components/card/cardFlip";
 
 export default function Experience() {
   return (
@@ -18,10 +17,7 @@ export default function Experience() {
       description="Attila Győri Developer personal site | Experience"
     >
       <ImageLeadingWithTitle url="/images/intro-path.jpg" title="Experience" />
-      <SpecializationSection
-        withThreeDotsLink={false}
-        data={dataSpecDescription}
-      />
+      <CardFlip />
       <ImageLeadingWithTitle url="/images/intro-study.jpg" title="Studies" />
       <TimelineSchool />
       <ImageLeadingWithTitle url="/images/illustration-work.jpg" title="Work" />
