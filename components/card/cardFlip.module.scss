@@ -1,12 +1,11 @@
 @import "../../styles/media";
 .wrapper {
-  width: 90vw;
   padding: 4rem;
-  height: 90wv;
+  height: auto;
   margin: 0 auto;
   position: relative;
-  max-width: 90vw;
-     @include respond(tab-land) {
+
+  @include respond(tab-land) {
     padding: 0rem;
   }
   @include respond(phone) {
@@ -78,6 +77,7 @@
 .front {
   &.bkg-img-dev {
     background-image: url("/images/card-bkgs/services_dev_bkg.png");
+    background-size: cover;
   }
   &.bkg-img-sdet {
     background-image: url("/images/card-bkgs/services_sdet_bkg.png");
@@ -177,6 +177,9 @@
   font-size: 2rem;
   margin-bottom: 1rem;
   position: relative;
+  @include respond(phone) {
+        margin-top: -2rem;
+        }
 }
 
 .front .inner p:after {
@@ -190,6 +193,7 @@
   right: 0;
   margin: 0 auto;
   bottom: -0.75rem;
+
 }
 
 .front .inner span {
@@ -214,6 +218,12 @@
         width: 100%;
         object-fit: cover;
         opacity: 0.5;
+        @include respond(phone) {
+         height: 58px;
+        width: 58px;
+        align-self: center;
+        justify-self: center;
+        }
       }
     }
   }
@@ -245,6 +255,9 @@
   text-align: center;
   color: #fff;
   width: 85%;
+  display: flex;
+  justify-content: center;
+  
 }
 
 .card__details {
