@@ -1,6 +1,7 @@
 /** @format */
 import { useRouter } from "next/router";
 import { useState, useRef, useEffect } from "react";
+import NextLink from "next/link";
 import {
   Link,
   DirectLink,
@@ -110,6 +111,19 @@ function MainNavigation(props) {
             <a className={classes.current}>Home</a>
           </Link>
         </li>
+        {!isPageHome() && (
+          <li>
+            <NextLink
+              href="/contact"
+              onClick={(event) => {
+                handleMenuClose(event);
+                handleClickOnPageDifferentThanHome(event);
+              }}
+            >
+              <a className={classes.current}>Contact</a>
+            </NextLink>
+          </li>
+        )}
         {isPageHome() && (
           <>
             <li>
