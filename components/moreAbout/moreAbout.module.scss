@@ -24,12 +24,17 @@
       @extend %title-large--light;
       font-size: 4rem;
       color: $deep-dark-color;
+       @include respond(tab-land) {
+        text-align: center;
+        margin-bottom: 1rem;
+      }
     }
     .more_text {
       font-size: 1.5rem;
       color: $deep-dark-color;
       @include respond(tab-land) {
         max-width: 100%;
+        margin-bottom: 2rem;
       }
     }
   }
