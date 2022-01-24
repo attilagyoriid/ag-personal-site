@@ -23,6 +23,19 @@
       padding: 4rem 0;
 
     }
+    .text-intro {
+      display: block;
+      position: relative;
+      color: $deep-dark-color;  
+      font-family: Nunito, Roboto, sans-serif;
+      font-size: 2rem;
+      top: -8rem;
+      text-align: center;
+       @include respond(phone) {
+       top: -4rem;
+
+    }
+    }
     .area {
       position: absolute;
       top: 0;
@@ -115,7 +128,18 @@
         }
       }
     }
-
+.animation {
+   position: relative;
+      height: 100%;
+      width: 100%;
+      @include respond(phone) {
+        display: block;
+        position: relative;
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+      }
+}
     img {
       position: relative;
       height: 100%;
