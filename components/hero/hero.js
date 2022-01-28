@@ -7,6 +7,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import ScrollButton from "../scrollButton/scrollButton";
+import ShareButton from "../shareButton/shareButton";
 
 export default function Hero({ posts }) {
   gsap.registerPlugin(ScrollTrigger);
@@ -200,6 +201,14 @@ export default function Hero({ posts }) {
             activeClass="active"
           >
             <ScrollButton />
+            <div
+              className={classes["share-button__container"]}
+              onClick={(e) => {
+                e.stopPropagation();
+              }}
+            >
+              <ShareButton />
+            </div>
           </Link>
         </li>
       </header>
