@@ -19,7 +19,7 @@ export default function ShareButton() {
         <div className={classes["container"]}>
           <div className={classes["icon"]}>
             <FacebookMessengerShareButton
-              url={"https://github.com/next-share"}
+              url={"https://attila-gyori.com"}
               appId={""}
             >
               <FacebookMessengerIcon size={22} round />
@@ -28,10 +28,8 @@ export default function ShareButton() {
 
           <div className={classes["icon"]}>
             <WhatsappShareButton
-              url={"https://github.com/next-share"}
-              title={
-                "next-share is a social share buttons for your next React apps."
-              }
+              url={"https://attila-gyori.com"}
+              title={"Attila Gyori Developer"}
               separator=":: "
             >
               <WhatsappIcon size={22} round />
@@ -39,15 +37,15 @@ export default function ShareButton() {
           </div>
           <div className={classes["icon"]}>
             <EmailShareButton
-              url={"https://github.com/next-share"}
-              subject={"Next Share"}
+              url={"https://attila-gyori.com"}
+              subject={"Attila Gyori Developer"}
               body="body"
             >
               <EmailIcon size={22} round />
             </EmailShareButton>
           </div>
           <div className={classes["icon"]}>
-            <LinkedinShareButton url={"https://github.com/next-share"}>
+            <LinkedinShareButton url={"https://attila-gyori.com"}>
               <LinkedinIcon size={22} round />
             </LinkedinShareButton>
           </div>
