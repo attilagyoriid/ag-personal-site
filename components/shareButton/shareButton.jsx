@@ -13,43 +13,53 @@ import {
 } from "next-share";
 export default function ShareButton() {
   return (
-    <div className={classes["share-button__container"]}>
-      <div className={classes["btn_wrap"]}>
-        <span>share</span>
-        <div className={classes["container"]}>
-          <div className={classes["icon"]}>
-            <FacebookMessengerShareButton
-              url={"https://attila-gyori.com"}
-              appId={""}
-            >
-              <FacebookMessengerIcon size={22} round />
-            </FacebookMessengerShareButton>
-          </div>
-
-          <div className={classes["icon"]}>
-            <WhatsappShareButton
-              url={"https://attila-gyori.com"}
-              title={"Attila Gyori Developer"}
-              separator=":: "
-            >
-              <WhatsappIcon size={22} round />
-            </WhatsappShareButton>
-          </div>
-          <div className={classes["icon"]}>
-            <EmailShareButton
-              url={"https://attila-gyori.com"}
-              subject={"Attila Gyori Developer"}
-              body="body"
-            >
-              <EmailIcon size={22} round />
-            </EmailShareButton>
-          </div>
-          <div className={classes["icon"]}>
-            <LinkedinShareButton url={"https://attila-gyori.com"}>
-              <LinkedinIcon size={22} round />
-            </LinkedinShareButton>
-          </div>
+    <div className={classes["share-container"]}>
+      <div className={classes["share"]}>
+        <div className={classes["main-icon"]}>
+          <img src="/images/icons/icons-share.png" />
         </div>
+        <nav>
+          <a href="#">
+            <i>
+              <FacebookMessengerShareButton
+                url={"https://attila-gyori.com"}
+                appId={"1004362527100544"}
+              >
+                <FacebookMessengerIcon size={80} round />
+              </FacebookMessengerShareButton>
+            </i>
+          </a>
+          <a href="#">
+            <i>
+              <WhatsappShareButton
+                url={"https://attila-gyori.com"}
+                title={"Attila Gyori Developer"}
+                separator=":: "
+              >
+                <WhatsappIcon size={80} round />
+              </WhatsappShareButton>
+            </i>
+          </a>
+          <a href="#">
+            <i>
+              <EmailShareButton
+                url={"https://attila-gyori.com"}
+                subject={"Attila Gyori Developer"}
+                body="body"
+              >
+                <EmailIcon size={80} round />
+              </EmailShareButton>
+            </i>
+          </a>
+          <a href="#">
+            <i>
+              {" "}
+              <LinkedinShareButton url={"https://attila-gyori.com"}>
+                <LinkedinIcon size={80} round />
+              </LinkedinShareButton>
+            </i>
+          </a>
+        </nav>
       </div>
     </div>
   );

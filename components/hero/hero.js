@@ -1,5 +1,4 @@
 /** @format */
-import Image from "next/image";
 import classes from "./hero.module.scss";
 import Typed from "typed.js";
 import { useEffect, useState, useRef } from "react";
