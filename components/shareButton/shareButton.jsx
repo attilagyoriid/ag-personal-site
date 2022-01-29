@@ -23,7 +23,7 @@ export default function ShareButton() {
             <i>
               <FacebookMessengerShareButton
                 url={"https://attila-gyori.com"}
-                appId={"1004362527100544"}
+                appId={process.env.FACEBOOK_APP_ID}
               >
                 <FacebookMessengerIcon size={80} round />
               </FacebookMessengerShareButton>
