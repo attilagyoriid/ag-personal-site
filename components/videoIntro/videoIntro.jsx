@@ -11,10 +11,10 @@ export default function VideoIntro({ title, keywords, description, children }) {
 
   useEffect(() => {
     document.onreadystatechange = function () {
-      if (document.readyState === "complete") {
+     
         setLoading(false);
         console.log("do something");
-      }
+  
     };
   }, []);
 

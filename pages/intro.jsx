@@ -1,8 +1,7 @@
 /** @format */
 import Head from "next/head";
-import dynamic from "next/dynamic";
 
-const VideoIntro = dynamic(() => import("../components/videoIntro/videoIntro"));
+import VideoIntro from "../components/videoIntro/videoIntro";
 export default function IntroPage({ title, keywords, description }) {
   return (
     <>
