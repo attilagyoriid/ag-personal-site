@@ -31,6 +31,11 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  @include respond(phone) {
+    margin: 2rem 0.5rem;
+    gap: 2rem;
+    
+  }
 }
 
 .col {
