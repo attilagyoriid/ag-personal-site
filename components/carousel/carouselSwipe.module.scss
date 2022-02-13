@@ -9,6 +9,14 @@
   display: block;
   overflow: hidden;
 
+  li[class="dot"] {
+    background: $main-color-dark !important;
+  }
+
+  li[class="dot selected"] {
+    background: $main-color-dark !important;
+  }
+
   .carousel-content {
     max-height: 100%;
     overflow: hidden;
