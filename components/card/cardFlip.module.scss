@@ -1,5 +1,6 @@
 @import "../../styles/media";
 .wrapper {
+  user-select: none;
   padding: 4rem;
   height: auto;
   margin: 0 auto;

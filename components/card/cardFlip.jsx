@@ -19,6 +19,7 @@ export default function CardFlip() {
             key={item.description}
             className={`${classes["col"]} ${isHover ? classes["hover"] : ""}`}
             onTouchStart={handleTouchEvent}
+            onTouchEnd={handleTouchEvent}
           >
             <div className={`${classes["container"]}`}>
               <div
