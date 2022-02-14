@@ -34,7 +34,7 @@ export default function VideoIntro({ title, keywords, description, children }) {
           setLoading(false);
         }}
         onLoadStart={() => {
-          setLoading(true);
+          setLoading(false);
         }}
         onEnded={() => {
           setLoading(false);
