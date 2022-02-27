@@ -31,5 +31,6 @@ HomePage.defaultProps = {
 export async function getStaticProps() {
   return {
     props: {},
+    revalidate: 10,
   };
 }
