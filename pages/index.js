@@ -27,3 +27,9 @@ HomePage.defaultProps = {
     "development, developer, software, software developer, software engineer, coding, programming, design, graphic, illustration, animation, qa, sdet, test automation, software test automation, software development engineer in test",
   description: "Attila Győri Software Developer personal site",
 };
+
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}

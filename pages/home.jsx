@@ -61,7 +61,7 @@ function Home() {
         <Projects />
       </Element>
       <Element name="contact">
-        <ImageLeading imgUrl={"/images/illustration-contact-main.png"} />
+        <ImageLeading imgUrl={"/images/contacts-ag.jpg"} />
         <Contact />
       </Element>
       <Footer />
@@ -70,3 +70,9 @@ function Home() {
 }
 
 export default Home;
+
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}
