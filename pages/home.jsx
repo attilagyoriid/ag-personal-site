@@ -43,7 +43,11 @@ const Footer = dynamic(() => import("../components/footer/footer"), {
 
 function Home() {
   return (
-    <Layout>
+    <Layout
+      title="Attila Győri | Home"
+      description="Attila Győri Developer personal site | Home. Software Developer, Designer, Software Development Engineer in Test, Engineering Manager"
+      keywords="development, developer, software, software developer, software engineer, software quality, software testing, software test automation, coding, programming, design, graphic, illustration, animation, qa, sdet, test automation, software test automation, software development engineer in test, engineering manager"
+    >
       <Element name="home">
         <Hero />
       </Element>

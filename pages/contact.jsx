@@ -7,13 +7,20 @@ import Layout from "../components/layout/layout";
 export default function About() {
   return (
     <Layout
-      title="Attila Győri | About"
-      keywords="development, contact, email, developer, software, software developer, software engineer, coding, programming, design, graphic, illustration, animation, qa, sdet, test automation, software test automation, software development engineer in test, Attila Győri, AG, Attila Gyori, Gyori Attila, Győri Attila, about, story"
-      description="Attila Győri Software Developer personal site | Contact"
+      title="Attila Győri | Contact"
+      description="Attila Győri Developer personal site | Contact. Software Developer, Designer, Software Development Engineer in Test, Engineering Manager"
+      keywords="contact, development, developer, software, software developer, software engineer, software quality, software testing, software test automation, coding, programming, design, graphic, illustration, animation, qa, sdet, test automation, software test automation, software development engineer in test, engineering manager"
     >
       <ImageLeadingWithTitle url="/images/illustration-contact.png" />
       <Contact />
       <Footer />
     </Layout>
   );
+}
+
+export async function getStaticProps() {
+  return {
+    props: {},
+    revalidate: 10,
+  };
 }

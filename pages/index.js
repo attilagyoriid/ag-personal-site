@@ -22,10 +22,11 @@ export default function HomePage({ title, keywords, description }) {
 }
 
 HomePage.defaultProps = {
-  title: "Attila Győri | SDET & Developer, Designer and Photographer",
+  title: "Attila Győri | SDET & Software Developer, Designer and Photographer",
   keywords:
-    "development, developer, software, software developer, software engineer, coding, programming, design, graphic, illustration, animation, qa, sdet, test automation, software test automation, software development engineer in test",
-  description: "Attila Győri Software Developer personal site",
+    "development, developer, software, software developer, software engineer, software quality, software testing, software test automation, coding, programming, design, graphic, illustration, animation, qa, sdet, test automation, software test automation, software development engineer in test",
+  description:
+    "Attila Győri Software Developer personal site: Software Developer, Designer, Software Development Engineer in Test, Engineering Manager",
 };
 
 export async function getStaticProps() {

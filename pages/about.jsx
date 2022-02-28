@@ -14,8 +14,8 @@ export default function About() {
   return (
     <Layout
       title="Attila Győri | About"
-      keywords="development, developer, software, software developer, software engineer, coding, programming, design, graphic, illustration, animation, qa, sdet, test automation, software test automation, software development engineer in test, Attila Győri, AG, Attila Gyori, Gyori Attila, Győri Attila, about, story"
-      description="Attila Győri Sfotware Developer personal site | About"
+      description="Attila Győri Developer personal site | About. Software Developer, Designer, Software Development Engineer in Test, Engineering Manager"
+      keywords="about, development, developer, software, software developer, software engineer, software quality, software testing, software test automation, coding, programming, design, graphic, illustration, animation, qa, sdet, test automation, software test automation, software development engineer in test, engineering manager"
     >
       <ImageLeadingWithTitle url="/images/intro-whoami.jpg" title="Who Am I" />
       <Introduction />
@@ -34,4 +34,10 @@ export default function About() {
       <Footer />
     </Layout>
   );
+}
+export async function getStaticProps() {
+  return {
+    props: {},
+    revalidate: 10,
+  };
 }
