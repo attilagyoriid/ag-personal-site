@@ -65,7 +65,7 @@ function Home() {
         <Projects />
       </Element>
       <Element name="contact">
-        <ImageLeading imgUrl={"/images/contacts-ag.jpg"} />
+        <ImageLeading imgUrl={"/images/contact.jpg"} />
         <Contact />
       </Element>
       <Footer />
