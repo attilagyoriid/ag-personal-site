@@ -2,7 +2,15 @@ import Link from "next/link";
 import Hun from "../hun/hun";
 import TitleText from "../titleText/titleText";
 import classes from "./introduction.module.scss";
+import * as gtag from "../../services/gtag";
 function Introduction() {
+  const handleClick = (e) => {
+    gtag.event({
+      action: "download_cv",
+      category: "Download",
+      label: "download_cv",
+    });
+  };
   return (
     <div className={classes["introduction-container"]}>
       <TitleText
@@ -20,7 +28,11 @@ function Introduction() {
       <div className={classes["button-container"]}>
         <div className={classes["btn-light__container"]}>
           <Link href="/doc/Attila_Gyori_2021.pdf">
-            <a className={classes["btn-dark--outline"]} target="_blank">
+            <a
+              className={classes["btn-dark--outline"]}
+              onClick={handleClick}
+              target="_blank"
+            >
               Resume
             </a>
           </Link>

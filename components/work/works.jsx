@@ -2,7 +2,16 @@
 import Link from "next/link";
 import TitleSection from "../titleSection/titleSection";
 import classes from "./works.module.scss";
+import * as gtag from "../../services/gtag";
 export default function Works() {
+  const handleClick = (e) => {
+    gtag.event({
+      action: "project_visited",
+      category: "Visit",
+      label: "project_visited",
+    });
+  };
+
   return (
     <section id="work" className={classes["work-container"]}>
       <TitleSection
@@ -11,7 +20,7 @@ export default function Works() {
         className="lead--deep-dark-color"
       />
       <div className={classes["container"]}>
-        <div className={classes["items"]}>
+        <div className={classes["items"]} onClick={handleClick}>
           <div className={classes["item"]}>
             <div className={classes["item-image"]}>
               <img src="/images/works/item1.png" alt="" />
