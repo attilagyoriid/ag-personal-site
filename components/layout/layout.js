@@ -41,6 +41,15 @@ export default function Layout({
         />
         <meta property="og:description" content={ogDescription} />
 
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={ogUlr} />
+        <meta property="twitter:title" content={ogTitle} />
+        <meta property="twitter:description" content={ogDescription} />
+        <meta
+          property="twitter:image"
+          content="https://attila-gyori.com/images/ag-social_opt.jpg"
+        />
+
         <meta charSet="utf-8"></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
