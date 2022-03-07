@@ -10,6 +10,8 @@ import {
   WhatsappIcon,
   LinkedinShareButton,
   LinkedinIcon,
+  TwitterShareButton,
+  TwitterIcon,
 } from "next-share";
 export default function ShareButton() {
   return (
@@ -31,13 +33,12 @@ export default function ShareButton() {
           </a>
           <a href="#">
             <i>
-              <WhatsappShareButton
+              <TwitterShareButton
                 url={"https://attila-gyori.com"}
                 title={"Attila Gyori Developer"}
-                separator=":: "
               >
-                <WhatsappIcon size={80} round />
-              </WhatsappShareButton>
+                <TwitterIcon size={80} round />
+              </TwitterShareButton>
             </i>
           </a>
           <a href="#">
