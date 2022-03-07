@@ -24,7 +24,7 @@ export default function ShareButton() {
           <a href="#">
             <i>
               <FacebookMessengerShareButton
-                url={"https://attila-gyori.com"}
+                url={"https://attila-gyori.com/home"}
                 appId={process.env.FACEBOOK_APP_ID}
               >
                 <FacebookMessengerIcon size={80} round />
@@ -34,7 +34,7 @@ export default function ShareButton() {
           <a href="#">
             <i>
               <TwitterShareButton
-                url={"https://attila-gyori.com"}
+                url={"https://attila-gyori.com/home"}
                 title={"Attila Gyori Developer"}
               >
                 <TwitterIcon size={80} round />
@@ -44,7 +44,7 @@ export default function ShareButton() {
           <a href="#">
             <i>
               <EmailShareButton
-                url={"https://attila-gyori.com"}
+                url={"https://attila-gyori.com/home"}
                 subject={"Attila Gyori Developer"}
                 body="body"
               >
@@ -55,7 +55,7 @@ export default function ShareButton() {
           <a href="#">
             <i>
               {" "}
-              <LinkedinShareButton url={"https://attila-gyori.com"}>
+              <LinkedinShareButton url={"https://attila-gyori.com/home"}>
                 <LinkedinIcon size={80} round />
               </LinkedinShareButton>
             </i>
