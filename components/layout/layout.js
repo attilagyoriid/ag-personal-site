@@ -58,7 +58,7 @@ Layout.defaultProps = {
   ogTitle:
     "Attila Győri | SDET & Software Developer, Designer and Photographer",
   ogType: "website",
-  ogUlr: "https://attila-gyori.com/",
+  ogUlr: "https://attila-gyori.com/home",
   ogImage: "",
   ogDescription:
     "Attila Győri Software Developer personal site: Software Developer, Designer, Software Development Engineer in Test, Engineering Manager",
