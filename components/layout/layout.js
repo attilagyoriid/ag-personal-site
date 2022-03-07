@@ -26,11 +26,11 @@ export default function Layout({
         <meta property="og:url" content={ogUlr} />
         <meta
           property="og:image"
-          content="https://attila-gyori.com/images/ag-social.jpg"
+          content="https://attila-gyori.com/images/ag-social_opt.jpg"
         />
         <meta
           property="og:image:secure_url"
-          content="https://attila-gyori.com/images/ag-social.jpg"
+          content="https://attila-gyori.com/images/ag-social_opt.jpg"
         />
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="400" />
@@ -51,7 +51,7 @@ export default function Layout({
 }
 
 Layout.defaultProps = {
-  title: "Attila Győri | SDET & Developer, Designer and Photographer",
+  title: "Attila Győri | SDET & Software Developer, Designer and Photographer",
   keywords:
     "development, developer, software, software developer, software engineer, coding, programming, design, graphic, illustration, animation, qa, sdet, test automation, software test automation, software development engineer in test, Attila Győri, AG, Attila Gyori, Gyori Attila, Győri Attila",
   description: "Attila Győri Developer personal site",
