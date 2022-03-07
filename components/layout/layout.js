@@ -33,8 +33,8 @@ export default function Layout({
           content="https://attila-gyori.com/images/ag-social_opt.jpg"
         />
         <meta property="og:image:type" content="image/jpeg" />
-        <meta property="og:image:width" content="400" />
-        <meta property="og:image:height" content="300" />
+        <meta property="og:image:width" content="600" />
+        <meta property="og:image:height" content="600" />
         <meta
           property="og:image:alt"
           content="Attila Gyori Software Developer Site"
