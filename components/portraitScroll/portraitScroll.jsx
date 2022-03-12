@@ -11,7 +11,7 @@ export default function PortraitScroll() {
   const imageRef = useRef(null);
   useEffect(() => {
     ScrollTrigger.matchMedia({
-      "(min-width: 1024px) and (orientation: landscape)": function () {
+      "(min-width: 1025px) and (orientation: landscape)": function () {
         gsap.set(imageScale.current, {
           autoAlpha: 0,
           scale: 0,
@@ -30,7 +30,6 @@ export default function PortraitScroll() {
             scrub: true,
             stagger: 0.2,
             toggleActions: "play none none none",
-
           },
         });
       },
@@ -53,7 +52,6 @@ export default function PortraitScroll() {
             scrub: true,
             stagger: 0.2,
             toggleActions: "play none none none",
-    
           },
         });
       },
