@@ -13,7 +13,7 @@ function DownloadButton() {
     <div className={classes["btn-container"]}>
       <a
         onClick={handleClick}
-        href="/doc/Attila_Gyori_2021.pdf"
+        href="/doc/Attila_Gyori_2022.pdf"
         target="_blank"
         className={classes.dnbtn}
       ></a>
