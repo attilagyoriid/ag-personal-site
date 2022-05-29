@@ -51,7 +51,7 @@ export default function Projects() {
     <section className={classes["main-projects"]}>
       <TitleSection
         title="PUBLIC PROJECTS"
-        subText="Seasoned Software Developer with more than 17 years experience and passion for visual design and creative creation"
+        subText="Selected list of projects I have worked on, over the years"
         className="lead--deep-dark-color"
       />
       <div className={classes["projects-section"]}>
@@ -60,9 +60,16 @@ export default function Projects() {
           className={classes["description-section"]}
         >
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-            molestias repellat quibusdam adipisci quas sed ullam accusantium
-            aliquam numquam quidem.Lorem ipsum dolor sit amet consectetur
+            I published some of my work-flow / process improvements project on github. Among others,
+            you can find Test Automation Framework core code base, Review Process aiding solutions,
+            Test Catalog to help Test Automation Engineers to browse and reuse already existing implementations or
+            organize their tests into suits. But there are some graphic and ui design, 3d models, logo presentation, photography and 
+            photo compositing available as well.I also published some website code base I implemented 
+            and java, javascript and python algorithms.
+            You can also find references to Tech Company projects I have been working on over the years.
+            The main focus is on back-end and Test Automation. But regarding the last two-three years I have been getting invloved in 
+            the javascript technolgy along with fornt-end development and UI design. 
+            There are always someting new to learn, be it a process, and approach or a new technolgy in this ever evolving profession.
           </p>
         </div>
         <div

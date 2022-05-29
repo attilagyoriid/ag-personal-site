@@ -36,6 +36,13 @@
         height: auto;
         font-size:1.2rem;
       }
+      @include respond(semi-big-desktop) {
+        right: 0px;
+        margin: 0rem 2rem;
+        padding: 1rem 1rem;
+        height: auto;
+        font-size:1.2rem;
+      }
     }
     .project-carousel-section {
       display: flex;

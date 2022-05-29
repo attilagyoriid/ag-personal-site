@@ -52,7 +52,7 @@ export default function WhoMain() {
       />
       <TitleSection
         title="WHO AM I"
-        subText="Seasoned Software Developer with more than 17 years experience and passion for visual design and creative creation"
+        subText="Seasoned Software Developer with more than 19 years experience and passion for visual design and creative creation"
         className="lead--deep-dark-color"
       />
       <div className={classes["about-section"]}>
@@ -63,18 +63,14 @@ export default function WhoMain() {
 
         <div ref={textSectionRef} className={classes["text-section"]}>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-            molestias repellat quibusdam adipisci quas sed ullam accusantium
-            aliquam numquam quidem.Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Officiis, molestias repellat quibusdam adipisci
-            quas sed ullam accusantium aliquam numquam quidem.Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Officiis, molestias repellat
-            quibusdam adipisci quas sed ullam accusantium aliquam numquam
-            quidem.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Officiis, molestias repellat quibusdam adipisci quas sed ullam
-            accusantium aliquam numquam quidem.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Officiis, molestias repellat quibusdam
-            adipisci quas
+          Not a Yet Another Average Software Engineer.
+          I'm passionate about bringing both the technical and visual aspects of digital products to life.
+          I’ve always been someone who has both a creative and a logical side.
+          I realized it would be the perfect fit. I could use my creative side to design and my logical side to code.    
+          I am a Software Test Automation Framework Developer and a Full-stack Engineer with over 19 years of Information Technology related experience. 
+          Sometimes I am also get involded in activites such as digital multimedia & ui design, graphic craftsmanship, and team management. 
+          I maintain a passion for technology and helping others get the most out of technology by using the appropriate tools, techniques, and strategies to ensure clients satisfaction.
+          Regarding the last 4 years I am functioning as a Development Team Lead as well.
           </p>
           <Link href="/about">
             <a className={classes["btn-main"]}>About</a>
