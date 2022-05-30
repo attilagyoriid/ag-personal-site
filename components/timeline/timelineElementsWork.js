@@ -1,62 +1,85 @@
 const timelineElements = [
   {
     id: 1,
-    title: "Frontend Developer",
-    location: "Dragontail, Ascana",
+    title: "Development Team Lead / Senior Java Test Automation Framework Developer",
+    location: "Ericsson R&D. Budapest",
     description:
-      "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.",
+      `Support, lead and coordinate Java Test Automation framework Core Team (6-7 members),
+      Create and assign/delegate or implement tasks: OpenALM, JIRA,
+      Facilitating scrum activities: daily stand-up,grooming, planning, retro,
+      Conducted interviews,
+      Integrating framework capabilities such as Selenium webdriver with container based Zalenium remote server,
+      Developing test activity supporting applications (such as gerrit review alert, grafana dasboard to pdf test report),
+      Further development of Automation Framework and implementation of test tools,
+      Support and follow-up annual performance goals,
+      Collect and organize Know-how/ write confluence,
+      Organizing trainings`,
 
-    date: "August 2016 - present",
+    date: "November, 2016 - present",
     icon: "work",
   },
   {
     id: 2,
-    title: "Backend Developer",
-    location: "Skystead, Craonia",
+    title: "Senior Software Development Engineer in Test",
+    location: "Ericsson R&D. Budapest",
     description:
-      "Working hand-in-hand with front-end developers by providing the outward facing web application elements server-side logic. Creating the logic to make the web app function properly, and accomplishing this through the use of server-side scripting languages.",
+      `Set up Test Framework lifecycle: versioning, branching - git, quality gates, unit test coverage, coding standards, style check. 
+      Contributed to setting up CI for product testing – Jenkins, DSL, maven, gradle, sonar. 
+      Implemented Java Test Automation Framework for functional e2e testing.
+      Internal test tool development: cluster lock, traceability matrix generator, etc.Mentorship`,
 
-    date: "June 2013 - August 2016",
+    date: "October, 2015 - November, 2016",
     icon: "work",
   },
   {
     id: 3,
-    title: "Quality Assurance Engineer",
-    location: "South Warren, Geshington",
+    title: "Senior Java Test Automation Engineer",
+    location: "General Electric HealthCare. Budapest, Hungary",
     description:
-      "Assessing the quality of specifications and technical design documents in order to ensure timely, relevant and meaningful feedback.",
+      `BDD automated test implementation for OSGI bundles - back end.
+      Feature file implementation for User Stories.Test Automation Framework Development in Java`,
 
-    date: "September 2011 - June 2013",
+    date: "April, 2014 - October, 2015",
     icon: "work",
   },
   {
     id: 4,
-    title: "Oak Ridge College",
-    location: "South Warren, Geshington",
+    title: "Senior Software Quality Assurance Engineer (Automation Team, framework developer)",
+    location: "Graphisoft SE. Budapest, Hungary",
     description:
-      "Online Course in Magical Beasts and Wonders of the World - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-
-    date: "September 2011",
-    icon: "school",
+      "Implemented Test Automation process aiding software solutions in Java",
+    date: "2011 - 2014",
+    icon: "work",
   },
   {
     id: 5,
-    title: "Hawking College",
-    location: "Skystead, Craonia",
+    title: "Software Quality Assurance Engineer (Automation Team)",
+    location: "Graphisoft SE. Budapest, Hungary",
     description:
-      "College - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
+      `Active participation in QA and Development process design a planning.
+      Responsible for reviewing and revising automated test scripts written by the members of QA Department`,
 
-    date: "2007 - 2011",
-    icon: "school",
+    date: "2008 - 2011",
+    icon: "work",
   },
   {
     id: 6,
-    title: "Marble Hills Grammar School",
-    location: "Dragontail, Ascana",
+    title: "Junior Software Quality Assurance Engineer (Automation Team)",
+    location: "Graphisoft SE. Budapest, Hungary",
     description:
-      "Highschool - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-    date: "2003 - 2007",
-    icon: "school",
+      "Gained solid knowledge of Automation tools.Designed and Implemented automated test script.",
+    date: "2004 - 2008",
+    icon: "work",
+  },
+  {
+    id: 7,
+    title: "Junior Software Quality Assurance Manual Tester",
+    location: "Graphisoft SE. Budapest, Hungary",
+    description:
+      `Designed and wrote test cases and workflow - like test scenarios.Reported, prioritized, tracked and retested test defects (Mercury Test Director) gained
+      solid knowledge in development and process planning`,
+    date: "2003 - 2004",
+    icon: "work",
   },
 ];
 
