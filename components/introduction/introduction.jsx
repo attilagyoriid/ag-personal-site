@@ -1,9 +1,17 @@
 import Link from "next/link";
+import { useEffect, useState} from "react";
 import Hun from "../hun/hun";
 import TitleText from "../titleText/titleText";
+import {getNumberOfYearsFrom} from "../../utils/date";
 import classes from "./introduction.module.scss";
 import * as gtag from "../../services/gtag";
+
 function Introduction() {
+  const [years, setYears] = useState();
+  useEffect(() => {
+    setYears(getNumberOfYearsFrom(2016));
+   
+  }, []);
   const handleClick = (e) => {
     gtag.event({
       action: "download_cv",
@@ -11,6 +19,7 @@ function Introduction() {
       label: "download_cv",
     });
   };
+  getNumberOfYearsFrom
   return (
     <div className={classes["introduction-container"]}>
       <TitleText
@@ -20,9 +29,10 @@ function Introduction() {
       />
       <Hun />
       <div className={classes["introduction-text"]}>
-        Hey, Thanks for stopping by. I am a software developer with a passion
-        for web design. I enjoy developing simple, clean and slick websites that
-        provide real value to the end user.
+        Hey, Thanks for stopping by. I am a Software Engineer with a passion
+        for graphic and web design having extensive experience in the field of Software QA especially STLC and Test Automation.
+        I am a Development Team Lead for {years} years now.
+
       </div>
 
       <div className={classes["button-container"]}>
