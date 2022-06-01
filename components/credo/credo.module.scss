@@ -1,0 +1,90 @@
+@import "../../styles/config";
+@import "../../styles/utilities";
+@import "../../styles/media";
+.main-credo {
+  display: block;
+  height: 80vh;
+
+  overflow: hidden;
+  color: $deep-dark-color;
+  font-family: Raleway, Roboto, sans-serif;
+  font-size: 1.5rem;
+  @include respond(phone) {
+    height: auto;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .credo-section {
+    position: relative;
+    margin: 0 3rem;
+    margin-top: 16rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include respond(phone) {
+      flex-direction: column;
+      margin-top: 2rem;
+      align-items: center;
+      text-align: center;
+    }
+
+    .img-section {
+      @include respond(phone) {
+        margin-top: 1rem;
+        position: relative;
+        transform: translateY(-20%) !important;
+        display: block;
+      }
+      img {
+        max-width: 80%;
+      }
+      p {
+        height: 100%;
+      }
+    }
+
+  
+
+      &.text-section {
+          margin-top: 10rem;
+          height: 100%;
+          font-size: 1.2rem;
+          
+          @include respond(phone) {
+            height: auto;
+            font-size: 1rem;
+
+            padding: 0rem 2rem;
+            padding-top: 4rem;
+        
+
+          @include respond(desktop) {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
