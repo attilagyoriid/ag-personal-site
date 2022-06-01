@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import ReactPlayer from 'react-player'
+import TitleSection from "../titleSection/titleSection";
 import classes from "./videoPlayer.module.scss";
 export default function VideoPlayer() {
 
@@ -8,6 +9,11 @@ export default function VideoPlayer() {
   }, []);
   return (
     <div className={classes["player__container"]}>
+       <TitleSection
+        title="hello there"
+        subText=""
+        className="lead--deep-dark-color"
+      />
     <div className={classes["player-wrapper"]}>
       <ReactPlayer
         className={classes["react-player"]}
