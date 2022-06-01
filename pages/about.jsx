@@ -1,14 +1,19 @@
 /** @format */
 
+import Creative from "../components/creative/creative";
+import Developer from "../components/developer/developer";
 import Footer from "../components/footer/footer";
 import FunFacts from "../components/funFacts/funFacts";
+import Hobbies from "../components/hobbies/hobbies";
 import ImageLeadingWithTitle from "../components/imageLeadingWithTitle/imageLeadingWithTitle";
 import Introduction from "../components/introduction/introduction";
 import Layout from "../components/layout/layout";
+import Leader from "../components/leader/leader";
 import MoreAbout from "../components/moreAbout/moreAbout";
 import PortraitScroll from "../components/portraitScroll/portraitScroll";
 import Skills from "../components/skills/skills";
 import TitleText from "../components/titleText/titleText";
+import VideoPlayer from "../components/video-player/videoPlayer";
 
 export default function About() {
   return (
@@ -19,8 +24,11 @@ export default function About() {
     >
       <ImageLeadingWithTitle url="/images/intro-whoami.jpg" title="Who Am I" />
       <Introduction />
-      <PortraitScroll />
 
+     
+      <Developer />
+      <Leader />
+      <Creative />
       <TitleText
         bigText="a few facts about me"
         bigTextBoldSubText="facts"
@@ -28,6 +36,8 @@ export default function About() {
         textColor="#e9ce84"
       />
       <FunFacts />
+      <Hobbies />
+      <VideoPlayer />
       <MoreAbout />
 
       <Skills />
