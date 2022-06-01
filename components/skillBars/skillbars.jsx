@@ -19,6 +19,7 @@ export default function Skillbars() {
   const skills1 = [{ type: "Dev", level: 85 }];
   const skills2 = [{ type: "SDET", level: 95 }];
   const skills3 = [{ type: "Design", level: 70 }];
+  const skills4 = [{ type: "Leader", level: 85 }];
   useEffect(() => {
     console.dir("stajl: " + skillBarRef.current.style);
   }, []);
@@ -43,6 +44,10 @@ export default function Skillbars() {
       <div className={classes["skill-description"]}>Graphic Design</div>
       {typeof window !== "undefined" ? (
         <SkillBar skills={skills3} colors={colors} height={25} />
+      ) : null}
+       <div className={classes["skill-description"]}>Team Leadership</div>
+      {typeof window !== "undefined" ? (
+        <SkillBar skills={skills4} colors={colors} height={25} />
       ) : null}
     </div>
   );
