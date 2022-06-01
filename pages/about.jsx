@@ -23,7 +23,7 @@ export default function About() {
       description="Attila Győri Developer personal site | About. Software Developer, Designer, Software Development Engineer in Test, Engineering Manager"
       keywords="about, development, developer, software, software developer, software engineer, software quality, software testing, software test automation, coding, programming, design, graphic, illustration, animation, qa, sdet, test automation, software test automation, software development engineer in test, engineering manager"
     >
-      <ImageLeadingWithTitle url="/images/intro-whoami.jpg" title="Who Am I" />
+      <ImageLeadingWithTitle url="/images/intro-whoami-funny.jpg" title="Who Am I" />
       <Introduction />
 
      
