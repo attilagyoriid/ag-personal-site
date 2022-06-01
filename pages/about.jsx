@@ -1,6 +1,7 @@
 /** @format */
 
 import Creative from "../components/creative/creative";
+import Credo from "../components/credo/credo";
 import Developer from "../components/developer/developer";
 import Footer from "../components/footer/footer";
 import FunFacts from "../components/funFacts/funFacts";
@@ -29,6 +30,7 @@ export default function About() {
       <Developer />
       <Leader />
       <Creative />
+      <Credo />
       <TitleText
         bigText="a few facts about me"
         bigTextBoldSubText="facts"
