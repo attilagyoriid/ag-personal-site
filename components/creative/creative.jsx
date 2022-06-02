@@ -18,19 +18,23 @@ export default function Creative() {
   useEffect(() => {
     gsap.from(leaderTextRef.current, {
       scrollTrigger: leaderTextRef.current,
+      start: "center center",
       autoAlpha: 0,
       x: -200,
       duration: 1.5,
       ease: "expo.easeInOut",
-      delay: 1,
+      delay: 2,
+
     });
     gsap.from(leaderImgContainerRef.current, {
       scrollTrigger: leaderImgContainerRef.current,
+      start: "top center",
       autoAlpha: 0,
       x: 200,
       duration: 1.5,
       ease: "expo.easeInOut",
-      delay: 1,
+      delay: 2,
+ 
     });
   }, []);
   return (

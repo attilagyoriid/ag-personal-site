@@ -22,7 +22,7 @@ export default function Leader() {
       x: -200,
       duration: 1.5,
       ease: "expo.easeInOut",
-      delay: 1,
+      delay: 2,
     });
     gsap.from(leaderTextContainerRef.current, {
       scrollTrigger: leaderTextContainerRef.current,
@@ -30,7 +30,7 @@ export default function Leader() {
       x: 200,
       duration: 1.5,
       ease: "expo.easeInOut",
-      delay: 1,
+      delay: 2,
     });
   }, []);
   return (
