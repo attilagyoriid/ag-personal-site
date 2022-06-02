@@ -19,10 +19,10 @@ export default function VideoPlayer() {
         className={classes["react-player"]}
         width='100%'
         height='100%'
-        url='https://www.youtube.com/watch?v=Go8nTmfrQd8&ab_channel=MarvelEntertainment'
+        url='https://dai.ly/k2PHDBuRahCyQdy1nl4'
         pip={false}
         playing={false}
-        controls={false}
+        controls={true}
         light={"/images/illustration-credo.png"}
 
         volume={0.8}
