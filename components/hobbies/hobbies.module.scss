@@ -9,6 +9,7 @@
   color: $deep-dark-color;
   font-family: Raleway, Roboto, sans-serif;
   font-size: 1.5rem;
+  margin-top: 10rem;
   @include respond(phone) {
     height: auto;
     font-size: 1rem;
