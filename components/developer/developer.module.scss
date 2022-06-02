@@ -15,7 +15,7 @@
     align-items: center;
     width: 90%;
   }
-  .dev_text__container {
+  .dev_img__container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -59,7 +59,7 @@
     @include respond(tab-land) {
       max-width: 100%;
     }
-    .dev_text__container {
+    .dev_img__container {
       position: relative;
       .dev_text__img_container {
         position: absolute;
