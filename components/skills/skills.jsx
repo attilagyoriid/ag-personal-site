@@ -17,7 +17,7 @@ export default function Skills() {
       duration: 1.5,
       stagger: 0.25,
       ease: "expo.easeInOut",
-      delay: 0.5,
+      delay: 1,
     });
     gsap.from(buttonGroupRef.current, {
       scrollTrigger: skillImgRef.current,
