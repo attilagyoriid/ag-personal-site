@@ -44,10 +44,19 @@ export default function Creative() {
       <div className={classes["leader_text"]} ref={leaderTextRef}>
         <div className={classes["leader_text__container"]}>
           <div className={classes["leader_text"]}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-            impedit, ipsum maxime ex alias libero suscipit? Quibusdam tenetur,
-            repudiandae ex facere pariatur molestiae debitis fugit, aperiam
-            voluptas alias dolores saepe.
+          I’ve always been someone who has both a creative and a logical side.
+          I realized it would be the perfect fit. I could use my creative side to design and my logical side to code.
+          I have always someone being attractive visually compelling creative activities. I love movies, photography and drawing as I can remember.
+          Thats why I started learning web design using Figma, Photoshop and Illustrator. I have been taking photos with my Canon DSLR for 8 years now.
+          I have also created some short films, and also edited so I am quite experienced in Adobe Premiere Pro and After Effects. And as 
+          for the last 3 years I have led off to the journey of 3D modeling learning Maya And Zbrush. Maybe back then thats why I attended another collage for the second time 
+          and received a 2nd dimploma in marketing communication - although I never worked in this area. But this knowledge has turned out useful in my IT career as well.
+          And to come to full circle I have started self-studying front-end development 3 years ago to put into functional form I have designed, so I have some experience in 
+          javascript, typescript, html, css, sccs, and frameworks like react and nextjs being able to deliver and e2e sofware solution if needed.
+          I'm passionate about bringing both the technical and visual aspects of digital products to life.
+          I'm happiest when I'm creating, learning, exploring and thinking about how to make things better. I am well-rounded curious individual hungry for
+          knowledge and passionet to learn. I do believe in "Lifelong learning". 
+          “Once you stop learning, you start dying.” – Albert Einstein     
           </div>
         </div>
       </div>
