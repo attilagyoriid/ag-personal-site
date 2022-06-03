@@ -10,57 +10,73 @@
   margin-bottom: 5rem;
   justify-content: center;
   gap: 5%;
+
   @include respond(tab-land) {
     flex-direction: column;
     align-items: center;
     width: 90%;
   }
+
   .dev_img__container {
     position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
 
-   
+
 
     .dev_img--lead {
       @extend %title-large--light;
       font-size: 4rem;
       color: $deep-dark-color;
-       @include respond(tab-land) {
+
+      @include respond(tab-land) {
         text-align: center;
         margin-bottom: 1rem;
       }
     }
+
     .dev_img {
       position: relative;
       font-size: 1.5rem;
+      display: flex;
+      height: 100%;
+      align-items: center;
       color: $deep-dark-color;
+
       @include respond(tab-land) {
         max-width: 100%;
         margin-bottom: 2rem;
       }
+
       img {
         margin: 2rem 0rem;
         width: 100%;
       }
     }
   }
+
   .dev_text {
-    
+
     color: $deep-dark-color;
     font-family: Raleway, Roboto, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    color: $text-blue;
+    text-align: justify;
+    text-justify: inter-word;
     max-width: 100%;
     margin-top: 5rem;
+
     // div[class="image-gallery-thumbnails"] {
     //     overflow: unset;
     // }
     @include respond(tab-land) {
       max-width: 100%;
     }
+
     .dev_img__container {
       position: relative;
+
       .dev_text__img_container {
         position: absolute;
 
@@ -70,6 +86,7 @@
           display: block;
         }
       }
+
       .dev_text {
         display: block;
         position: relative;
