@@ -34,12 +34,12 @@ export default function Works() {
           </div>
           <div className={classes["item"]}>
             <div className={classes["item-image"]}>
-              <img src="/images/works/item2.png" alt="" />
+              <img src="/images/works/javascript_algo.jpg" alt="" />
             </div>
             <div className={classes["item-text"]}>
               <div className={classes["item-text-wrap"]}>
-                <p className={classes["item-text-category"]}>UI/UX</p>
-                <h2 className={classes["item-text-title"]}>World Experience</h2>
+                <p className={classes["item-text-category"]}>Javascript</p>
+                <h2 className={classes["item-text-title"]}>Algorithms</h2>
               </div>
             </div>
           </div>
@@ -95,11 +95,11 @@ export default function Works() {
           </div>
           <div className={classes["item"]}>
             <div className={classes["item-image"]}>
-              <img src="/images/works/item7.png" alt="" />
+              <img src="/images/works/java_development.jpg" alt="" />
             </div>
             <div className={classes["item-text"]}>
               <div className={classes["item-text-wrap"]}>
-                <p className={classes["item-text-category"]}>Photography</p>
+                <p className={classes["item-text-category"]}>Java</p>
                 <h2 className={classes["item-text-title"]}>Dock Ponder</h2>
               </div>
             </div>
@@ -119,7 +119,7 @@ export default function Works() {
           </div>
           <div className={classes["item"]}>
             <div className={classes["item-image"]}>
-              <img src="/images/works/item9.png" alt="" />
+              <img src="/images/works/selenium.jpg" alt="" />
             </div>
             <div className={classes["item-text"]}>
               <div className={classes["item-text-wrap"]}>
