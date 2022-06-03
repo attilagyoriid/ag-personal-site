@@ -33,7 +33,7 @@ export default function Hobbies() {
             I've also trying my hand at plying the guitar time and time again... Lets say I am not a natural born talent &#128516; and I love singing too.
             I have a serious passion for movies so I watch a lots of films and series - I am a real movie junkie.
             
-            I love travelling, this is the mere essence of being for me getting acquanted with different cultures and people, making new friendships, 
+            I love travelling and taking photos, this is the mere essence of being for me getting acquanted with different cultures and people, making new friendships, 
             sightseeing beautiful arhitecures or the miracle of nature. I also regularly do some sport, soccer, table tennis, biking or just stop by the gym. 
             I love pets and I have a dog, a Havanese Bichion called "Whopper".
             And of course I use my free time to learn or try new things.
