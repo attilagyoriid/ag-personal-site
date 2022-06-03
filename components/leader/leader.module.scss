@@ -35,6 +35,9 @@
     .leader_img {
       position: relative;
       font-size: 1.5rem;
+      display: flex;
+      height: 100%;
+      align-items: center;
       color: $deep-dark-color;
       @include respond(tab-land) {
         max-width: 100%;
@@ -50,9 +53,13 @@
     
     color: $deep-dark-color;
     font-family: Raleway, Roboto, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    color: $text-blue;
+    text-align: justify;
+    text-justify: inter-word;
     max-width: 100%;
     margin-top: 5rem;
+
     // div[class="image-gallery-thumbnails"] {
     //     overflow: unset;
     // }
