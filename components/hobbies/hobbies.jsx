@@ -12,7 +12,7 @@ export default function Hobbies() {
     <section className={classes["main-hobbies"]}>
       <TitleSection
         title="in my spare time"
-        subText="Seasoned Software Developer with more than 19 years experience and passion for visual design and creative creation"
+        subText="outside of my working life"
         className="lead--deep-dark-color"
       />
       <div className={classes["hobbies-section"]}>
@@ -22,14 +22,23 @@ export default function Hobbies() {
 
         <div className={classes["text-section"]}>
           <p>
-          Not a Yet Another Average Software Engineer.
-          I'm passionate about bringing both the technical and visual aspects of digital products to life.
-          I’ve always been someone who has both a creative and a logical side.
-          I realized it would be the perfect fit. I could use my creative side to design and my logical side to code.    
-          I am a Software Test Automation Framework Developer and a Full-stack Engineer with over 19 years of Information Technology related experience. 
-          Sometimes I am also get involded in activites such as digital multimedia & ui design, graphic craftsmanship, and team management. 
-          I maintain a passion for technology and helping others get the most out of technology by using the appropriate tools, techniques, and strategies to ensure clients satisfaction.
-          Regarding the last 4 years I am functioning as a Development Team Lead as well.
+            I am passionate about leveraging my diverse backgrounds to decipher challenging problems and create delightful experiences.
+            I do beleive in work-life balance. You cant succeed if you concentrate one aspect of life. 
+            Since private live is the main mitovation driver for excell at work, it could be also a source of inspiration for work, 
+            and vica-versa.
+            I think it’s important to get regular screen downtime, so when I’m not pushing pixels or coding, 
+            you’ll find me working on my film ideas, 3d model and screewriting, tending to my garden and many house plants, 
+            cooking up one of my favourite dishes, or hanging out with friends and family.
+            I am reading a lot, it is a seance of my bed time to read some pulp fiction,or books on topics like sociology or psychology.
+            I've also trying my hand at plying the guitar time and time again... Lets say I am not a natural born talent &#128516; and I love singing too.
+            I have a serious passion for movies so I watch a lots of films and series - I am a real movie junkie.
+            
+            I love travelling, this is the mere essence of being for me getting acquanted with different cultures and people, making new friendships, 
+            sightseeing beautiful arhitecures or the miracle of nature. I also regularly do some sport, soccer, table tennis, biking or just stop by the gym. 
+            I love pets and I have a dog, a Havanese Bichion called "Whopper".
+            And of course I use my free time to learn or try new things.
+            My abundant energy fuels me in the pursuit of many interests, hobbies, areas of study and artistic endeavors. 
+            I’m a fast learner, able to pick up new skills and juggle different projects and roles with relative ease.
           </p>
 
         </div>
