@@ -12,9 +12,9 @@
   gap: 5%;
 
   @include respond(tab-land) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
-    width: 90%;
+    width: 100wv;
   }
 
   .dev_img__container {
@@ -22,8 +22,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-
-
 
     .dev_img--lead {
       @extend %title-large--light;
@@ -40,9 +38,19 @@
       position: relative;
       font-size: 1.5rem;
       display: flex;
+      flex-direction: column;
       height: 100%;
+      justify-content: center;
       align-items: center;
       color: $deep-dark-color;
+
+      width: 500px;
+      height: 500px;
+
+      @include respond(phone) {
+        height: 300px;
+      }
+
 
       @include respond(tab-land) {
         max-width: 100%;
@@ -56,45 +64,4 @@
     }
   }
 
-  .dev_text {
-
-    color: $deep-dark-color;
-    font-family: Raleway, Roboto, sans-serif;
-    font-size: 1.3rem;
-    color: $text-blue;
-    text-align: justify;
-    text-justify: inter-word;
-    max-width: 100%;
-    margin-top: 5rem;
-
-    // div[class="image-gallery-thumbnails"] {
-    //     overflow: unset;
-    // }
-    @include respond(tab-land) {
-      max-width: 100%;
-    }
-
-    .dev_img__container {
-      position: relative;
-
-      .dev_text__img_container {
-        position: absolute;
-
-        img {
-          width: 100%;
-          height: 100%;
-          display: block;
-        }
-      }
-
-      .dev_text {
-        display: block;
-        position: relative;
-
-        div[class="image-gallery-bullets"] {
-          z-index: 12;
-        }
-      }
-    }
-  }
 }
