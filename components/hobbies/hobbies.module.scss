@@ -32,7 +32,7 @@
 
     .img-section {
       @include respond(phone) {
-        margin-top: 1rem;
+        margin-top: 3rem;
         position: relative;
         transform: translateY(-20%) !important;
         display: block;
@@ -58,11 +58,17 @@
         p {
           height: 100%;
           font-size: 1.2rem;
+          color: $deep-dark-color;
+          font-family: Raleway, Roboto, sans-serif;
+          color: $text-blue;
+          text-align: justify;
+          text-justify: inter-word;
+          max-width: 100%;
           @include respond(phone) {
             height: auto;
             font-size: 1rem;
 
-            padding: 0rem 2rem;
+            padding: 0rem 0rem;
             padding-top: 4rem;
           }
 
