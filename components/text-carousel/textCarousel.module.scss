@@ -1,0 +1,37 @@
+@import "../../styles/config";
+@import "../../styles/utilities";
+@import "../../styles/media";
+
+.carousel-container {
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  justify-content: center;
+
+  li[class="dot"] {
+    background: $main-color-dark !important;
+  }
+
+  li[class="dot selected"] {
+    background: $main-color-dark !important;
+  }
+
+  div[class="slider-wrapper axis-horizontal"] {
+    margin-bottom: 3rem;
+  }
+
+  .carousel-content {
+    color: $deep-dark-color;
+    font-family: Raleway, Roboto, sans-serif;
+    font-size: 1.5rem;
+    color: $text-blue;
+    text-align: justify;
+    text-justify: inter-word;
+    max-width: 100%;
+    margin-top: 5rem;
+    @include respond(phone) {
+      font-size: 1rem;
+      margin-top: 0rem;
+    }
+  }
+}
