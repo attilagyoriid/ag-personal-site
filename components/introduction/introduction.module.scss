@@ -18,6 +18,8 @@
     color: $deep-dark-color;
     @extend %title-lead--main-color;
     max-width: 60%;
+    text-align: justify;
+    text-justify: inter-word;
     @include respond(phone) {
       max-width: 80%;
       margin: 2rem 0;
