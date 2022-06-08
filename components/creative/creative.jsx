@@ -20,7 +20,7 @@ export default function Creative() {
   So, I specialise in a multi-disciplined approach to my work incorporating design and development.
   My work crosses a broad range of categories in the digital space, both from a design and a technical perspective. I believe in using the right tools for the job so don’t subscribe to following bandwagons.
   I'm happiest when I'm creating, learning, exploring and thinking about how to make things better. I am well-rounded curious individual hungry for
-  knowledge and passionet to learn. I do believe in "Lifelong learning". 
+  knowledge and passionet to learn. I'm often referred to by many as a polyglot. I do believe in "Lifelong learning". 
   “Once you stop learning, you start dying.” – Albert Einstein`
   const textContent = chunkSubstrBySegments(text,2);
   const devTextRef = useRef(null);
