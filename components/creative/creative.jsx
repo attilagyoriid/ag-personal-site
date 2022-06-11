@@ -9,11 +9,11 @@ export default function Creative() {
   const text = ` I’ve always been someone who has both a creative and a logical side.
   I realized it would be the perfect fit. I could use my creative side to design and my logical side to code.
   I have always someone being attractive visually compelling creative activities. I love movies, photography and drawing as I can remember.
-  Thats why I started learning web design using Figma, Photoshop and Illustrator. I have been taking photos with my Canon DSLR for 8 years now.
-  I have also created some short films, and also edited so I am quite experienced in Adobe Premiere Pro and After Effects. And as 
-  for the last 3 years I have led off to the journey of 3D modeling learning Maya And Zbrush. Maybe back then thats why I attended another collage for the second time 
+  Thats why I started learning web design using Figma, Photoshop and Illustrator. I have been taking photos with my Canon DSLR for 10 years now.
+  I have also created some short films, and also edited them so I am quite experienced in Adobe Premiere Pro and After Effects. And as 
+  for the last 3 years I have led off to the journey of 3D modeling learning Maya and Zbrush. Maybe back then thats why I attended another collage for the second time 
   and received a 2nd dimploma in marketing communication - although I never worked in this area. But this knowledge has turned out useful in my IT career as well.
-  And to come to full circle I have started self-studying front-end development 3 years ago to put into functional form I have designed, so I have some experience in 
+  And to come to full circle I have started self-studying front-end development for 3 years now to put into functional form What I have designed, so I have some experience in 
   javascript, typescript, html, css, sccs, and frameworks like react and nextjs being able to deliver and e2e sofware solution if needed.
   I'm passionate about bringing both the technical and visual aspects of digital products to life.
   I am very interested in interactive media, and in an age of digital I believe bringing design to life with code is essential. 

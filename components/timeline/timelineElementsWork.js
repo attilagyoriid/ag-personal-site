@@ -5,15 +5,15 @@ const timelineElements = [
     location: "Ericsson R&D. Budapest",
     description:
       `Support, lead and coordinate Java Test Automation framework Core Team (6-7 members),
-      Create and assign/delegate or implement tasks: OpenALM, JIRA,
+      Create and assign/delegate / implement tasks: OpenALM, JIRA,
       Facilitating scrum activities: daily stand-up,grooming, planning, retro,
       Conducted interviews,
-      Integrating framework capabilities such as Selenium webdriver with container based Zalenium remote server,
-      Developing test activity supporting applications (such as gerrit review alert, grafana dasboard to pdf test report),
-      Further development of Automation Framework and implementation of test tools,
+      Integrated framework capabilities such as Selenium webdriver with container based Zalenium remote server,
+      Developed test activity supporting applications (such as gerrit review alert, grafana dasboard to pdf test report converter),
+      Further developed Automation Framework and implementation of test tools,
       Support and follow-up annual performance goals,
-      Collect and organize Know-how/ write confluence,
-      Organizing trainings`,
+      Collect and organize Know-how / write confluence,
+      Organize trainings`,
 
     date: "November, 2016 - present",
     icon: "work",
@@ -36,8 +36,8 @@ const timelineElements = [
     title: "Senior Java Test Automation Engineer",
     location: "General Electric HealthCare. Budapest, Hungary",
     description:
-      `BDD automated test implementation for OSGI bundles - back end.
-      Feature file implementation for User Stories.Test Automation Framework Development in Java`,
+      `BDD styled automated test implementation for OSGI bundles - back end apis test automation.
+      Feature file implementation for User Stories. Test Automation Framework Development in Java`,
 
     date: "April, 2014 - October, 2015",
     icon: "work",
@@ -56,7 +56,7 @@ const timelineElements = [
     title: "Software Quality Assurance Engineer (Automation Team)",
     location: "Graphisoft SE. Budapest, Hungary",
     description:
-      `Active participation in QA and Development process design a planning.
+      `Active participation in QA and Development process planning and design.
       Responsible for reviewing and revising automated test scripts written by the members of QA Department`,
 
     date: "2008 - 2011",
@@ -67,7 +67,7 @@ const timelineElements = [
     title: "Junior Software Quality Assurance Engineer (Automation Team)",
     location: "Graphisoft SE. Budapest, Hungary",
     description:
-      "Gained solid knowledge of Automation tools.Designed and Implemented automated test script.",
+      "Gained solid knowledge of Automation tools such as WinRunner and QTP. Designed and Implemented automated test scripts.",
     date: "2004 - 2008",
     icon: "work",
   },
@@ -76,7 +76,7 @@ const timelineElements = [
     title: "Junior Software Quality Assurance Manual Tester",
     location: "Graphisoft SE. Budapest, Hungary",
     description:
-      `Designed and wrote test cases and workflow - like test scenarios.Reported, prioritized, tracked and retested test defects (Mercury Test Director) gained
+      `Designed and wrote test cases and workflow-like test scenarios. Reported, prioritized, tracked and retested test defects (Mercury Test Director) gained
       solid knowledge in development and process planning`,
     date: "2003 - 2004",
     icon: "work",

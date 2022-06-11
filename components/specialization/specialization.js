@@ -32,7 +32,7 @@ export default function SpecializationSection({ withThreeDotsLink, data }) {
       <div className={classes.container}>
         <TitleSection
           title="I Specialize In"
-          subText="Backend Development, Test Automation and Front-end, along with creating digital masterpieces and UI layouts for websites and mobile applications"
+          subText="Test Automation, Backend and Front-end Development along with creating digital masterpieces and UI layouts for websites and mobile applications"
         />
         <div ref={cardsRef} className={classes.specials}>
           {data.map((item, index) => (

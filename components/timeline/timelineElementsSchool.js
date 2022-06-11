@@ -28,7 +28,7 @@ const timelineElements = [
     location: "Budapest, Hungary",
     description:
       `BACHELOR DEGREE Major: 
-       Didatctics`,
+       Didactics`,
 
     date: "1999 - 2003",
     icon: "school",
