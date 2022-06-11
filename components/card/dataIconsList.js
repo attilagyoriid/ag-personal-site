@@ -48,7 +48,7 @@ const cardList = [
       "Sass",
       "Spring",
       "NextJS",
-      "React.svg",
+      "React",
       "Git",
     ],
   },
