@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player/dailymotion'
 import TitleSection from "../titleSection/titleSection";
 import classes from "./videoPlayer.module.scss";
 export default function VideoPlayer() {
@@ -18,15 +18,20 @@ export default function VideoPlayer() {
       <ReactPlayer
         className={classes["react-player"]}
         width='100%'
-        height='100%'
-        url='https://dai.ly/k2PHDBuRahCyQdy1nl4'
+        height='100%'      
+        url='https://dai.ly/k77HvZ1MGFZ4bRy46Am'
         pip={false}
         playing={false}
         controls={true}
-        light={"/images/illustration-credo.png"}
+        light={false}
 
         volume={0.8}
+        config={{
+          dailymotion: {
 
+          },
+         
+        }}
       />
     </div>
     </div>
