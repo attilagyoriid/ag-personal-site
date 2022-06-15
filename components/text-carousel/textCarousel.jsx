@@ -1,11 +1,11 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { useEffect, useState } from "react";
+import parse from 'html-react-parser';
 import classes from "./textCarousel.module.scss";
 import * as gtag from "../../services/gtag";
 
 export default function TextCarousel({ texts }) {
-  const [years, setYears] = useState();
   useEffect(() => {
 
 
@@ -18,6 +18,7 @@ export default function TextCarousel({ texts }) {
     });
   };
 
+  
   return (
     <div className={classes["carousel-container"]}>
       <Carousel
@@ -32,7 +33,8 @@ export default function TextCarousel({ texts }) {
             className={`${classes["carousel-content"]} ${classes["noselect"]} `}
             key={i}
           >
-            {item}
+
+            {parse(item)}
           </div>))
         }
 
