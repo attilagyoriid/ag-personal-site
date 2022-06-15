@@ -34,31 +34,31 @@ export default function Social({ layout }) {
       </div>
       <div className={classes["icon-container"]}>
         <a target="_blank" href={socialUrls.github} rel="noopener noreferrer">
-          <img src="/images/social-icons/git.svg" alt="Linked In Icon" />
+          <img src="/images/social-icons/git.svg" alt="Git In Icon" />
         </a>
       </div>
       <div className={classes["icon-container"]}>
         <a target="_blank" href={socialUrls.youtube} rel="noopener noreferrer">
-          <img src="/images/social-icons/yout.svg" alt="Linked In Icon" />
+          <img src="/images/social-icons/yout.svg" alt="Youtube In Icon" />
         </a>
       </div>
       <div className={classes["icon-container"]}>
         <a target="_blank" href={socialUrls.dribbble} rel="noopener noreferrer">
-          <img src="/images/social-icons/dribble.svg" alt="Linked In Icon" />
+          <img src="/images/social-icons/dribble.svg" alt="Dribble In Icon" />
         </a>
       </div>
       <div className={classes["icon-container"]}>
         <a target="_blank" href={socialUrls.facebook} rel="noopener noreferrer">
-          <img src="/images/social-icons/face.svg" alt="Linked In Icon" />
+          <img src="/images/social-icons/face.svg" alt="Facebook In Icon" />
         </a>
       </div>
       <div className={classes["icon-container"]}>
         <a
           target="_blank"
-          href={socialUrls.instagram}
+          href={socialUrls.behance}
           rel="noopener noreferrer"
         >
-          <img src="/images/social-icons/insta.svg" alt="Linked In Icon" />
+          <img src="/images/social-icons/behance.svg" alt="Behance In Icon" />
         </a>
       </div>
     </div>
