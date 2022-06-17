@@ -19,7 +19,7 @@ export default function VideoPlayer() {
         className={classes["react-player"]}
         width='100%'
         height='100%'      
-        url='https://dai.ly/k77HvZ1MGFZ4bRy46Am'
+        url='https://dai.ly/k20f4IXnxLVtqry4Azp'
         pip={false}
         playing={false}
         controls={true}
