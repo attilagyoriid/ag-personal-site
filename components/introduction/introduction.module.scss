@@ -6,7 +6,6 @@
   position: relative;
   flex-direction: column;
   display: flex;
-  height: 100vh;
   gap: 2rem;
   @include respond(phone) {
     height: auto;

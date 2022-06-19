@@ -3,7 +3,6 @@
 @import "../../styles/media";
 .main-hobbies {
   display: block;
-  height: 100vh;
 
   overflow: hidden;
   color: $deep-dark-color;
@@ -16,13 +15,15 @@
   }
   
   .hobbies-section {
-    position: relative;
+
     margin: 0 3rem;
     margin-top: 6rem;
     
     display: flex;
     justify-content: center;
+    align-items: center;
     column-gap: 5rem;
+
     @include respond(phone) {
       flex-direction: column;
       margin-top: 2rem;
