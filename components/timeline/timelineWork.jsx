@@ -52,9 +52,9 @@ function TimelineWork() {
           </Link>
         </div>
         <div className={classes["btn-light__container"]}>
-          <Link href="/doc/Attila_Gyori_2022.pdf">
+          <Link href="/about">
             <a className={classes["btn-dark--outline"]} target="_blank">
-              Resume
+              About
             </a>
           </Link>
         </div>
