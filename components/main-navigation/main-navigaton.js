@@ -57,7 +57,7 @@ function MainNavigation(props) {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    Events.scrollEvent.register("begin", function (to, element) {});
+    Events.scrollEvent.register("begin", function (to, element) { });
 
     Events.scrollEvent.register("end", function (to, element) {
       console.log("end", to, element, arguments);
@@ -83,9 +83,8 @@ function MainNavigation(props) {
 
   return (
     <nav
-      className={`${classes.main_nav}  ${
-        visible ? classes.main_nav_visible : classes.main_nav_invisible
-      }`}
+      className={`${classes.main_nav}  ${visible ? classes.main_nav_visible : classes.main_nav_invisible
+        }`}
     >
       <Logo width="60px" />
       <ul
@@ -112,17 +111,52 @@ function MainNavigation(props) {
           </Link>
         </li>
         {!isPageHome() && (
-          <li>
-            <NextLink
-              href="/contact"
-              onClick={(event) => {
-                handleMenuClose(event);
-                handleClickOnPageDifferentThanHome(event);
-              }}
-            >
-              <a className={classes.current}>Contact</a>
-            </NextLink>
-          </li>
+          <>
+            <li>
+              <NextLink
+                href="/about"
+                onClick={(event) => {
+                  handleMenuClose(event);
+                  handleClickOnPageDifferentThanHome(event);
+                }}
+              >
+                <a className={classes.current}>About</a>
+              </NextLink>
+            </li>
+            <li>
+              <NextLink
+                href="/experience"
+                onClick={(event) => {
+                  handleMenuClose(event);
+                  handleClickOnPageDifferentThanHome(event);
+                }}
+              >
+                <a className={classes.current}>Experience</a>
+              </NextLink>
+            </li>
+            <li>
+              <NextLink
+                href="/projects"
+                onClick={(event) => {
+                  handleMenuClose(event);
+                  handleClickOnPageDifferentThanHome(event);
+                }}
+              >
+                <a className={classes.current}>Work</a>
+              </NextLink>
+            </li>
+            <li>
+              <NextLink
+                href="/contact"
+                onClick={(event) => {
+                  handleMenuClose(event);
+                  handleClickOnPageDifferentThanHome(event);
+                }}
+              >
+                <a className={classes.current}>Contact</a>
+              </NextLink>
+            </li>
+          </>
         )}
         {isPageHome() && (
           <>
