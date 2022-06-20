@@ -23,6 +23,7 @@
   transition: all 0.2s ease-in-out;
   @include respond(tab-land) {
     padding: 1rem 1rem;
+    width: 90vw;
   }
   &:hover,
   &:focus {
