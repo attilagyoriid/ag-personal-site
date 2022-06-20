@@ -37,7 +37,7 @@ export default function Works() {
           <a target="_blank" href="https://github.com/attilagyoriid/algorithms-js" rel="noopener noreferrer">
             <div className={classes["item"]}>
               <div className={classes["item-image"]}>
-                <img src="/images/works/javascript_algo.jpg" alt="" />
+                <img src="/images/works/item2.png" alt="" />
               </div>
               <div className={classes["item-text"]}>
                 <div className={classes["item-text-wrap"]}>
@@ -108,7 +108,7 @@ export default function Works() {
           <a target="_blank" href="https://github.com/attilagyoriid/leetcode_java" rel="noopener noreferrer">
             <div className={classes["item"]}>
               <div className={classes["item-image"]}>
-                <img src="/images/works/java_development.jpg" alt="" />
+                <img src="/images/works/item7.png" alt="" />
               </div>
               <div className={classes["item-text"]}>
                 <div className={classes["item-text-wrap"]}>

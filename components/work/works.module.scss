@@ -41,12 +41,17 @@
         // Scale image on hover
         &:hover .item-image {
           transform: scale(1.2);
+       
         }
 
         // Bring in text on hover
         &:hover .item-text {
           opacity: 1;
           transform: translateY(0);
+        }
+
+        &:hover .item-text:hover {
+          cursor: pointer;
         }
 
         &-image {
