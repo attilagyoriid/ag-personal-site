@@ -38,7 +38,7 @@
     margin-top: 6rem;
     display: flex;
     justify-content: center;
-    column-gap: 5rem;
+    column-gap: 2rem;
 
     @include respond(phone) {
       flex-direction: column;
@@ -61,7 +61,7 @@
     }
 
     div {
-      max-width: 40%;
+      max-width: 50%;
 
       @include respond(phone) {
         max-width: 100%;
@@ -82,9 +82,22 @@
             padding-top: 4rem;
           }
 
+          
           @include respond(desktop) {
             font-size: 1.5rem;
           }
+          @include respond(tablet) {
+            font-size: 1.4rem;
+          }
+          @include respond(semi-big-desktop) {
+            font-size: 1.2rem;
+          }
+
+          @include respond(tab-land) {
+            font-size: 1.1rem;
+          }
+
+
         }
       }
     }
