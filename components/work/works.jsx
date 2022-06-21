@@ -148,6 +148,51 @@ export default function Works() {
               </div>
             </div>
           </a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=9U61mMOMjUk&ab_channel=ARCHICAD" rel="noopener noreferrer">
+            <div className={classes["item"]}>
+              <div className={classes["item-image"]}>
+                <img src="/images/works/gaso.png" alt="" />
+              </div>
+              <div className={classes["item-text"]}>
+                <div className={classes["item-text-wrap"]}>
+                  <p className={classes["item-text-category"]}>
+                    Graphisoft
+                  </p>
+                  <h2 className={classes["item-text-title"]}>ArchiCAD</h2>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=gZjAW7vGqsY&t=10s&ab_channel=HendrikVeugelers" rel="noopener noreferrer">
+            <div className={classes["item"]}>
+              <div className={classes["item-image"]}>
+                <img src="/images/works/ge.png" alt="" />
+              </div>
+              <div className={classes["item-text"]}>
+                <div className={classes["item-text-wrap"]}>
+                  <p className={classes["item-text-category"]}>
+                    GE Healthcare
+                  </p>
+                  <h2 className={classes["item-text-title"]}>Predix</h2>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=xhCEn0o529U&t=39s&ab_channel=Ericsson" rel="noopener noreferrer">
+            <div className={classes["item"]}>
+              <div className={classes["item-image"]}>
+                <img src="/images/works/ericsson.png" alt="" />
+              </div>
+              <div className={classes["item-text"]}>
+                <div className={classes["item-text-wrap"]}>
+                  <p className={classes["item-text-category"]}>
+                    Ericsson
+                  </p>
+                  <h2 className={classes["item-text-title"]}>Expert Analytics</h2>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
       <div className={classes["button-container"]}>
