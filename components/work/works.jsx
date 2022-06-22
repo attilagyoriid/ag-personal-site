@@ -21,7 +21,7 @@ export default function Works() {
       />
       <div className={classes["container"]}>
         <div className={classes["items"]} onClick={handleClick}>
-          <a target="_blank" href="/404" rel="noopener noreferrer">
+          <a target="_blank" href="https://www.behance.net/gallery/146571261/Personal-Coach-Logo" rel="noopener noreferrer">
             <div className={classes["item"]}>
               <div className={classes["item-image"]}>
                 <img src="/images/works/item1.png" alt="" />
