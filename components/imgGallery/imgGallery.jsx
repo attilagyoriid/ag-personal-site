@@ -113,11 +113,23 @@ const images = [
     thumbnail: "/images/gallery/beautiful_barcelona.jpg",
     description: "Beautiful Barcelona",
   },
+  
   {   
-    original: "/images/gallery/with_my_godson.jpg",
-    thumbnail: "/images/gallery/with_my_godson.jpg",
-    description: "with my first Grandson",
+    original: "/images/gallery/stag_party_with_my_friend.jpg",
+    thumbnail: "/images/gallery/stag_party_with_my_friend.jpg",
+    description: "My Stag Party",
   },
+  {   
+    original: "/images/gallery/wedding.jpg",
+    thumbnail: "/images/gallery/wedding.jpg",
+    description: "just about to get married",
+  },
+  {   
+    original: "/images/gallery/es_opt.png",
+    thumbnail: "/images/gallery/es_opt.png",
+    description: "wedding",
+  },
+  
   {   
     original: "/images/gallery/the_tuareg.jpg",
     thumbnail: "/images/gallery/the_tuareg.jpg",
@@ -128,21 +140,20 @@ const images = [
     thumbnail: "/images/gallery/braga.jpg",
     description: "Braga",
   },
-  
+  {   
+    original: "/images/gallery/with_my_godson.jpg",
+    thumbnail: "/images/gallery/with_my_godson.jpg",
+    description: "with my first Grandson",
+  },
+  {   
+    original: "/images/gallery/crete_me.png",
+    thumbnail: "/images/gallery/crete_me.png",
+    description: "crete",
+  },
   {   
     original: "/images/gallery/belgium.jpg",
     thumbnail: "/images/gallery/belgium.jpg",
     description: "Belgium",
-  },
-  {   
-    original: "/images/gallery/stag_party_with_my_friend.jpg",
-    thumbnail: "/images/gallery/stag_party_with_my_friend.jpg",
-    description: "My Stag Party",
-  },
-  {   
-    original: "/images/gallery/wedding.jpg",
-    thumbnail: "/images/gallery/wedding.jpg",
-    description: "just about to get married",
   },
 ];
 
