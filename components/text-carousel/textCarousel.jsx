@@ -27,6 +27,7 @@ export default function TextCarousel({ texts }) {
         showArrows={false}
         autoPlay={false}
         emulateTouch={true}
+        interval={600000}
       >
         {texts.map((item, i) => (
           <div
