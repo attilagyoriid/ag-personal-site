@@ -22,6 +22,12 @@
   transition: 0.3s all ease-in-out;
 
   padding: 1.4rem 1rem;
+
+  @include respond(phone) {
+    margin-top: 2rem;
+    width: 160px;
+    border-radius: 8px;
+  }
 }
 
 .dnbtn:before {
@@ -33,6 +39,11 @@
   position: absolute;
   transform: translate(-50%, -50%);
   transition: 0.3s all ease-in-out;
+
+  @include respond(phone) {
+    display: none;
+
+  }
 }
 
 .dnbtn:hover:before {
@@ -43,12 +54,24 @@
   font-family: Nunito, Roboto, sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
-  content: "DOWNLOAD";
+  content: "RESUME";
   color: $deep-dark-color;
   position: absolute;
   transform: translate(-50%, -50%);
   transition: 0.3s all ease-in-out;
   animation: fadein 1.4s;
+}
+
+.dnbtn:after {
+  @include respond(phone) {
+    font-family: Nunito, Roboto, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    content: "RESUME";
+    color: $deep-dark-color;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .dnbtn:hover {
@@ -60,6 +83,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -69,6 +93,7 @@
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
   }
