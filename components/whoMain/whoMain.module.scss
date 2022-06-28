@@ -35,7 +35,7 @@
 
   .about-section {
     position: relative;
-    margin-top: 6rem;
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
     column-gap: 2rem;
@@ -69,11 +69,11 @@
 
       &.text-section {
         p {
-          height: 100%;
+
           font-size: 1.2rem;
           text-align: justify;
           text-justify: inter-word;
-
+          margin-bottom: 2rem;
           @include respond(phone) {
             height: auto;
             font-size: 1rem;
