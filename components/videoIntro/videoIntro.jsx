@@ -28,7 +28,7 @@ export default function VideoIntro({ title, keywords, description, children }) {
       </Head>
       <LoadingSpinner isLoading={isLoading} />
       <video
-        autoPlay
+        autoplay
         muted
         playsinline
         onPlay={() => {
