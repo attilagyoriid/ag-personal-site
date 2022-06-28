@@ -4,24 +4,45 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import classes from "./videoIntro.module.scss";
 import LoadingSpinner from "../loadingSpinner/loadingSpinner";
-import { isIOS,isIpadOS } from "../../utils/platform";
-
+import { isIOS, isIpadOS } from "../../utils/platform";
+const mainVideo =
+  "/video/intro.mp4";
 export default function VideoIntro({ title, keywords, description, children }) {
   const [isLoading, setLoading] = useState(true);
   const router = useRouter();
   const videoParentRef = useRef();
+  const [shouldUseImage, setShouldUseImage] = useState(false);
   useEffect(() => {
-    if (videoParentRef.current && (isIOS() || isIpadOS())) {
-      const player = videoParentRef.current;
+    if (videoParentRef.current) {
+      const player = videoParentRef.current.children[0];
       if (player) {
         player.controls = false;
         player.playsinline = true;
         player.muted = true;
-        player.setAttribute("muted","");
+        player.setAttribute("muted", "");
         player.autoplay = true;
-        setTimeout(()=>{
+        player.onplay = () => {
+          setLoading(false);
+        }
+        player.onloadstart = () => {
+          setLoading(false);
+        }
+        player.onended = () => {
+          setLoading(false);
+          router.push("/home");
+        }
+        setTimeout(() => {
           const promise = player.play();
-        },0);
+          if (promise.then) {
+            promise
+              .then(() => { })
+              .catch(() => {
+                // if promise fails, hide the video and fallback to <img> tag
+                videoParentRef.current.style.display = "none";
+                setShouldUseImage(true);
+              });
+          }
+        }, 0);
       }
 
     }
@@ -33,6 +54,26 @@ export default function VideoIntro({ title, keywords, description, children }) {
     };
   }, []);
 
+  let videoTag = shouldUseImage ? (
+    <div>
+      <img src={mainVideo} alt="Muted Video" />
+    </div>
+  ) : (
+    <div
+      ref={videoParentRef}
+      dangerouslySetInnerHTML={{
+        __html: `
+        <video
+          muted
+          autoplay
+          playsinline
+          preload="metadata"
+        >
+        <source src="${mainVideo}" type="video/mp4" />
+        </video>`
+      }}
+    />
+  );
   return (
     <div className={classes["video-container"]}>
       <Head>
@@ -42,27 +83,7 @@ export default function VideoIntro({ title, keywords, description, children }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <LoadingSpinner isLoading={isLoading} />
-      <video
-        ref={videoParentRef}
-        muted={true}
-        playsinline={true}
-        autoPlay={true}
-
-
-        onPlay={() => {
-          setLoading(false);
-        }}
-        onLoadStart={() => {
-          setLoading(false);
-        }}
-        onEnded={() => {
-          setLoading(false);
-          router.push("/home");
-        }}
-      >
-        <source src="/video/intro.mp4" type="video/mp4"></source>
-      </video>
-     
+      {videoTag}
     </div >
   );
 }
