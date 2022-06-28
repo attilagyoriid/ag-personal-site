@@ -7,21 +7,26 @@
 .contact-section {
   height: 95vh;
   z-index: -5;
+
   @include respond(phone) {
     height: auto;
   }
+
   .title-container {
     position: relative;
     top: 7rem;
+
     @include respond(phone) {
       top: 8rem;
     }
   }
+
   .contact-container {
     margin-top: 5rem;
     display: flex;
     justify-content: center;
     height: 100%;
+
     @include respond(semi-big-desktop) {
       justify-content: initial;
     }
@@ -31,9 +36,11 @@
         display: flex;
         flex-direction: column;
         padding-top: 6rem;
+
         @include respond(semi-big-desktop) {
           display: none;
         }
+
         .social-title {
           @extend %title-large;
           line-height: 116.9%;
@@ -53,6 +60,7 @@
 
           align-items: center;
           transition: all 0.5s ease-in-out;
+
           a {
             text-decoration: none;
             color: black;
@@ -63,6 +71,7 @@
               width: 4rem;
             }
           }
+
           .email-content {
             font-family: Nunito, Roboto, sans-serif;
 
@@ -88,9 +97,11 @@
         width: 100%;
 
         background-color: $main-color;
+
         @include respond(phone) {
           width: auto;
         }
+
         .form-content {
           font-family: Nunito, Roboto, sans-serif;
           font-size: 1rem;
@@ -104,25 +115,30 @@
           display: flex;
           flex-direction: column;
           align-items: center;
+
           @include respond(phone) {
             margin: 1rem;
             font-weight: 500;
           }
+
           .error {
             position: relative;
 
             color: $warn-color;
             font-size: 0.6rem;
           }
+
           form {
             display: flex;
             flex-direction: column;
             position: relative;
             width: 80%;
             height: 80%;
+
             @include respond(phone) {
               width: 100%;
             }
+
             textarea {
               outline: none;
               width: 100%;
@@ -134,7 +150,10 @@
               background-color: $dark-color;
               color: $light-color;
               resize: none;
-
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
               margin: 2rem 0rem 0rem 0rem;
               overflow: auto;
               font-family: Raleway, Roboto, sans-serif;
@@ -142,13 +161,16 @@
               font-weight: 700;
 
               transition: all 0.25s ease-in-out;
+
               @include respond(phone) {
                 height: auto;
                 padding-bottom: 1rem;
               }
+
               &:hover {
                 border: 4px solid $main-color;
               }
+
               &.invalid {
                 border: 4px solid $warn-color;
               }
@@ -161,6 +183,7 @@
               @include respond(phone) {
                 margin-top: 1rem;
               }
+
               button {
                 &:disabled {
                   opacity: 0.7;
@@ -200,10 +223,12 @@
                 color: $light-color;
                 transition: 0.2s all;
                 cursor: text;
+
                 &.invalid {
                   color: $warn-color;
                 }
               }
+
               input {
                 font-family: Raleway, Roboto, sans-serif;
                 font-size: 1rem;
@@ -217,19 +242,23 @@
                 box-shadow: none;
                 color: $light-color;
                 background-color: $dark-color;
+
                 &:invalid {
                   outline: 0;
                 }
+
                 &:focus {
-                  & ~ .underline {
+                  &~.underline {
                     width: 100%;
                   }
                 }
-                &:focus ~ label,
-                &:valid ~ label {
+
+                &:focus~label,
+                &:valid~label {
                   font-size: 14px;
                   top: -24px;
                   color: $main-color;
+
                   &.invalid {
                     color: $warn-color;
                   }
