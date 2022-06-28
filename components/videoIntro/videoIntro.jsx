@@ -11,10 +11,10 @@ export default function VideoIntro({ title, keywords, description, children }) {
 
   useEffect(() => {
     document.onreadystatechange = function () {
-     
-        setLoading(false);
-        console.log("do something");
-  
+
+      setLoading(false);
+      console.log("do something");
+
     };
   }, []);
 
@@ -27,10 +27,11 @@ export default function VideoIntro({ title, keywords, description, children }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <LoadingSpinner isLoading={isLoading} />
-      <video
-        autoplay
-        muted
-        playsinline
+      <video        
+        autoPlay={true}
+        muted={true}
+        playsinline={true}
+
         onPlay={() => {
           setLoading(false);
         }}
