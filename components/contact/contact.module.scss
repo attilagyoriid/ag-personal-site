@@ -150,10 +150,10 @@
               background-color: $dark-color;
               color: $light-color;
               resize: none;
-              -webkit-user-select: none;
-              -moz-user-select: none;
-              -ms-user-select: none;
-              user-select: none;
+              -webkit-user-select: text; /* Chrome, Opera, Safari */
+              -moz-user-select: text; /* Firefox 2+ */
+              -ms-user-select: text; /* IE 10+ */
+              user-select: text; /* Standard syntax */
               margin: 2rem 0rem 0rem 0rem;
               overflow: auto;
               font-family: Raleway, Roboto, sans-serif;
