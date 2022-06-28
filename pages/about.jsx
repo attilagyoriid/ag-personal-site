@@ -48,16 +48,14 @@ export default function About({ isIOS }) {
   );
 }
 export async function getStaticProps(ctx) {
-
+  
   let userAgent = "";
   if (ctx.req) {
     userAgent = ctx.req.headers['user-agent'];
   } else if(typeof window!== "undefined") {
     userAgent = window.navigator.userAgent;
   }
-  const isIOS = userAgent.match(
-      /iPhone|iPad|iPod/i
-    );
+  const isIOS =/(iPad|iPhone)/i.test(userAgent);
   return {
     props: { isIOS, },
     revalidate: 10,
