@@ -30,6 +30,7 @@ export default function VideoIntro({ title, keywords, description, children }) {
       <video
         autoPlay
         muted
+        playsinline
         onPlay={() => {
           setLoading(false);
         }}
