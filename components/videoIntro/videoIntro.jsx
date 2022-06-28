@@ -27,10 +27,11 @@ export default function VideoIntro({ title, keywords, description, children }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <LoadingSpinner isLoading={isLoading} />
-      <video        
-        autoPlay={true}
+      <video
         muted={true}
         playsinline={true}
+        autoPlay={true}
+
 
         onPlay={() => {
           setLoading(false);
