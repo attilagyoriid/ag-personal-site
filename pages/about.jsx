@@ -16,7 +16,7 @@ import Skills from "../components/skills/skills";
 import TitleText from "../components/titleText/titleText";
 import VideoPlayer from "../components/video-player/videoPlayer";
 
-export default function About() {
+export default function About({ isIOS }) {
   return (
     <Layout
       title="Attila Győri | About"
@@ -26,7 +26,7 @@ export default function About() {
       <ImageLeadingWithTitle url="/images/intro-whoami-funny.jpg" title="Who Am I" />
       <Introduction />
 
-     
+
       <Developer />
       <Leader />
       <Creative />
@@ -40,16 +40,26 @@ export default function About() {
       <FunFacts />
       <Hobbies />
       <VideoPlayer />
-      <MoreAbout />
+      <MoreAbout isIOS={isIOS}/>
 
       <Skills />
       <Footer />
     </Layout>
   );
 }
-export async function getStaticProps() {
+export async function getStaticProps(ctx) {
+
+  let userAgent = "";
+  if (ctx.req) {
+    userAgent = ctx.req.headers['user-agent'];
+  } else if(typeof window!== "undefined") {
+    userAgent = window.navigator.userAgent;
+  }
+  const isIOS = userAgent.match(
+      /iPhone|iPad|iPod/i
+    );
   return {
-    props: {},
+    props: { isIOS, },
     revalidate: 10,
   };
 }

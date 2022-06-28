@@ -4,7 +4,7 @@ import ImgGallery from "../imgGallery/imgGallery";
 import classes from "./moreAbout.module.scss";
 import TextCarousel from "../text-carousel/textCarousel";
 import { chunkSubstrBySegments } from "../../utils/textManipulator";
-export default function MoreAbout() {
+export default function MoreAbout({isIOS}) {
   const text = `
   <h4>Goals and Motivations:</h4> I am really interested in those domains solving everyday peoples' problems (coming from different domain than IT especially), software solutions that are customer facing.
   This way I have a chance to learn another business domain a bit - or more 😆. When we talking about a company, an employer, I am always looking for a good community,
@@ -62,7 +62,7 @@ export default function MoreAbout() {
       <div className={classes["more_gallery"]} ref={moreGalleryRef}>
         <div className={classes["more_gallery__container"]}>
           <div className={classes["img_gallery"]}>
-            <ImgGallery />
+            <ImgGallery isIOS = {isIOS}/>
           </div>
         </div>
       </div>

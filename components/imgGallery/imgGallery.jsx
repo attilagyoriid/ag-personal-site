@@ -1,7 +1,7 @@
 import classes from "./imgGallery.module.scss";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
-import { isIOS } from "../../utils/platform";
+
 
 const images = [
   {
@@ -158,7 +158,7 @@ const images = [
   },
 ];
 
-export default function ImgGallery() {
+export default function ImgGallery({isIOS}) {
   return (
     <div className={classes["gallery_container"]}>
       <ImageGallery
@@ -170,8 +170,9 @@ export default function ImgGallery() {
         items={images}
         showNav={false}
         useBrowserFullscreen={true}
-        showFullscreenButton = {isIOS() ? false: true}
+        showFullscreenButton = {!isIOS}
       />
     </div>
   );
 }
+
