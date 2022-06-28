@@ -1,15 +1,30 @@
 /** @format */
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import classes from "./videoIntro.module.scss";
 import LoadingSpinner from "../loadingSpinner/loadingSpinner";
+import { isIOS,isIpadOS } from "../../utils/platform";
 
 export default function VideoIntro({ title, keywords, description, children }) {
   const [isLoading, setLoading] = useState(true);
   const router = useRouter();
-
+  const videoParentRef = useRef();
   useEffect(() => {
+    if (videoParentRef.current && (isIOS() || isIpadOS())) {
+      const player = videoParentRef.current;
+      if (player) {
+        player.controls = false;
+        player.playsinline = true;
+        player.muted = true;
+        player.setAttribute("muted","");
+        player.autoplay = true;
+        setTimeout(()=>{
+          const promise = player.play();
+        },0);
+      }
+
+    }
     document.onreadystatechange = function () {
 
       setLoading(false);
@@ -28,6 +43,7 @@ export default function VideoIntro({ title, keywords, description, children }) {
       </Head>
       <LoadingSpinner isLoading={isLoading} />
       <video
+        ref={videoParentRef}
         muted={true}
         playsinline={true}
         autoPlay={true}
@@ -46,7 +62,8 @@ export default function VideoIntro({ title, keywords, description, children }) {
       >
         <source src="/video/intro.mp4" type="video/mp4"></source>
       </video>
-    </div>
+     
+    </div >
   );
 }
 
