@@ -47,17 +47,19 @@ export default function About({ isIOS }) {
     </Layout>
   );
 }
-export async function getStaticProps(ctx) {
+export const getServerSideProps = async (ctx) => {
   
   let userAgent = "";
   if (ctx.req) {
+    console.log("van req", userAgent);
     userAgent = ctx.req.headers['user-agent'];
   } else if(typeof window!== "undefined") {
+    console.log("van win", userAgent);
     userAgent = window.navigator.userAgent;
   }
+  console.log("user agent", userAgent);
   const isIOS =/(iPad|iPhone)/i.test(userAgent);
   return {
     props: { isIOS, },
-    revalidate: 10,
   };
 }
