@@ -1,4 +1,5 @@
 @import "../../styles/media";
+
 .wrapper {
   user-select: none;
   padding: 4rem;
@@ -9,6 +10,7 @@
   @include respond(tab-land) {
     padding: 0rem;
   }
+
   @include respond(phone) {
     padding: 0rem;
   }
@@ -32,10 +34,11 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+
   @include respond(phone) {
     margin: 2rem 0.5rem;
     gap: 2rem;
-    
+
   }
 }
 
@@ -43,9 +46,11 @@
   width: calc(25% - 2rem);
   margin: 1rem;
   cursor: pointer;
+
   @include respond(semi-big-desktop) {
     width: calc(33% - 2rem);
   }
+
   @include respond(phone) {
     width: 100%;
   }
@@ -85,9 +90,11 @@
     background-image: url("/images/card-bkgs/services_dev_bkg.png");
     background-size: cover;
   }
+
   &.bkg-img-sdet {
     background-image: url("/images/card-bkgs/services_sdet_bkg.png");
   }
+
   &.bkg-img-creative {
     background-image: url("/images/card-bkgs/services_creative_bkg.png");
   }
@@ -115,6 +122,7 @@
   backface-visibility: hidden;
   border-radius: 10px;
 }
+
 .container:hover .front,
 .container:hover .back {
   -webkit-transition: -webkit-transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
@@ -146,6 +154,7 @@
   -webkit-perspective: inherit;
   perspective: inherit;
   z-index: 2;
+
   @include respond(semi-big-desktop) {
     padding: 0rem;
   }
@@ -183,6 +192,7 @@
   font-size: 2rem;
   margin-bottom: 1rem;
   position: relative;
+
   @include respond(phone) {
     margin-top: -2rem;
   }
@@ -217,16 +227,28 @@
 
       margin: 1rem 3rem;
       margin-top: 3rem;
-       @include respond(phone) {
-          column-gap: .5rem;
-           row-gap: .5rem;
-        }
+
+      @include respond(phone) {
+        column-gap: .5rem;
+        row-gap: .5rem;
+      }
 
       img {
         height: 100%;
         width: 100%;
         object-fit: cover;
         opacity: 0.5;
+
+        
+
+        @include respond(semi-big-desktop) {
+          height: 70%;
+          width: 70%;
+          opacity: 0.5;
+          align-self: center;
+          justify-self: center;
+          object-fit: contain;
+        }
         @include respond(phone) {
           height: 90px;
           width: 90px;
@@ -255,6 +277,7 @@
   -ms-flex-align: center;
   align-items: center;
 }
+
 .card__heading {
   font-size: 2rem;
   text-align: center;
