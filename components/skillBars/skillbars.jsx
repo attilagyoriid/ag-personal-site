@@ -25,6 +25,16 @@ export default function Skillbars() {
   }, []);
   return (
     <div id="program-skills" className={classes["skill-container"]}>
+      <div className={classes["skill-description"]}>Team Leadership</div>
+      {typeof window !== "undefined" ? (
+        <SkillBar skills={skills4} colors={colors} height={25} />
+      ) : null}
+      <div className={classes["skill-description"]}>
+        Software Development Engineer in Test
+      </div>
+      {typeof window !== "undefined" ? (
+        <SkillBar skills={skills2} colors={colors} height={25} />
+      ) : null}
       <div className={classes["skill-description"]}>Software Development</div>
 
       {typeof window !== "undefined" ? (
@@ -35,20 +45,12 @@ export default function Skillbars() {
           ref={skillBarRef}
         />
       ) : null}
-      <div className={classes["skill-description"]}>
-        Software Development Engineer in Test
-      </div>
-      {typeof window !== "undefined" ? (
-        <SkillBar skills={skills2} colors={colors} height={25} />
-      ) : null}
+      
       <div className={classes["skill-description"]}>Graphic Design</div>
       {typeof window !== "undefined" ? (
         <SkillBar skills={skills3} colors={colors} height={25} />
       ) : null}
-       <div className={classes["skill-description"]}>Team Leadership</div>
-      {typeof window !== "undefined" ? (
-        <SkillBar skills={skills4} colors={colors} height={25} />
-      ) : null}
+
     </div>
   );
 }
