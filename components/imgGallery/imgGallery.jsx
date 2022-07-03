@@ -144,7 +144,7 @@ const images = [
   {   
     original: "/images/gallery/with_my_godson.jpg",
     thumbnail: "/images/gallery/with_my_godson.jpg",
-    description: "with my first Grandson",
+    description: "with my first Godson",
   },
   {   
     original: "/images/gallery/crete_me.png",
