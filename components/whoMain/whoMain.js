@@ -70,7 +70,7 @@ export default function WhoMain() {
           I am a Software Test Automation Framework Developer and a Full-stack Engineer with over 19 years of Information Technology related experience. 
           Sometimes I am also get involded in activites such as digital multimedia & ui design, graphic craftsmanship, and team management. 
           I maintain a passion for technology and helping others get the most out of technology by using the appropriate tools, techniques, and strategies to ensure clients satisfaction.
-          Regarding the last 4 years I am functioning as a Development Team Lead as well.
+          Regarding the last 5 years I am functioning as a Development Team Lead as well.
           </p>
           <Link href="/about">
             <a className={classes["btn-main"]}>About</a>
