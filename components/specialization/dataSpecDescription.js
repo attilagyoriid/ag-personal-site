@@ -15,7 +15,7 @@ const cardList = [
     text: [
       `The Software Quality Assurance and espacially Software Test Automation are the fields I am the most expreinced in. 
       I have been working in different positions
-      realted to Software Development Engineer in Test for almost 20 years now.`,`I love QA. 
+      realted to Software Development Engineer in Test for almost 20 years now and I am a Development Team Lead for more then 5 years.`,`I love QA. 
       The process, getting into the details. At the heart of it, 
       it comes down to connection & communication between all the parts of a development team, 
       from the project manager to developer to design and to the external clients at large. `,
