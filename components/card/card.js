@@ -3,12 +3,15 @@ import { Fragment } from "react";
 import Lottie from "react-lottie-player";
 import Link from "next/link";
 import classes from "./card.module.scss";
-import service_creative_animation from "./service_creative_animation.json";
-import service_dev_animation from "./service_dev_animation.json";
-import service_robot_animation from "./service_robot_animation.json";
+import service_creative_animation_data from "./service_creative_animation.json";
+import service_dev_animation_data from "./service_dev_animation.json";
+import service_robot_animation_data from "./service_robot_animation.json";
 import CarouselSwipe from "../carousel/carouselSwipe";
 
 export default function Card(props) {
+  const service_creative_animation = JSON.parse(JSON.stringify(service_creative_animation_data));
+  const service_dev_animation = JSON.parse(JSON.stringify(service_dev_animation_data));
+  const service_robot_animation = JSON.parse(JSON.stringify(service_robot_animation_data));
   return (
     <Fragment>
       <article className={`${classes["content-box"]}`}>

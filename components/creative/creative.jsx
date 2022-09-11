@@ -1,11 +1,12 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import Lottie from 'react-lottie';
-import designer_animation from "./designer_animation.json";
+import designer_animation_data from "./designer_animation.json";
 import classes from "./creative.module.scss";
 import TextCarousel from "../text-carousel/textCarousel";
 import { chunkSubstrBySegments } from "../../utils/textManipulator";
 export default function Creative() {
+  const designer_animation = JSON.parse(JSON.stringify(designer_animation_data));
   const text = ` I’ve always been someone who has both a creative and a logical side.
   I realized it would be the perfect fit. I could use my creative side to design and my logical side to code.
   I have always someone being attractive visually compelling creative activities. I love movies, photography and drawing as I can remember.

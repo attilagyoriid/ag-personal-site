@@ -1,11 +1,12 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import Lottie from 'react-lottie';
-import leader_animation from "./leader_animation.json";
+import leader_animation_data from "./leader_animation.json";
 import classes from "./leader.module.scss";
 import TextCarousel from "../text-carousel/textCarousel";
 import { chunkSubstrBySegments } from "../../utils/textManipulator";
 export default function Leader() {
+  const leader_animation = JSON.parse(JSON.stringify(leader_animation_data));
   const text = `I have been a development team lead for more then 5 years now.
   I do not really want to appear to show off, 
   but I have always been the one to set the tone, and others tend to cosider me as a leader in some way since I can remember 

@@ -1,11 +1,12 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import Lottie from 'react-lottie';
-import developer_animation from "./developer_animation.json";
+import developer_animation_data from "./developer_animation.json";
 import classes from "./developer.module.scss";
 import TextCarousel from "../text-carousel/textCarousel";
 import { chunkSubstrBySegments } from "../../utils/textManipulator";
 export default function Developer() {
+  const developer_animation = JSON.parse(JSON.stringify(developer_animation_data));
   const text = `I love sofware development or any creative activity: Creating Something out of Nothing!
   I have been working with technology for as long as I can remember.
   I am eager to embrace new ideas, methodologies and technologies to expand my knowledge.

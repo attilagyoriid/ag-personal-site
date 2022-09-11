@@ -2,10 +2,11 @@ import { useEffect, useRef } from "react";
 import Lottie from "react-lottie-player";
 import { gsap } from "gsap";
 import classes from "./funFacts.module.scss";
-import funFacts from "./funFacts-animation.json";
+import funFacts_data from "./funFacts-animation.json";
 
 export default function FunFacts() {
   const funFactsImgRef = useRef(null);
+  const funFacts = JSON.parse(JSON.stringify(funFacts_data));
   useEffect(() => {
     gsap.from(funFactsImgRef.current, {
       scrollTrigger: funFactsImgRef.current,
