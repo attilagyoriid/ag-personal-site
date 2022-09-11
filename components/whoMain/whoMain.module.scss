@@ -48,11 +48,22 @@
     }
 
     .skill-sphere-section {
+      display: flex;
+      flex-direction: column;
       @include respond(phone) {
         margin-top: 1rem;
         position: relative;
         transform: translateY(-20%) !important;
         display: block;
+      }
+
+      .flex-center{
+        align-self: center;
+        transform: scale(.7);
+        border-radius: 100rem;
+        @include respond(phone) {
+          margin-top: 4rem;
+        }
       }
 
       p {
