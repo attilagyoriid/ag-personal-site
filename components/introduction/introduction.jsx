@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 import Hun from "../hun/hun";
 import TitleText from "../titleText/titleText";
-import {getNumberOfYearsFrom} from "../../utils/date";
+import { getNumberOfYearsFrom } from "../../utils/date";
 import classes from "./introduction.module.scss";
 import * as gtag from "../../services/gtag";
 
@@ -10,7 +10,7 @@ function Introduction() {
   const [years, setYears] = useState();
   useEffect(() => {
     setYears(getNumberOfYearsFrom(2016));
-   
+
   }, []);
   const handleClick = (e) => {
     gtag.event({
@@ -39,7 +39,7 @@ function Introduction() {
         <div className={classes["btn-light__container"]}>
           <Link href="/doc/Attila_Gyori_2022.pdf">
             <a
-              className={classes["btn-dark--outline"]}
+              className={`${classes["btn-dark--outline"]} ${classes["btn-pulse"]}`}
               onClick={handleClick}
               target="_blank"
             >

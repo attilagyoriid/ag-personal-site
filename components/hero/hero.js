@@ -162,7 +162,7 @@ export default function Hero({ posts }) {
             ></span>
           </h1>
           <div className={classes.lead}>
-            <div>I specialize in software test automation,</div>
+            <div>Specializing in software test automation,</div>
             <div>software development and creative design</div>
             <div>{posts}</div>
           </div>
@@ -175,7 +175,7 @@ export default function Hero({ posts }) {
                 duration={1500}
                 activeClass="active"
               >
-                <a className={classes["btn-light"]}>About</a>
+                <a className={`${classes["btn-light"]} ${classes["btn-pulse"]}`}>About</a>
               </Link>
             </div>
             <div className={classes["btn-main__container"]}>
