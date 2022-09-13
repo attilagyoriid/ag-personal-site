@@ -7,8 +7,6 @@ const timelineElements = [
     description:
     `BACHELOR DEGREE Major: 
     Marketing Communication`,
-
-    date: "2007 - 2009",
     icon: "school",
   },
   {
@@ -19,7 +17,6 @@ const timelineElements = [
       `BACHELOR DEGREE Major: 
        Computer Science`,
 
-    date: "1999 - 2003",
     icon: "school",
   },
   {
@@ -29,8 +26,6 @@ const timelineElements = [
     description:
       `BACHELOR DEGREE Major: 
        Didactics`,
-
-    date: "1999 - 2003",
     icon: "school",
   },
   {
@@ -40,8 +35,6 @@ const timelineElements = [
     description:
       `BACHELOR DEGREE Major:
        English Language`,
-
-    date: "1999 - 2003",
     icon: "school",
   },
   {
@@ -50,7 +43,6 @@ const timelineElements = [
     location: "Budapest, Hungary",
     description:
       "Secondary school diploma in Computer Technologies",
-    date: "1994 - 1998",
     icon: "school",
   },
 ];
