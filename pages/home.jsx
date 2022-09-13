@@ -26,13 +26,15 @@ const ImageLeading = dynamic(
   }
 );
 
+const ProjectsIntro = dynamic(() => import("../components/projects/projectsIntro"), {
+  loading: () => <LoadingSpinner isLoading={true} />,
+});
+
 const WhoMain = dynamic(() => import("../components/whoMain/whoMain"), {
   loading: () => <LoadingSpinner isLoading={true} />,
 });
 
-const Projects = dynamic(() => import("../components/projects/projects"), {
-  loading: () => <LoadingSpinner isLoading={true} />,
-});
+
 
 const Contact = dynamic(() => import("../components/contact/contact"), {
   loading: () => <LoadingSpinner isLoading={true} />,
@@ -61,8 +63,8 @@ function Home() {
       </Element>
       <Element name="projects">
         <ImageLeading imgUrl={"/images/ui-ux-unsplash_main.jpg"} />
-
-        <Projects />
+        <ProjectsIntro />
+        
       </Element>
       <Element name="contact">
         <ImageLeading imgUrl={"/images/contact.jpg"} />

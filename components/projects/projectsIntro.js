@@ -5,9 +5,9 @@ import { useEffect, useRef } from "react";
 import Link from "next/link";
 import CarouselSwipe from "../carousel/carouselSwipe";
 import TitleSection from "../titleSection/titleSection";
-import classes from "./projects.module.scss";
+import classes from "./projectsIntro.module.scss";
 import ParticlesBkg from "../particlesBkg/particlesBkg";
-export default function Projects() {
+export default function ProjectsIntro() {
   const projectDescriptionRef = useRef(null);
   const projectCarouselSectionRef = useRef(null);
 
@@ -51,7 +51,7 @@ export default function Projects() {
     <section className={classes["main-projects"]}>
       <TitleSection
         title="PUBLIC PROJECTS"
-        subText="Selected list of projects I have worked on, over the years"
+        subText="Selected sample of public projects I have worked on previously"
         className="lead--deep-dark-color"
       />
       <div className={classes["projects-section"]}>
@@ -60,15 +60,16 @@ export default function Projects() {
           className={classes["description-section"]}
         >
           <p>
-            I published some of my work-flow / process improvement projects on github. Among others,
-            you can find Test Automation Framework core code base, Review Process aiding solutions,
-            Test Catalog to help Test Automation Engineers to browse and reuse already existing implementations or
-            organize their tests into suits. But there are some graphics and ui design, 3d models, logo presentation, photography and 
-            photo compositing available as well.I also published some website code base I implemented 
-            and java, javascript and python algorithms.
-            You can also find references to Tech Company projects I have been working on over the years.
+            I have published a selection of my work-flow/product improvement projects on github.  
+            Among these selections, you will find test automation framework code core base, 
+            review process aiding solutions, and a test catalog to help test automation engineers 
+            browse and reuse pre-existing implementations or organize tests into suits.  
+            Additionally, you will find graphics and UI design, 3D models, logo presentation, 
+            photography and photo composition.  I have also included examples of website code base 
+            I implemented along with Java, Javascript, and Python algorithms. 
+            You will further find examples of tech company projects I have worked on over the years.  
             My main focus is on back-end and Test Automation. But regarding the last two-three years I have been getting invloved in 
-            the javascript technolgy realm along with fornt-end development and UI design. 
+            the javascript technology realm, front-end development and UI design. 
             There are always someting new to learn, be it a process, and approach or a new technolgy in this ever evolving profession.
           </p>
         </div>
