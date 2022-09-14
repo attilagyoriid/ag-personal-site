@@ -18,7 +18,7 @@ export default function TextCarousel({ texts }) {
     });
   };
 
-  
+
   return (
     <div className={classes["carousel-container"]}>
       <Carousel
@@ -28,6 +28,8 @@ export default function TextCarousel({ texts }) {
         autoPlay={false}
         emulateTouch={true}
         interval={600000}
+        preventMovementUntilSwipeScrollTolerance={true}
+        swipeScrollTolerance={50}
       >
         {texts.map((item, i) => (
           <div

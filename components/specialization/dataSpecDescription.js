@@ -11,6 +11,8 @@ const cardList = [
       emulateTouch: true,
       showStatus: false,
       autoPlay: false,
+      preventMovementUntilSwipeScrollTolerance:true,
+      swipeScrollTolerance: 50,
     },
     text: [
       `I have extensive experience in the fields of software test automation and software quality assurance, 
@@ -37,6 +39,8 @@ const cardList = [
       emulateTouch: true,
       showStatus: false,
       autoPlay: false,
+      preventMovementUntilSwipeScrollTolerance:true,
+      swipeScrollTolerance: 50,
     },
     text: [
       `I started coding before the age of ten.My extensive experience has enabled me to be employed in a wide-range of domains, 
@@ -71,6 +75,8 @@ const cardList = [
       emulateTouch: true,
       showStatus: false,
       autoPlay: false,
+      preventMovementUntilSwipeScrollTolerance:true,
+      swipeScrollTolerance: 50,
     },
     text: [
       `I have always been an individual who has both strong creative and logical abilities.
