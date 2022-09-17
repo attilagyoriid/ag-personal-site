@@ -30,8 +30,8 @@ function Introduction() {
       <Hun />
       <div className={classes["introduction-text"]}>
         Hey, Thanks for stopping by. I am a Software Engineer with a passion
-        for graphic and web design having extensive experience in the field of Software QA especially STLC and Test Automation.
-        I am a Development Team Lead for {years} years now.
+        for graphic and web design having extensive experience in the fields of Software QA especially STLC and Test Automation.
+        I am a Development Team Lead for the last {years} years.
 
       </div>
 
