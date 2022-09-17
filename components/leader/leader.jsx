@@ -7,29 +7,28 @@ import TextCarousel from "../text-carousel/textCarousel";
 import { chunkSubstrBySegments } from "../../utils/textManipulator";
 export default function Leader() {
   const leader_animation = JSON.parse(JSON.stringify(leader_animation_data));
-  const text = `I have been a development team lead for more then 5 years now.
-  I do not really want to appear to show off, 
-  but I have always been the one to set the tone, and others tend to cosider me as a leader in some way since I can remember 
-  (from the primary school on). I am a kind of a "natural born leader" 
-
-  Currently I am a Team Lead to a team of Test Automation Framework engineers, establishing code standards, performing code reviews, coding, 
-  mentoring, giving recommendations on architectural issues, facilitating scrum sceremonies, and doing behind-the-scenes operational work.
+  const text = `At this point in my career, I have been working as a development team lead for more than 5 years.   I have always been a natural-born leader, and people have organically looked to me 
+  for leadership since I was in primary school.  I currently lead a team of test automation framework engineers.  In my role as team lead, I establish code standards, 
+  perform coding and code review, mentor team members, give feedback and recommendations on architectural issues, facilitate scrum ceremonies, and performing general, behind-the-scenes tasks.  
               
   Leading development efforts in agile/scrum environment with CI/CD automation mindset and DevOps culture, 
   organizing and distributing tasks and workloads considering and planning with the current resources. 
-  As part of the Leader position I am attending technical interviews helping to recruit many of the engineers in the entire Release nad Verification Department, organizing trainings,
-  helpint to form and achieve career goals and carry out and follow-up performance reviews. 
-  My main objective as a Leader is to make and keep every member of
-  my team motivated and insipred profesinally and personally providing the perception of being represented in the organization, being valuable assets with
-  having a clear goal, a sense of progression and achievement and purpose in a production, I do beleive these are the things really matter.
+  Additionally, as a team lead I also conduct and assist with technical interviews 
+  and am personally responsible for recruiting many of the current engineers in the Release and Verification Department. I also organize training, assist team members in 
+  determining and achieving their professional career goals, and undertake regular performance reviews. 
+  My main objective as a leader is to effectively 
+  maintain the professional motivation and inspiration of my team, through reinforcing their value to the corporation, by celebrating their achievements, 
+  and instilling a sense of purpose in them, I do beleive these are the things really matter.
   
-  For me, people come first, without a solid foundation and trust it is impossible to create something valuable.
-  Helping others to grow and achieve their goals is one of the most rewarding activities in life.
-  I also studied psychology, pedagogy and didactics at college for 4 years which really helps me in working with individuals and teams 
+  My leadership style can be best described as "people come first". Without trust, respect, and a solid foundation, 
+  it is impossible to create anything of value.
+  I have found that helping others to grow and work to achieve their goals is one of the most rewarding things in life. 
+  I also studied psychology, pedagogy and didactics at college for 4 years which really helps me in working effectively with individuals and teams 
   (of course this fact doesnt make me a psychologist though &#128516;)
-  So I consider myself an involving leader to whom your opinion really matters, a so called "servant leader".
-  Due to this aspect of my attitude and my great network in the industry I could easly ramp-up a team of 5-7 great professionals whitin a few month,
-  professionals I worked with in mutual trust and respect and sharing the willingness to work together again in the future.`
+  I consider myself a hands-on, involving leader, a so called "servant leader", who sincerely values the ideas and opinions of my team members.
+  As a result of my management style, and my extensive professional network within the industry,  I could easily gather a team of 5 - 7 outstanding professionals,
+  whom I have worked with in mutual trust and respect and sharing the willingness to work together again in the future.`
+
   const textContent = chunkSubstrBySegments(text,2);
   const leaderImgRef = useRef(null);
   const leaderTextContainerRef = useRef(null);
