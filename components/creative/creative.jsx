@@ -7,22 +7,26 @@ import TextCarousel from "../text-carousel/textCarousel";
 import { chunkSubstrBySegments } from "../../utils/textManipulator";
 export default function Creative() {
   const designer_animation = JSON.parse(JSON.stringify(designer_animation_data));
-  const text = ` I’ve always been someone who has both a creative and a logical side.
-  I realized it would be the perfect fit. I could use my creative side to design and my logical side to code.
-  I have always someone being attractive visually compelling creative activities. I love movies, photography and drawing as I can remember.
-  Thats why I started learning web design using Figma, Photoshop and Illustrator. I have been taking photos with my Canon DSLR for 10 years now.
-  I have also created some short films, and also edited them so I am quite experienced in Adobe Premiere Pro and After Effects. And as 
-  for the last 3 years I have led off to the journey of 3D modeling learning Maya and Zbrush. Maybe back then thats why I attended another collage for the second time 
-  and received a 2nd dimploma in marketing communication - although I never worked in this area. But this knowledge has turned out useful in my IT career as well.
-  And to come to full circle I have started self-studying front-end development for 3 years now to put into functional form What I have designed, so I have some experience in 
-  javascript, typescript, html, css, sccs, and frameworks like react and nextjs being able to deliver and e2e sofware solution if needed.
-  I'm passionate about bringing both the technical and visual aspects of digital products to life.
-  I am very interested in interactive media, and in an age of digital I believe bringing design to life with code is essential. 
-  So, I specialise in a multi-disciplined approach to my work incorporating design and development.
-  My work crosses a broad range of categories in the digital space, both from a design and a technical perspective. I believe in using the right tools for the job so don’t subscribe to following bandwagons.
-  I'm happiest when I'm creating, learning, exploring and thinking about how to make things better. I am well-rounded curious individual hungry for
-  knowledge and passionet to learn. I'm often referred to by many as a polyglot. I do believe in "Lifelong learning". 
+  const text = ` I’ve always been someone with both creative and logical sensibilities.
+  I discovered that it is a perfect fit to both of those sensibilities. I am able to use my creative talents to design, and by logical sensibility to code.
+  I have historically been drawn to visually compelling creative activities. I have always enjoyed movies, photography, and drawing as I can remember.
+  As such, I started to learn web design using Figma, Photoshop, and Illustrator. I have also been practicing photography with my Canon DSLR for about 10 years. 
+  Through creating and editing a handful of short films, 
+  I have gained extensive experience in using Adobe Premiere Pro and After Effects. Over the last few years, I have started to explore 3D modeling using Maya and Zbrush. 
+  These interests may be why I decided to return to college for a 2nd degree in marketing communications, despite the fact that I have never formally worked in that area.  
+  But, my knowledge of marketing communications has turned out useful in my IT career  to come to full circle I have started self-studying front-end development for 3 years now to put into functional form What I have designed, so I have become comfortable 
+  using Javascript, Typescript, HTML, CCS, and SCSS, along with frameworks such as ReactJs and NextJs, 
+  which enables me to deliver E2E software solutions, if necessary.
+  I am passionate about bringing both technical and visual aspects of digit products to life.
+  I am very interested in interactive media, and in the current digital age, bringing design to life with code is essential.
+  Therefore, I specialize in a multi-disciplined approach to my work, 
+  by incorporating both design and development.
+  My work emcompasses a broad range of categories in the digital space, both from a design and technical perspective. I believe in using the right tools for the job. I do not subscribe to following trends or "jumping on the bandwagon.". 
+  I am truly happiest when creating, learning, exploring and just generally thinking about ways to make things better. 
+  I am a well-rounded and curious individual who is hungry for knowledge and has a passion to learn. 
+  I'm often referred to by many as a polyglot. I do believe in "Lifelong learning". 
   “Once you stop learning, you start dying.” – Albert Einstein`
+
   const textContent = chunkSubstrBySegments(text,2);
   const devTextRef = useRef(null);
   const leaderTextRef = useRef(null);
