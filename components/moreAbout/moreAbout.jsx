@@ -6,32 +6,31 @@ import TextCarousel from "../text-carousel/textCarousel";
 import { chunkSubstrBySegments } from "../../utils/textManipulator";
 export default function MoreAbout({isIOS}) {
   const text = `
-  <h4>Goals and Motivations:</h4> I am really interested in those domains solving everyday peoples' problems (coming from different domain than IT especially), software solutions that are customer facing.
+  <h4>Goals and Motivations:</h4> I have a strong interest in all aspects of how professional services may assist in problem solving for everyday people (beyond just the IT solutions) software solutions that are customer facing.
   This way I have a chance to learn another business domain a bit - or more 😆. When we talking about a company, an employer, I am always looking for a good community,
-  making new friendships, finding - how shell I put it, a "second family"... after all you spend a significant part of your life with your colleague.
-  I am also very open to relocate. It would open an a brand new perspective to get aquanted with different cultures.
-  <h4>Special power:</h4> I am quite multi-sided, ployglot person, and I consider myself an involving leader to whom your opinion really matters, a so called "servant leader".
-  Due to this aspect of my attitude and my great network in the industry I could easly ramp-up a team of 5-7 great professionals whitin a few month,
-  professionals I worked with in mutual trust and respect and sharing the willingness to work together again in the future.
-  <h4>Characteristics:</h4> I am creative and a pro-active self-starter, love learning new things, meeting new people. 
-  I am loyal - not really a job-hopper, and quite straightforward loving absurd humor. I am quite attentive and involving, open for other opinions.
-  If I dont understand something, well I am persistent, and dont easily give up on finding the solution.
+  making new friendships. My ideal employer would foster a strong sense of community amongst its employees, as co-workers often become friends and/or a "second family", after all you spend a significant part of your life with your colleague.
+  I am also very open to relocation for the right position, as I greatly enjoy meeting new people, new experiences, and becoming acquainted with new cultures.  I am easily adaptable and love new adventures.
+  <h4>Special power:</h4> Due to my diverse interests and adaptability, I am a very involving, hands-on leader - "servant leader" - who values the ideas and opinions of my team.  
+  As a result, I have maintained a large network of individuals within the industry, 
+  and could easily amass a team of 5-7 outstanding professionals for any project or assignment.  These individuals are people I have successfully worked with previously, 
+  with whom I have mutual trust, respect, and a willingness to collaborate again in the future.
+  <h4>Characteristics:</h4>I am a creative and proactive self-starter.  love learning new things and meeting new people.
+  I am a very loyal employee, and do not just hop from one job to the next.  I am very straight-forward and I love absurd humor. I am quite attentive and involving, open for other opinions.
+  I am very attentive and involved.  I enjoy collaboration, and am open to the ideas and opinions of others.  I am determined, persistent, and driven - if I don't know something, I won't stop until I find the answer.
   <h4>Future perspectives:</h4>
-  In a long run I imagine myself as an Engineering manager or a Line manager (not distancing totally away from technology 
-  - a 30%-70% ration / hands-on - people management could be ideal), puting and keeping teams together, making their job and thereby their life
-  as motivated and fruitful as possible.
-    
-  <h4>and now it is show time...</h4> Let me share some picture with you from my past - cause I dont have any from my future yet 😀
-  From the very beginning  when I took my first baby-steps, through the years when I started coding before the age of ten, 
-  on a computer called Videoton TV computer in Basic language (with tape drive plugged to a Black&White TV ). 
-  There came Commodore Plus 4, then Commdore 64 with Blue Chip 5.25 Disk Drive, then the first 
-  XT 286 with , and AT 486, and Pentium with CGA and VGA monitors 😆 wowww, this is a history 😀 installing 
-  windows 3.11 coming on 6 1.44MB 3.5″ 
-  floppy disc ( my favourite disk brand was "noname" 😂 ), 
-  at that time I got familiar with Quick Basic, Turbo Pascal, and with the big game changer: Delphi 😀
-  Ohh I am getting old.. but who isnt? 😄 (Vampires and Christopher Lambert). But aside IT, of course most importantly let me present some insight 
-  into my everyday life.
-  feel free to browse through`
+  My future career goal is to become either an engineering manager or a line manager.  
+  While I am not seeking to move 100% away from technology, a 70/30 split of employee management and technology would be ideal for my skill set, with an emphasis on team creating, collaboration, motivation,
+  making their job and thereby their life as motivated and fruitful as possible.
+  <h4>and now it is show time...</h4> Let me share some picture with you from my past - as I don't have any from my present yet 😉
+  from the very beginning when I took my first baby steps, through the years when I began coding before I was 10, 
+  I began my coding experience on a Videoton TV computer in Basic language, with a tape drive plugged into a black & white TV.  
+  Thereafter came a Commodore Plus 4, then a Commodore 64 with Blue Chip 5.25 disk drive, next the first XT 286.
+  After that, I moved onto an AT 486, and from there to a Pentium with GCA and VGA montorits, with windows 3.11 installed with 6 1.44MB 3.5 inch floppy disks -
+  wow, what a history!
+  As an aside, my favorite disk brand was "noname" at that time 😂 , 
+  At that time I got familiar with Quick Basic, Turbo Pascal, and with the big game changer: Delphi 😀
+  I am aging myself, but we are all getting older, correct? 😄 (Except maybe vampires and Christopher Lambert), but I digress... Beyond my IT history, please allow the selected photographs to present 
+  some insight into my everyday life.  Feel free to browse through.`
   const textContent = chunkSubstrBySegments(text,2);
   const moreTextRef = useRef(null);
   const moreGalleryRef = useRef(null);
