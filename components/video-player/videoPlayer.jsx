@@ -1,8 +1,18 @@
 import { useEffect } from "react";
-import ReactPlayer from 'react-player/dailymotion'
+import ReactPlayer from 'react-player/dailymotion';
+import * as gtag from "../../services/gtag";
 import TitleSection from "../titleSection/titleSection";
 import classes from "./videoPlayer.module.scss";
 export default function VideoPlayer() {
+  const handleOnPlay = (event) => {
+    gtag.event({
+      action: "video_play",
+      category: "VideoPlay",
+      label: "video_play",
+    });
+    console.log('Your video event: ', event);
+
+  };
 
   useEffect(() => {
    
@@ -24,6 +34,7 @@ export default function VideoPlayer() {
         playing={false}
         controls={true}
         light={false}
+        onPlay={handleOnPlay}
 
         volume={0.8}
         config={{
