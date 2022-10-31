@@ -10,41 +10,40 @@ export default function VideoPlayer() {
       category: "VideoPlay",
       label: "video_play",
     });
-    console.log('Your video event: ', event);
 
   };
 
   useEffect(() => {
-   
+
   }, []);
   return (
     <div className={classes["player__container"]}>
-       <TitleSection
+      <TitleSection
         title="hello there"
         subText=""
         className="lead--deep-dark-color"
       />
-    <div className={classes["player-wrapper"]}>
-      <ReactPlayer
-        className={classes["react-player"]}
-        width='100%'
-        height='100%'      
-        url='https://dai.ly/k20f4IXnxLVtqry4Azp'
-        pip={false}
-        playing={false}
-        controls={true}
-        light={false}
-        onPlay={handleOnPlay}
+      <div className={classes["player-wrapper"]}>
+        <ReactPlayer
+          className={classes["react-player"]}
+          width='100%'
+          height='100%'
+          url='https://dai.ly/k20f4IXnxLVtqry4Azp'
+          pip={false}
+          playing={false}
+          controls={true}
+          light={false}
+          onPlay={handleOnPlay}
 
-        volume={0.8}
-        config={{
-          dailymotion: {
+          volume={0.8}
+          config={{
+            dailymotion: {
 
-          },
-         
-        }}
-      />
-    </div>
+            },
+
+          }}
+        />
+      </div>
     </div>
   );
 }
