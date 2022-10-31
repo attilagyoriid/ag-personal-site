@@ -12,7 +12,6 @@ export default function SpecializationSection({ withThreeDotsLink, data }) {
   const cardRef = useRef(null);
   const cardRefsList = [];
   useEffect(() => {
-    console.log("cardref", cardRef.current);
     gsap.utils.toArray(cardRefsList).forEach((section, index) => {
       gsap.from(section, {
         scrollTrigger: section,
