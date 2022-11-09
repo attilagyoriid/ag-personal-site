@@ -70,7 +70,7 @@ export default function WhoMain() {
           <div className={`${classes["btn-dark--outline"]} ${classes["flex-center"]}`}>
             <a
               onClick={handleClick}
-              href="/doc/Attila_Gyori_2022_09.pdf"
+              href="/doc/Attila_Gyori_2022_11.pdf"
               target="_blank"
               className={classes.dnbtn}
             >Resume</a>
