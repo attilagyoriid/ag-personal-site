@@ -75,7 +75,7 @@ export default function Works() {
               </div>
             </div>
           </a>
-          <a target="_blank" href="/404" rel="noopener noreferrer">
+          <a target="_blank" href="https://dribbble.com/shots/19940854-Personal-Coach-Mobile-High-Fidelity-Design?new_shot_upload=true&utm_source=Clipboard_Shot&utm_campaign=attila_gyori&utm_content=Personal%20Coach%20-%20Mobile%20High%20Fidelity%20Design&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=attila_gyori&utm_content=Personal%20Coach%20-%20Mobile%20High%20Fidelity%20Design&utm_medium=Social_Share" rel="noopener noreferrer">
             <div className={classes["item"]}>
               <div className={classes["item-image"]}>
                 <img src="/images/works/item5.png" alt="" />
