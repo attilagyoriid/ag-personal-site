@@ -137,6 +137,11 @@ const images = [
     description: "being a tuareg",
   },
   {   
+    original: "/images/gallery/whopper.jpg",
+    thumbnail: "/images/gallery/whopper.jpg",
+    description: "My dog: Whopper",
+  },
+  {   
     original: "/images/gallery/braga.jpg",
     thumbnail: "/images/gallery/braga.jpg",
     description: "Braga",
