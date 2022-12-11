@@ -1,0 +1,17 @@
+@import "../../styles/config";
+@import "../../styles/utilities";
+@import "../../styles/media";
+
+.widget_container {
+  display: flex;
+  position: relative;
+
+  max-width: 30%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+}

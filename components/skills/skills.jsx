@@ -5,10 +5,19 @@ import classes from "./skills.module.scss";
 
 import Skillbars from "../skillBars/skillbars";
 import TitleText from "../titleText/titleText";
+import CodersRank from "../codersrank/codersRank";
+
+import getConfig from "next/config";
+
+
+
 
 export default function Skills() {
   const skillImgRef = useRef(null);
   const buttonGroupRef = useRef(null);
+  const {
+    publicRuntimeConfig: { socialUrls },
+  } = getConfig();
   useEffect(() => {
     gsap.from(skillImgRef.current, {
       scrollTrigger: skillImgRef.current,
@@ -42,6 +51,33 @@ export default function Skills() {
         </div>
         <div className={classes["skill-bar"]}>
           <Skillbars />
+          <div className={classes["skill-icons"]}>
+            <CodersRank />
+            <div className={classes["icon-container"]}>
+              <a target="_blank" href={socialUrls.linkedin} rel="noopener noreferrer">
+                <img src="/images/social-icons/linked.svg" alt="Linked In Icon" />
+              </a>
+            </div>
+            <div className={classes["icon-container"]}>
+              <a target="_blank" href={socialUrls.github} rel="noopener noreferrer">
+                <img src="/images/social-icons/git.svg" alt="Git In Icon" />
+              </a>
+            </div>
+            <div className={classes["icon-container"]}>
+              <a target="_blank" href={socialUrls.dribbble} rel="noopener noreferrer">
+                <img src="/images/social-icons/dribble.svg" alt="Dribble In Icon" />
+              </a>
+            </div>
+            <div className={classes["icon-container"]}>
+              <a
+                target="_blank"
+                href={socialUrls.behance}
+                rel="noopener noreferrer"
+              >
+                <img src="/images/social-icons/behance.svg" alt="Behance In Icon" />
+              </a>
+            </div>
+          </div>
           <div className={classes["button-group"]} ref={buttonGroupRef}>
             <Link href="/projects">
               <a className={classes["btn-main"]}>Work</a>
