@@ -7,6 +7,14 @@
   position: relative;
 
   max-width: 30%;
+  
+  @include respond(phone) {
+   
+      max-width: 100% !important;
+      flex-basis: 100%;
+
+  }
+
 
   img {
     width: 100%;

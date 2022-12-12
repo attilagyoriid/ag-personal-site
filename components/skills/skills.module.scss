@@ -8,30 +8,33 @@
   height: auto;
   width: 100%;
   position: relative;
-  background: radial-gradient(
-    85.9% 169.88% at 85.9% 24.17%,
-    #486287 0%,
-    #94a3b9 50.98%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  .codersrank_container{
+  background: radial-gradient(85.9% 169.88% at 85.9% 24.17%,
+      #486287 0%,
+      #94a3b9 50.98%,
+      rgba(255, 255, 255, 0) 100%);
+
+  .codersrank_container {
     align-self: flex-end;
   }
+
   .skills-container-details {
     display: flex;
     height: auto;
     width: 100%;
     position: relative;
+
     @include respond(phone) {
       flex-direction: column;
       justify-content: center;
       align-items: center;
     }
+
     .skill-bar {
       padding: 2rem;
       width: 100%;
+
       .skill-icons {
-        -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+        -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
         -webkit-mask-size: 200%;
         animation: shine 2s linear infinite;
         padding: 1rem 0;
@@ -39,18 +42,27 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @include respond(phone) {
+          flex-wrap: wrap;
+        }
+
         .icon-container {
           @include respond(phone) {
-            transform: scale(0.6);
+            transform: scale(0.8);
           }
+
         }
+
       }
+
       .button-group {
         top: 0rem;
         padding-top: 6rem;
 
       }
     }
+
     .skill-image {
       padding: 2rem;
       opacity: 0.1;
@@ -60,6 +72,11 @@
 }
 
 @keyframes shine {
-  from { -webkit-mask-position: 150%; }
-  to { -webkit-mask-position: -50%; }
+  from {
+    -webkit-mask-position: 150%;
+  }
+
+  to {
+    -webkit-mask-position: -50%;
+  }
 }
