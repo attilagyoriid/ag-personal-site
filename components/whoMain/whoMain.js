@@ -91,7 +91,7 @@ export default function WhoMain() {
           </p>
           <Link href="/about">
 
-            <a className={`${classes["btn-main"]} ${classes["btn-pulse"]}`}>About</a>
+            <a className={`${classes["btn-main"]} ${classes["btn-pulse"]}`}>More</a>
           </Link>
         </div>
       </div>
