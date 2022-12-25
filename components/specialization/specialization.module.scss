@@ -13,8 +13,14 @@
     height: 100%;
     margin-bottom: 4rem;
     position: relative;
+    .btn-main {
+      @include respond(phone) {
+        margin: 1rem 0rem;
+      }
+    }
     .specials {
       margin-top: 3rem;
+      margin-bottom: 2rem;
       padding: 1rem 2rem;
       display: grid;
       grid-gap: 1rem;
@@ -28,12 +34,14 @@
       }
       @include respond(desktop) {
         grid-gap: 4rem;
+        
       }
       @include respond(phone) {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-bottom: 2.8rem;
+        margin-bottom: unset;
       }
     }
   }

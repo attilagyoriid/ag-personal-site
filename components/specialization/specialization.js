@@ -2,6 +2,7 @@
 import Card from "../card/card";
 import TitleSection from "../titleSection/titleSection";
 import { useEffect, useRef } from "react";
+import Link from "next/link";
 import { gsap } from "gsap";
 import classes from "./specialization.module.scss";
 import ParticlesBkg from "../particlesBkg/particlesBkg";
@@ -46,7 +47,9 @@ export default function SpecializationSection({ withThreeDotsLink, data }) {
             </div>
           ))}
         </div>
-        {withThreeDotsLink && <Dots url="/experience" />}
+        <Link href="/experience">
+          <a className={`${classes["btn-main"]} ${classes["btn-pulse"]}`}>More</a>
+        </Link>
       </div>
       <ParticlesBkg
         presetName="matrix"
