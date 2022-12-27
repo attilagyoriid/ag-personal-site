@@ -23,10 +23,10 @@ module.exports = class Email {
         name: this.fromName,
       },
       reply_to: {
-        email: "no-reply@ag.com",
+        email: "attila.gyori.ag@gmail.com",
         name: "AG",
       },
-      templateId: "d-09440aa1df6643d7a41617e6577f0300",
+      templateId: "d-7fc85447ae3847d4bcb5c051d4c099c9",
       dynamic_template_data: {
         message_subject: this.message_subject,
         email_content: this.message,
