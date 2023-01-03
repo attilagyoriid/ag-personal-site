@@ -11,7 +11,8 @@ import ShareButton from "../shareButton/shareButton";
 export default function Hero({ posts }) {
   gsap.registerPlugin(ScrollTrigger);
 
-  const typedTextColors = ["#EBC250", "#FFFFFF", "#2283bb"];
+  // color of the typed text can be changed, but user feedback says saying yellow looks better
+  const typedTextColors = ["#EBC250", "#EBC250", "#EBC250"];
   const typeEl = useRef(null);
 
   const comparisonSectionRef = useRef(null);
@@ -96,9 +97,9 @@ export default function Hero({ posts }) {
     const typed = new Typed(typeEl.current, {
       strings: ["SDET", "Developer", "Creative"],
       startDelay: 300,
-      typeSpeed: 100,
-      backSpeed: 100,
-      backDelay: 100,
+      typeSpeed: 250,
+      backSpeed: 250,
+      backDelay: 250,
       smartBackspace: true,
       loop: true,
       showCursor: true,
