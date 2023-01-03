@@ -25,51 +25,52 @@ export default function Hero({ posts }) {
 
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    ScrollTrigger.matchMedia({
-      "(min-width: 1024px) and (orientation: landscape)": function () {
-        gsap.utils.toArray(comparisonSectionRef.current).forEach((section) => {
-          let tl = gsap.timeline({
-            scrollTrigger: {
-              trigger: section,
-              start: "top top",
+  // it is the hero image animation can be be useful later
+  // useEffect(() => {
+  //   ScrollTrigger.matchMedia({
+  //     "(min-width: 1024px) and (orientation: landscape)": function () {
+  //       gsap.utils.toArray(comparisonSectionRef.current).forEach((section) => {
+  //         let tl = gsap.timeline({
+  //           scrollTrigger: {
+  //             trigger: section,
+  //             start: "top top",
 
-              end: () => "+=" + section.offsetWidth,
-              scrub: true,
-              pin: containerRef.current,
-              anticipatePin: 1,
-            },
-            defaults: { ease: "none" },
-          });
+  //             end: () => "+=" + section.offsetWidth,
+  //             scrub: true,
+  //             pin: containerRef.current,
+  //             anticipatePin: 1,
+  //           },
+  //           defaults: { ease: "none" },
+  //         });
 
-          tl.fromTo(
-            afterImageRef.current,
-            { xPercent: 100, x: 0 },
-            { xPercent: 0 }
-          )
+  //         tl.fromTo(
+  //           afterImageRef.current,
+  //           { xPercent: 100, x: 0 },
+  //           { xPercent: 0 }
+  //         )
 
-            .fromTo(
-              afterImageImgRef.current,
-              { xPercent: -100, x: 0 },
-              { xPercent: 0 },
-              0
-            )
-            .fromTo(
-              afterImage2Ref.current,
-              { xPercent: 100, x: 0 },
-              { xPercent: 0 }
-            )
+  //           .fromTo(
+  //             afterImageImgRef.current,
+  //             { xPercent: -100, x: 0 },
+  //             { xPercent: 0 },
+  //             0
+  //           )
+  //           .fromTo(
+  //             afterImage2Ref.current,
+  //             { xPercent: 100, x: 0 },
+  //             { xPercent: 0 }
+  //           )
 
-            .fromTo(
-              afterImage2ImgRef.current,
-              { xPercent: -100, x: 0 },
-              { xPercent: 0 },
-              0
-            );
-        });
-      },
-    });
-  }, []);
+  //           .fromTo(
+  //             afterImage2ImgRef.current,
+  //             { xPercent: -100, x: 0 },
+  //             { xPercent: 0 },
+  //             0
+  //           );
+  //       });
+  //     },
+  //   });
+  // }, []);
 
   useEffect(() => {
     setLoading(false);
