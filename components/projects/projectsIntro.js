@@ -101,10 +101,11 @@ export default function ProjectsIntro() {
           </div>
         </div>
       </div>
-      <ParticlesBkg
+      {/* User feedback: no need for animated background */}
+      {/* <ParticlesBkg
         presetName="bubble"
         elementId="projectsParticlesBkg"
-      />
+      /> */}
     </section>
   );
 }
