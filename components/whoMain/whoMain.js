@@ -73,7 +73,7 @@ export default function WhoMain() {
               href="/doc/Attila_Gyori_2022_11.pdf"
               target="_blank"
               className={classes.dnbtn}
-            >Resume</a>
+            >Download CV</a>
           </div>
 
         </div>
