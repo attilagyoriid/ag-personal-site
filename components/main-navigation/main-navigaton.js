@@ -16,6 +16,7 @@ import {
 import Logo from "../logo/logo";
 
 import classes from "./main-navigation.module.scss";
+import ActiveLink from "../activeLink/ActiveLinks";
 
 const usePrevious = (value) => {
   const ref = useRef();
@@ -42,12 +43,14 @@ function MainNavigation(props) {
   };
 
   const handleScroll = () => {
-    if (scrollPositionY < prevScrollPositionY) {
-      setVisible(true);
-    } else {
-      setVisible(false);
-      handleMenuClose();
-    }
+    setVisible(true);
+    // User feedback, navigation stay visible
+    // if (scrollPositionY < prevScrollPositionY) {
+    //   setVisible(true);
+    // } else {
+    //   setVisible(false);
+    //   handleMenuClose();
+    // }
     setScrollPositionY(window.pageYOffset);
   };
 
@@ -60,7 +63,6 @@ function MainNavigation(props) {
     Events.scrollEvent.register("begin", function (to, element) { });
 
     Events.scrollEvent.register("end", function (to, element) {
-      console.log("end", to, element, arguments);
     });
 
     scrollSpy.update();
@@ -72,13 +74,13 @@ function MainNavigation(props) {
   }, [scrollPositionY, prevScrollPositionY]);
 
   const handleSetActive = (to) => {
-    console.log("set active", to);
   };
 
   const handleClickOnPageDifferentThanHome = (event) => {
-    if (!isPageHome()) {
-      router.push("/home");
-    }
+    // User feedback, navigation stop scrolling switxh page
+    // if (!isPageHome()) {
+    //   router.push("/home");
+    // }
   };
 
   return (
@@ -95,7 +97,14 @@ function MainNavigation(props) {
         }
       >
         <li>
-          <Link
+          <ActiveLink activeClassName="active" href="/home"
+            onClick={(event) => {
+              handleMenuClose(event);
+            }}>
+            <a className={classes.current}>Home</a>
+          </ActiveLink>
+          {/* User feedback, navigation stop scrolling switxh page */}
+          {/* <Link
             to="home"
             spy={true}
             smooth={true}
@@ -108,23 +117,18 @@ function MainNavigation(props) {
             }}
           >
             <a className={classes.current}>Home</a>
-          </Link>
+          </Link> */}
         </li>
-        {!isPageHome() && (
-          <>
-            <li>
-              <NextLink
-                href="/about"
-                onClick={(event) => {
-                  handleMenuClose(event);
-                  handleClickOnPageDifferentThanHome(event);
-                }}
-              >
-                <a className={classes.current}>About</a>
-              </NextLink>
-            </li>
-            <li>
-              <NextLink
+        {/* {!isPageHome() && ( */}
+        <>
+          <li>
+            <ActiveLink activeClassName="active" href="/experience"
+              onClick={(event) => {
+                handleMenuClose(event);
+              }}>
+              <a className={classes.current}>Experience</a>
+            </ActiveLink>
+            {/* <NextLink
                 href="/experience"
                 onClick={(event) => {
                   handleMenuClose(event);
@@ -132,10 +136,34 @@ function MainNavigation(props) {
                 }}
               >
                 <a className={classes.current}>Experience</a>
-              </NextLink>
-            </li>
-            <li>
-              <NextLink
+              </NextLink> */}
+          </li>
+          <li>
+            <ActiveLink activeClassName="active" href="/about"
+              onClick={(event) => {
+                handleMenuClose(event);
+              }}>
+              <a className={classes.current}>About</a>
+            </ActiveLink>
+            {/* <NextLink
+                href="/about"
+                onClick={(event) => {
+                  handleMenuClose(event);
+                  handleClickOnPageDifferentThanHome(event);
+                }}
+              >
+                <a className={classes.current}>About</a>
+              </NextLink> */}
+          </li>
+
+          <li>
+            <ActiveLink activeClassName="active" href="/projects"
+              onClick={(event) => {
+                handleMenuClose(event);
+              }}>
+              <a className={classes.current}>Projects</a>
+            </ActiveLink>
+            {/* <NextLink
                 href="/projects"
                 onClick={(event) => {
                   handleMenuClose(event);
@@ -143,10 +171,17 @@ function MainNavigation(props) {
                 }}
               >
                 <a className={classes.current}>Work</a>
-              </NextLink>
-            </li>
-            <li>
-              <NextLink
+              </NextLink> */}
+          </li>
+
+          <li>
+            <ActiveLink activeClassName="active" href="/contact"
+              onClick={(event) => {
+                handleMenuClose(event);
+              }}>
+              <a className={classes.current}>Contact</a>
+            </ActiveLink>
+            {/* <NextLink
                 href="/contact"
                 onClick={(event) => {
                   handleMenuClose(event);
@@ -154,28 +189,31 @@ function MainNavigation(props) {
                 }}
               >
                 <a className={classes.current}>Contact</a>
-              </NextLink>
-            </li>
-          </>
-        )}
-        {isPageHome() && (
-          <>
-            <li>
-              <Link
-                to="whoami"
-                spy={true}
-                smooth={true}
-                duration={1500}
-                onSetActive={handleSetActive}
-                activeClass="active"
+              </NextLink> */}
+          </li>
+          <li>
+            <ActiveLink activeClassName="active" href="/doc/Attila_Gyori_2022_11.pdf" onClick={(event) => {
+              handleMenuClose(event);
+            }}>
+              <a className={classes.current} target="_blank" rel="noopener noreferrer">CV</a>
+            </ActiveLink>
+            {/* <NextLink
+                href="/doc/Attila_Gyori_2022_11.pdf"
                 onClick={(event) => {
                   handleMenuClose(event);
+                  handleClickOnPageDifferentThanHome(event);
                 }}
               >
-                About
-              </Link>
-            </li>
-
+                <a className={classes.current} target="_blank" rel="noopener noreferrer">
+                  CV
+                </a>
+              </NextLink> */}
+          </li>
+        </>
+        {/* )} */}
+        {/* User feedback, navigation stop scrolling switxh page */}
+        {/* {isPageHome() && (
+          <>
             <li>
               <Link
                 activeClass="active"
@@ -192,6 +230,23 @@ function MainNavigation(props) {
             </li>
             <li>
               <Link
+                to="whoami"
+                spy={true}
+                smooth={true}
+                duration={1500}
+                onSetActive={handleSetActive}
+                activeClass="active"
+                onClick={(event) => {
+                  handleMenuClose(event);
+                }}
+              >
+                About
+              </Link>
+            </li>
+
+
+            <li>
+              <Link
                 activeClass="active"
                 to="projects"
                 spy={true}
@@ -204,6 +259,7 @@ function MainNavigation(props) {
                 Work
               </Link>
             </li>
+
             <li>
               <Link
                 activeClass="active"
@@ -218,8 +274,21 @@ function MainNavigation(props) {
                 Contact
               </Link>
             </li>
+            <li>
+              <NextLink
+                href="/doc/Attila_Gyori_2022_11.pdf"
+                onClick={(event) => {
+                  handleMenuClose(event);
+                  handleClickOnPageDifferentThanHome(event);
+                }}
+              >
+                <a className={classes.current} target="_blank" rel="noopener noreferrer">
+                  CV
+                </a>
+              </NextLink>
+            </li>
           </>
-        )}
+        )} */}
       </ul>
       <div className={classes["nav-icon"]} onClick={handleMenuClick}>
         <div
