@@ -39,7 +39,7 @@ function Introduction() {
         <div className={classes["btn-light__container"]}>
           <Link href="/doc/Attila_Gyori_2022_11.pdf">
             <a
-              className={`${classes["btn-dark--outline"]} ${classes["btn-pulse"]}`}
+              className={`${classes["btn-dark--outline"]}`}
               onClick={handleClick}
               target="_blank"
             >

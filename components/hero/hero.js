@@ -177,7 +177,7 @@ export default function Hero({ posts }) {
                 duration={1500}
                 activeClass="active"
               >
-                <a className={`${classes["btn-light"]} ${classes["btn-pulse"]}`}>About</a>
+                <a className={`${classes["btn-light"]}`}>About</a>
               </Link>
             </div>
             <div className={classes["btn-main__container"]}>

@@ -48,7 +48,7 @@ export default function SpecializationSection({ withThreeDotsLink, data }) {
           ))}
         </div>
         <Link href="/experience">
-          <a className={`${classes["btn-main"]} ${classes["btn-pulse"]}`}>More</a>
+          <a className={`${classes["btn-main"]}`}>More</a>
         </Link>
       </div>
       <ParticlesBkg
