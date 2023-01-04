@@ -35,7 +35,7 @@
 
   .about-section {
     position: relative;
-    margin-top: 2rem;
+    margin-top: 14rem;
     display: flex;
     justify-content: center;
     column-gap: 2rem;
@@ -88,7 +88,7 @@
           @include respond(phone) {
             height: auto;
             font-size: 1rem;
-
+            margin-top: -8rem;
             padding: 0rem 2rem;
             padding-top: 4rem;
           }
