@@ -192,7 +192,7 @@ function MainNavigation(props) {
               </NextLink> */}
           </li>
           <li>
-            <ActiveLink activeClassName="active" href="/doc/Attila_Gyori_2022_11.pdf" onClick={(event) => {
+            <ActiveLink activeClassName="active" href="/doc/Attila_Gyori_2023_05.pdf" onClick={(event) => {
               handleMenuClose(event);
             }}>
               <a className={classes.current} target="_blank" rel="noopener noreferrer">CV</a>
