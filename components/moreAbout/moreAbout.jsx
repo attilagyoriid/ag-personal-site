@@ -12,7 +12,7 @@ export default function MoreAbout({isIOS}) {
   I am also very open to relocation for the right position, as I greatly enjoy meeting new people, new experiences, and becoming acquainted with new cultures.  I am easily adaptable and love new adventures.
   <h4>Special power:</h4> Due to my diverse interests and adaptability, I am a very involving, hands-on leader - "servant leader" - who values the ideas and opinions of my team.  
   As a result, I have maintained a large network of individuals within the industry, 
-  and could easily amass a team of 5-7 outstanding professionals for any project or assignment.  These individuals are people I have successfully worked with previously, 
+  and could easily build a team of 5-7 outstanding professionals from ground up for any product, project or assignment.  These individuals are people I have successfully worked with previously, 
   with whom I have mutual trust, respect, and a willingness to collaborate again in the future.
   <h4>Characteristics:</h4>I am a creative and proactive self-starter.  love learning new things and meeting new people.
   I am a very loyal employee, and do not just hop from one job to the next.  I am very straight-forward and I love absurd humor. I am quite attentive and involving, open for other opinions.
