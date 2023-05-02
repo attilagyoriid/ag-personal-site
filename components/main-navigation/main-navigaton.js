@@ -12,6 +12,7 @@ import {
   scroller,
   Scroll,
 } from "react-scroll";
+import * as gtag from "../../services/gtag";
 // import useScrollPosition from "../../hooks/useScrollPosition";
 import Logo from "../logo/logo";
 
@@ -40,6 +41,14 @@ function MainNavigation(props) {
 
   const isPageHome = () => {
     return router.pathname.includes("home");
+  };
+
+  const handleClick = (e) => {
+    gtag.event({
+      action: "download_cv",
+      category: "Download",
+      label: "download_cv",
+    });
   };
 
   const handleScroll = () => {
@@ -193,6 +202,7 @@ function MainNavigation(props) {
           </li>
           <li>
             <ActiveLink activeClassName="active" href="/doc/Attila_Gyori_2023_05.pdf" onClick={(event) => {
+              handleClick(event);
               handleMenuClose(event);
             }}>
               <a className={classes.current} target="_blank" rel="noopener noreferrer">CV</a>
