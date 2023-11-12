@@ -201,7 +201,7 @@ function MainNavigation(props) {
               </NextLink> */}
           </li>
           <li>
-            <ActiveLink activeClassName="active" href="/doc/Attila_Gyori_2023_05.pdf" onClick={(event) => {
+            <ActiveLink activeClassName="active" href="/doc/Attila_Gyori_2023_11.pdf" onClick={(event) => {
               handleClick(event);
               handleMenuClose(event);
             }}>
