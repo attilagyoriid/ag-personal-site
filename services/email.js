@@ -26,7 +26,7 @@ module.exports = class Email {
         email: "attila.gyori.ag@gmail.com",
         name: "AG",
       },
-      templateId: "d-7fc85447ae3847d4bcb5c051d4c099c9",
+      templateId: "d-efd447914df24faea2a00f751bdab1ec",
       dynamic_template_data: {
         message_subject: this.message_subject,
         email_content: this.message,
