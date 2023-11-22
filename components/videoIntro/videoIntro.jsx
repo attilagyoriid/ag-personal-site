@@ -49,7 +49,6 @@ export default function VideoIntro({ title, keywords, description, children }) {
     document.onreadystatechange = function () {
 
       setLoading(false);
-      console.log("do something");
 
     };
   }, []);

@@ -21,7 +21,11 @@ export default function Works() {
       />
       <div className={classes["container"]}>
         <div className={classes["items"]} onClick={handleClick}>
-          <a target="_blank" href="https://www.behance.net/gallery/146571261/Personal-Coach-Logo" rel="noopener noreferrer">
+          <a
+            target="_blank"
+            href="https://www.behance.net/gallery/146571261/Personal-Coach-Logo"
+            rel="noopener noreferrer"
+          >
             <div className={classes["item"]}>
               <div className={classes["item-image"]}>
                 <img src="/images/works/item1.png" alt="" />
@@ -34,7 +38,11 @@ export default function Works() {
               </div>
             </div>
           </a>
-          <a target="_blank" href="https://github.com/attilagyoriid/algorithms-js" rel="noopener noreferrer">
+          <a
+            target="_blank"
+            href="https://github.com/attilagyoriid/algorithms-js"
+            rel="noopener noreferrer"
+          >
             <div className={classes["item"]}>
               <div className={classes["item-image"]}>
                 <img src="/images/works/item2.png" alt="" />
@@ -47,7 +55,11 @@ export default function Works() {
               </div>
             </div>
           </a>
-          <a target="_blank" href="https://www.behance.net/gallery/141240137/Puppy-in-fantasy-forest" rel="noopener noreferrer">
+          <a
+            target="_blank"
+            href="https://www.behance.net/gallery/141240137/Puppy-in-fantasy-forest"
+            rel="noopener noreferrer"
+          >
             <div className={classes["item"]}>
               <div className={classes["item-image"]}>
                 <img src="/images/works/item3.png" alt="" />
@@ -62,7 +74,11 @@ export default function Works() {
               </div>
             </div>
           </a>
-          <a target="_blank" href="https://github.com/attilagyoriid/leetcode_python" rel="noopener noreferrer">
+          <a
+            target="_blank"
+            href="https://github.com/attilagyoriid/leetcode_python"
+            rel="noopener noreferrer"
+          >
             <div className={classes["item"]}>
               <div className={classes["item-image"]}>
                 <img src="/images/works/item4.png" alt="" />
@@ -75,7 +91,11 @@ export default function Works() {
               </div>
             </div>
           </a>
-          <a target="_blank" href="https://dribbble.com/shots/19940854-Personal-Coach-Mobile-High-Fidelity-Design?new_shot_upload=true&utm_source=Clipboard_Shot&utm_campaign=attila_gyori&utm_content=Personal%20Coach%20-%20Mobile%20High%20Fidelity%20Design&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=attila_gyori&utm_content=Personal%20Coach%20-%20Mobile%20High%20Fidelity%20Design&utm_medium=Social_Share" rel="noopener noreferrer">
+          <a
+            target="_blank"
+            href="https://www.behance.net/gallery/185130511/Personal-Coach-Mobile-High-Fidelity-Design"
+            rel="noopener noreferrer"
+          >
             <div className={classes["item"]}>
               <div className={classes["item-image"]}>
                 <img src="/images/works/item5.png" alt="" />
@@ -85,27 +105,35 @@ export default function Works() {
                   <p className={classes["item-text-category"]}>
                     Mobile UI Design
                   </p>
-                  <h2 className={classes["item-text-title"]}>
-                    Linda Novai
-                  </h2>
+                  <h2 className={classes["item-text-title"]}>Linda Novai</h2>
                 </div>
               </div>
             </div>
           </a>
-          <a target="_blank" href="https://dribbble.com/shots/17981216-Desktop-Landing-Page-Design-for-a-coach" rel="noopener noreferrer">
+          <a
+            target="_blank"
+            href="https://www.behance.net/gallery/185130989/Desktop-Landing-Page-Design-for-a-coach"
+            rel="noopener noreferrer"
+          >
             <div className={classes["item"]}>
               <div className={classes["item-image"]}>
                 <img src="/images/works/item6.png" alt="" />
               </div>
               <div className={classes["item-text"]}>
                 <div className={classes["item-text-wrap"]}>
-                  <p className={classes["item-text-category"]}>Design Concept</p>
+                  <p className={classes["item-text-category"]}>
+                    Design Concept
+                  </p>
                   <h2 className={classes["item-text-title"]}>Personal Coach</h2>
                 </div>
               </div>
             </div>
           </a>
-          <a target="_blank" href="https://github.com/attilagyoriid/leetcode_java" rel="noopener noreferrer">
+          <a
+            target="_blank"
+            href="https://github.com/attilagyoriid/leetcode_java"
+            rel="noopener noreferrer"
+          >
             <div className={classes["item"]}>
               <div className={classes["item-image"]}>
                 <img src="/images/works/item7.png" alt="" />
@@ -118,7 +146,11 @@ export default function Works() {
               </div>
             </div>
           </a>
-          <a target="_blank" href="https://github.com/attilagyoriid/ag-personal-site" rel="noopener noreferrer">
+          <a
+            target="_blank"
+            href="https://github.com/attilagyoriid/ag-personal-site"
+            rel="noopener noreferrer"
+          >
             <div className={classes["item"]}>
               <div className={classes["item-image"]}>
                 <img src="/images/works/item8.png" alt="" />
@@ -140,55 +172,61 @@ export default function Works() {
               </div>
               <div className={classes["item-text"]}>
                 <div className={classes["item-text-wrap"]}>
-                  <p className={classes["item-text-category"]}>
-                    Selenium
-                  </p>
+                  <p className={classes["item-text-category"]}>Selenium</p>
                   <h2 className={classes["item-text-title"]}>UI Automation</h2>
                 </div>
               </div>
             </div>
           </a>
-          <a target="_blank" href="https://www.youtube.com/watch?v=9U61mMOMjUk&ab_channel=ARCHICAD" rel="noopener noreferrer">
+          <a
+            target="_blank"
+            href="https://www.youtube.com/watch?v=9U61mMOMjUk&ab_channel=ARCHICAD"
+            rel="noopener noreferrer"
+          >
             <div className={classes["item"]}>
               <div className={classes["item-image"]}>
                 <img src="/images/works/gaso.png" alt="" />
               </div>
               <div className={classes["item-text"]}>
                 <div className={classes["item-text-wrap"]}>
-                  <p className={classes["item-text-category"]}>
-                    Graphisoft
-                  </p>
+                  <p className={classes["item-text-category"]}>Graphisoft</p>
                   <h2 className={classes["item-text-title"]}>ArchiCAD</h2>
                 </div>
               </div>
             </div>
           </a>
-          <a target="_blank" href="https://www.youtube.com/watch?v=gZjAW7vGqsY&t=10s&ab_channel=HendrikVeugelers" rel="noopener noreferrer">
+          <a
+            target="_blank"
+            href="https://www.youtube.com/watch?v=gZjAW7vGqsY&t=10s&ab_channel=HendrikVeugelers"
+            rel="noopener noreferrer"
+          >
             <div className={classes["item"]}>
               <div className={classes["item-image"]}>
                 <img src="/images/works/ge.png" alt="" />
               </div>
               <div className={classes["item-text"]}>
                 <div className={classes["item-text-wrap"]}>
-                  <p className={classes["item-text-category"]}>
-                    GE Healthcare
-                  </p>
+                  <p className={classes["item-text-category"]}>GE Healthcare</p>
                   <h2 className={classes["item-text-title"]}>Predix</h2>
                 </div>
               </div>
             </div>
           </a>
-          <a target="_blank" href="https://www.youtube.com/watch?v=xhCEn0o529U&t=39s&ab_channel=Ericsson" rel="noopener noreferrer">
+          <a
+            target="_blank"
+            href="https://www.youtube.com/watch?v=xhCEn0o529U&t=39s&ab_channel=Ericsson"
+            rel="noopener noreferrer"
+          >
             <div className={classes["item"]}>
               <div className={classes["item-image"]}>
                 <img src="/images/works/ericsson.png" alt="" />
               </div>
               <div className={classes["item-text"]}>
                 <div className={classes["item-text-wrap"]}>
-                  <p className={classes["item-text-category"]}>
-                    Ericsson
-                  </p>
-                  <h2 className={classes["item-text-title"]}>Expert Analytics</h2>
+                  <p className={classes["item-text-category"]}>Ericsson</p>
+                  <h2 className={classes["item-text-title"]}>
+                    Expert Analytics
+                  </h2>
                 </div>
               </div>
             </div>
@@ -199,7 +237,7 @@ export default function Works() {
         <div className={classes["btn-light__container"]}>
           <Link href="/doc/Attila_Gyori_2022_11.pdf">
             <a className={classes["btn-dark--outline"]} target="_blank">
-              Resume
+              Download CV
             </a>
           </Link>
         </div>
@@ -209,6 +247,6 @@ export default function Works() {
           </Link>
         </div>
       </div>
-    </section >
+    </section>
   );
 }

@@ -26,7 +26,6 @@ export default function Contact() {
         resetForm({});
       })
       .catch((error) => {
-        console.log("ejjor" + JSON.stringify(error));
         let erroMessage = "Error sending email!";
         if (error.response) {
           erroMessage = error.response.data.message;

@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/e2e_test/node_modules
 .next
 /.pnp
 .pnp.js

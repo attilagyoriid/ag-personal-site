@@ -1,0 +1,67 @@
+/** @format */
+
+@import "../../styles/config";
+@import "../../styles/utilities";
+@import "../../styles/media";
+.main-projects {
+  height: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+
+  font-family: Raleway, Roboto, sans-serif;
+  font-size: 1.5rem;
+
+  .projects-section {
+    margin: 3rem 0rem;
+    display: flex;
+    align-items: center;
+    @include respond(phone) {
+      flex-direction: column;
+    }
+    .description-section {
+      font-family: Nunito, Roboto, sans-serif;
+      background-color: $main-color;
+      color: $light-color;
+      border-radius: 16px;
+      padding: 2rem;
+      padding-right: 6rem;
+      height: 40rem;
+      position: relative;
+      right: -80px;
+      @include respond(phone) {
+        right: 0px;
+        margin: 0rem 2rem;
+        padding: 1rem 1rem;
+        height: auto;
+        font-size:1.2rem;
+      }
+    }
+    .project-carousel-section {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      top: 4rem;
+
+      align-items: flex-start;
+      justify-content: center;
+      z-index: 5;
+
+      height: 25rem;
+      @include respond(phone) {
+        align-items: center;
+        margin-bottom: 2rem;
+      }
+      .project-carousel-section-content {
+        padding: 2rem 0;
+        background-color: $medium-color-overlay;
+        color: $light-color;
+        border-radius: 16px 0px 0px 16px;
+        margin-bottom: 4rem;
+        @include respond(phone) {
+          margin-bottom: 0rem;
+        }
+      }
+    }
+  }
+}

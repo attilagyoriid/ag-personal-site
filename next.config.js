@@ -7,7 +7,7 @@ module.exports = {
       linkedin: "https://www.linkedin.com/in/attila-gyori-ag",
       github: "https://github.com/attilagyoriid",
       behance: "https://www.behance.net/attila_gyori",
-      dribbble: "https://dribbble.com/attila_gyori/shots",
+      dribbble: "https://www.behance.net/attila_gyori/projects",
       youtube: "https://www.youtube.com/user/attilagyori/videos",
     },
   },
