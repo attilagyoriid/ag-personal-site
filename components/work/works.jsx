@@ -237,7 +237,7 @@ export default function Works() {
         <div className={classes["btn-light__container"]}>
           <Link href="/doc/Attila_Gyori_2023_11.pdf">
             <a className={classes["btn-dark--outline"]} target="_blank">
-              Download CV
+              Visit CV
             </a>
           </Link>
         </div>
