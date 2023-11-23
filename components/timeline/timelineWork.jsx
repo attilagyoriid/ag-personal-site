@@ -53,9 +53,7 @@ function TimelineWork() {
         </div>
         <div className={classes["btn-light__container"]}>
           <Link href="/about">
-            <a className={classes["btn-dark--outline"]} target="_blank">
-              About
-            </a>
+            <a className={classes["btn-dark--outline"]}>About</a>
           </Link>
         </div>
       </div>
