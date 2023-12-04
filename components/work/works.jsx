@@ -180,6 +180,61 @@ export default function Works() {
           </a>
           <a
             target="_blank"
+            href="https://github.com/attilagyoriid/cypress_pom_cucumber"
+            rel="noopener noreferrer"
+          >
+            <div className={classes["item"]}>
+              <div className={classes["item-image"]}>
+                <img src="/images/works/cypress.jpg" alt="" />
+              </div>
+              <div className={classes["item-text"]}>
+                <div className={classes["item-text-wrap"]}>
+                  <p className={classes["item-text-category"]}>Cypress</p>
+                  <h2 className={classes["item-text-title"]}>UI Automation</h2>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            target="_blank"
+            href="https://github.com/attilagyoriid/playwright_pom_cucumber"
+            rel="noopener noreferrer"
+          >
+            <div className={classes["item"]}>
+              <div className={classes["item-image"]}>
+                <img src="/images/works/playwright.jpg" alt="" />
+              </div>
+              <div className={classes["item-text"]}>
+                <div className={classes["item-text-wrap"]}>
+                  <p className={classes["item-text-category"]}>Playwright</p>
+                  <h2 className={classes["item-text-title"]}>UI Automation</h2>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.behance.net/gallery/185131315/Company-design-farewell-to-colleagues"
+            rel="noopener noreferrer"
+          >
+            <div className={classes["item"]}>
+              <div className={classes["item-image"]}>
+                <img src="/images/works/akos.jpg" alt="" />
+              </div>
+              <div className={classes["item-text"]}>
+                <div className={classes["item-text-wrap"]}>
+                  <p className={classes["item-text-category"]}>
+                    Company Design
+                  </p>
+                  <h2 className={classes["item-text-title"]}>
+                    Logo compositing
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            target="_blank"
             href="https://www.youtube.com/watch?v=9U61mMOMjUk&ab_channel=ARCHICAD"
             rel="noopener noreferrer"
           >
