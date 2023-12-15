@@ -165,7 +165,11 @@ export default function Works() {
               </div>
             </div>
           </a>
-          <a target="_blank" href="/404" rel="noopener noreferrer">
+          <a
+            target="_blank"
+            href="https://github.com/attilagyoriid/selenium-java-spring-pom-cucumber"
+            rel="noopener noreferrer"
+          >
             <div className={classes["item"]}>
               <div className={classes["item-image"]}>
                 <img src="/images/works/selenium.jpg" alt="" />
