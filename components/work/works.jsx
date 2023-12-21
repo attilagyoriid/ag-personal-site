@@ -112,19 +112,19 @@ export default function Works() {
           </a>
           <a
             target="_blank"
-            href="https://www.behance.net/gallery/185130989/Desktop-Landing-Page-Design-for-a-coach"
+            href="https://github.com/attilagyoriid/restassured-testng-java"
             rel="noopener noreferrer"
           >
             <div className={classes["item"]}>
               <div className={classes["item-image"]}>
-                <img src="/images/works/item6.png" alt="" />
+                <img src="/images/works/restassured.jpg" alt="" />
               </div>
               <div className={classes["item-text"]}>
                 <div className={classes["item-text-wrap"]}>
-                  <p className={classes["item-text-category"]}>
-                    Design Concept
-                  </p>
-                  <h2 className={classes["item-text-title"]}>Personal Coach</h2>
+                  <p className={classes["item-text-category"]}>Rest Assured</p>
+                  <h2 className={classes["item-text-title"]}>
+                    Rest API testing
+                  </h2>
                 </div>
               </div>
             </div>
@@ -218,19 +218,19 @@ export default function Works() {
           </a>
           <a
             target="_blank"
-            href="https://github.com/attilagyoriid/restassured-testng-java"
+            href="https://www.behance.net/gallery/185130989/Desktop-Landing-Page-Design-for-a-coach"
             rel="noopener noreferrer"
           >
             <div className={classes["item"]}>
               <div className={classes["item-image"]}>
-                <img src="/images/works/restassured.jpg" alt="" />
+                <img src="/images/works/item6.png" alt="" />
               </div>
               <div className={classes["item-text"]}>
                 <div className={classes["item-text-wrap"]}>
-                  <p className={classes["item-text-category"]}>Rest Assured</p>
-                  <h2 className={classes["item-text-title"]}>
-                    Rest API testing
-                  </h2>
+                  <p className={classes["item-text-category"]}>
+                    Design Concept
+                  </p>
+                  <h2 className={classes["item-text-title"]}>Personal Coach</h2>
                 </div>
               </div>
             </div>
