@@ -218,20 +218,18 @@ export default function Works() {
           </a>
           <a
             target="_blank"
-            href="https://www.behance.net/gallery/185131315/Company-design-farewell-to-colleagues"
+            href="https://github.com/attilagyoriid/restassured-testng-java"
             rel="noopener noreferrer"
           >
             <div className={classes["item"]}>
               <div className={classes["item-image"]}>
-                <img src="/images/works/akos.jpg" alt="" />
+                <img src="/images/works/restassured.jpg" alt="" />
               </div>
               <div className={classes["item-text"]}>
                 <div className={classes["item-text-wrap"]}>
-                  <p className={classes["item-text-category"]}>
-                    Company Design
-                  </p>
+                  <p className={classes["item-text-category"]}>Rest Assured</p>
                   <h2 className={classes["item-text-title"]}>
-                    Logo compositing
+                    Rest API testing
                   </h2>
                 </div>
               </div>
