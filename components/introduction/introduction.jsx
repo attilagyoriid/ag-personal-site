@@ -10,7 +10,6 @@ function Introduction() {
   const [years, setYears] = useState();
   useEffect(() => {
     setYears(getNumberOfYearsFrom(2016));
-
   }, []);
   const handleClick = (e) => {
     gtag.event({
@@ -19,7 +18,7 @@ function Introduction() {
       label: "download_cv",
     });
   };
-  getNumberOfYearsFrom
+  getNumberOfYearsFrom;
   return (
     <div className={classes["introduction-container"]}>
       <TitleText
@@ -29,15 +28,15 @@ function Introduction() {
       />
       <Hun />
       <div className={classes["introduction-text"]}>
-        Hey, Thanks for stopping by. I am a Software Engineer with a passion
-        for graphic and web design having extensive experience in the fields of Software QA especially STLC and Test Automation.
-        I am a Development Team Lead for the last {years} years.
-
+        Hey, Thanks for stopping by. I am a Software Engineer with a passion for
+        graphic and web design having extensive experience in the fields of
+        Software QA especially STLC and Test Automation. I am a Development Team
+        Lead for the last {years} years.
       </div>
 
       <div className={classes["button-container"]}>
         <div className={classes["btn-light__container"]}>
-          <Link href="/doc/Attila_Gyori_2023_11.pdf">
+          <Link href="/doc/Attila_Gyori_2023_12.pdf">
             <a
               className={`${classes["btn-dark--outline"]}`}
               onClick={handleClick}

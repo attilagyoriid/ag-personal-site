@@ -15,7 +15,7 @@ function TimelineSchool() {
     <div className={classes["timeline-container"]}>
       <VerticalTimeline className={classes["vertical-timeline"]}>
         {timelineElementsSchool.map((element) => {
-          let showButton =
+          const showButton =
             element.buttonText !== undefined &&
             element.buttonText !== null &&
             element.buttonText !== "";
@@ -47,7 +47,7 @@ function TimelineSchool() {
       </VerticalTimeline>
       <div className={classes["button-container"]}>
         <div className={classes["btn-light__container"]}>
-          <Link href="/doc/Attila_Gyori_2023_11.pdf">
+          <Link href="/doc/Attila_Gyori_2023_12.pdf">
             <a className={classes["btn-dark--outline"]} target="_blank">
               Resume
             </a>

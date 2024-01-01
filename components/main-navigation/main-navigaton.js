@@ -69,10 +69,9 @@ function MainNavigation(props) {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    Events.scrollEvent.register("begin", function (to, element) { });
+    Events.scrollEvent.register("begin", function (to, element) {});
 
-    Events.scrollEvent.register("end", function (to, element) {
-    });
+    Events.scrollEvent.register("end", function (to, element) {});
 
     scrollSpy.update();
     return () => {
@@ -82,8 +81,7 @@ function MainNavigation(props) {
     };
   }, [scrollPositionY, prevScrollPositionY]);
 
-  const handleSetActive = (to) => {
-  };
+  const handleSetActive = (to) => {};
 
   const handleClickOnPageDifferentThanHome = (event) => {
     // User feedback, navigation stop scrolling switxh page
@@ -94,8 +92,9 @@ function MainNavigation(props) {
 
   return (
     <nav
-      className={`${classes.main_nav}  ${visible ? classes.main_nav_visible : classes.main_nav_invisible
-        }`}
+      className={`${classes.main_nav}  ${
+        visible ? classes.main_nav_visible : classes.main_nav_invisible
+      }`}
     >
       <Logo width="60px" />
       <ul
@@ -106,10 +105,13 @@ function MainNavigation(props) {
         }
       >
         <li>
-          <ActiveLink activeClassName="active" href="/home"
+          <ActiveLink
+            activeClassName="active"
+            href="/home"
             onClick={(event) => {
               handleMenuClose(event);
-            }}>
+            }}
+          >
             <a className={classes.current}>Home</a>
           </ActiveLink>
           {/* User feedback, navigation stop scrolling switxh page */}
@@ -131,10 +133,13 @@ function MainNavigation(props) {
         {/* {!isPageHome() && ( */}
         <>
           <li>
-            <ActiveLink activeClassName="active" href="/experience"
+            <ActiveLink
+              activeClassName="active"
+              href="/experience"
               onClick={(event) => {
                 handleMenuClose(event);
-              }}>
+              }}
+            >
               <a className={classes.current}>Experience</a>
             </ActiveLink>
             {/* <NextLink
@@ -148,10 +153,13 @@ function MainNavigation(props) {
               </NextLink> */}
           </li>
           <li>
-            <ActiveLink activeClassName="active" href="/about"
+            <ActiveLink
+              activeClassName="active"
+              href="/about"
               onClick={(event) => {
                 handleMenuClose(event);
-              }}>
+              }}
+            >
               <a className={classes.current}>About</a>
             </ActiveLink>
             {/* <NextLink
@@ -166,10 +174,13 @@ function MainNavigation(props) {
           </li>
 
           <li>
-            <ActiveLink activeClassName="active" href="/projects"
+            <ActiveLink
+              activeClassName="active"
+              href="/projects"
               onClick={(event) => {
                 handleMenuClose(event);
-              }}>
+              }}
+            >
               <a className={classes.current}>Projects</a>
             </ActiveLink>
             {/* <NextLink
@@ -184,10 +195,13 @@ function MainNavigation(props) {
           </li>
 
           <li>
-            <ActiveLink activeClassName="active" href="/contact"
+            <ActiveLink
+              activeClassName="active"
+              href="/contact"
               onClick={(event) => {
                 handleMenuClose(event);
-              }}>
+              }}
+            >
               <a className={classes.current}>Contact</a>
             </ActiveLink>
             {/* <NextLink
@@ -201,11 +215,21 @@ function MainNavigation(props) {
               </NextLink> */}
           </li>
           <li>
-            <ActiveLink activeClassName="active" href="/doc/Attila_Gyori_2023_11.pdf" onClick={(event) => {
-              handleClick(event);
-              handleMenuClose(event);
-            }}>
-              <a className={classes.current} target="_blank" rel="noopener noreferrer">CV</a>
+            <ActiveLink
+              activeClassName="active"
+              href="/doc/Attila_Gyori_2023_12.pdf"
+              onClick={(event) => {
+                handleClick(event);
+                handleMenuClose(event);
+              }}
+            >
+              <a
+                className={classes.current}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                CV
+              </a>
             </ActiveLink>
             {/* <NextLink
                 href="/doc/Attila_Gyori_2022_11.pdf"
