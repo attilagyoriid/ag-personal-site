@@ -3,7 +3,6 @@ import Head from "next/head";
 import MainNavigation from "../main-navigation/main-navigaton";
 import classes from "./layout.module.scss";
 
-
 export default function Layout({
   title,
   keywords,
@@ -60,17 +59,16 @@ export default function Layout({
 }
 
 Layout.defaultProps = {
-  title: "Attila Győri | SDET & Software Developer, Designer and Photographer",
+  title:
+    "Attila Győri | SDET & Software Developer, Development Team Lead, Visual Design and Photographer enthusiast",
   keywords:
     "development, developer, software, software developer, software engineer, coding, programming, design, graphic, illustration, animation, qa, sdet, test automation, software test automation, software development engineer in test, Attila Győri, AG, Attila Gyori, Gyori Attila, Győri Attila",
   description: "Attila Győri Developer personal site",
   ogTitle:
-    "Attila Győri | SDET & Software Developer, Designer and Photographer",
+    "Attila Győri | SDET & Software Developer, Development Team Lead, Visual Design and Photographer enthusiast",
   ogType: "website",
   ogUlr: "https://attila-gyori.com/home",
   ogImage: "",
   ogDescription:
     "Attila Győri Software Developer personal site: Software Developer, Designer, Software Development Engineer in Test, Engineering Manager",
 };
-
-
