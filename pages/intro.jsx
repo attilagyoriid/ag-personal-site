@@ -18,7 +18,7 @@ export default function IntroPage({ title, keywords, description }) {
 }
 
 VideoIntro.defaultProps = {
-  title: "Attila Győri | SDET & Developer, Designer and Photographer",
+  title: "Attila Győri | SDET & Developer, Designer and Photography enthusiast",
   keywords:
     "development, developer, software, software developer, software engineer, coding, programming, design, graphic, illustration, animation, qa, sdet, test automation, software test automation, software development engineer in test, Attila Győri, AG, Attila Gyori, Gyori Attila, Győri Attila",
   description: "Attila Győri Software Developer personal site",
