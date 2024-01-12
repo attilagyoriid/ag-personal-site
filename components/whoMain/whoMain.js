@@ -71,7 +71,7 @@ export default function WhoMain() {
           >
             <a
               onClick={handleClick}
-              href="/doc/Attila_Gyori_2023_12.pdf"
+              href="/doc/Attila_Gyori_2024_1.pdf"
               target="_blank"
               className={classes.dnbtn}
             >

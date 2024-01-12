@@ -217,7 +217,7 @@ function MainNavigation(props) {
           <li>
             <ActiveLink
               activeClassName="active"
-              href="/doc/Attila_Gyori_2023_12.pdf"
+              href="/doc/Attila_Gyori_2024_1.pdf"
               onClick={(event) => {
                 handleClick(event);
                 handleMenuClose(event);
