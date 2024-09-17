@@ -1,13 +1,13 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import Lottie from 'react-lottie';
+import Lottie from "react-lottie";
 import leader_animation_data from "./leader_animation.json";
 import classes from "./leader.module.scss";
 import TextCarousel from "../text-carousel/textCarousel";
 import { chunkSubstrBySegments } from "../../utils/textManipulator";
 export default function Leader() {
   const leader_animation = JSON.parse(JSON.stringify(leader_animation_data));
-  const text = `At this point in my career, I have been working as a development team lead for more than 5 years.   I have always been a natural-born leader, and people have organically looked to me 
+  const text = `At this point in my career, I have been working as a development team lead for more than 7 years.   I have always been a natural-born leader, and people have organically looked to me 
   for leadership since I was in primary school.  I currently lead a team of test automation framework engineers.  In my role as team lead, I establish code standards, 
   perform coding and code review, mentor team members, give feedback and recommendations on architectural issues, facilitate scrum ceremonies, and performing general, behind-the-scenes tasks.  
               
@@ -27,18 +27,18 @@ export default function Leader() {
   (of course this fact doesnt make me a psychologist though &#128516;)
   I consider myself a hands-on, involving leader, a so called "servant leader", who sincerely values the ideas and opinions of my team members.
   As a result of my management style, and my extensive professional network within the industry,  I could easily gather a team of 5 - 7 outstanding professionals,
-  whom I have worked with in mutual trust and respect and sharing the willingness to work together again in the future.`
+  whom I have worked with in mutual trust and respect and sharing the willingness to work together again in the future.`;
 
-  const textContent = chunkSubstrBySegments(text,2);
+  const textContent = chunkSubstrBySegments(text, 2);
   const leaderImgRef = useRef(null);
   const leaderTextContainerRef = useRef(null);
   const defaultOptions = {
     loop: true,
-    autoplay: true, 
+    autoplay: true,
     animationData: leader_animation,
     rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
+      preserveAspectRatio: "xMidYMid slice",
+    },
   };
 
   useEffect(() => {
@@ -61,20 +61,20 @@ export default function Leader() {
   }, []);
   return (
     <div className={classes["leader__container"]}>
-      
       <div className={classes["leader_img__container"]} ref={leaderImgRef}>
-      
         <div className={classes["leader_img--lead"]}>being a leader...</div>
         <div className={classes["leader_img"]}>
-          <Lottie options={defaultOptions}/>
+          <Lottie options={defaultOptions} />
         </div>
       </div>
-      <div className={classes["leader_text"]} >
-        <div className={classes["leader_text__container"]} ref={leaderTextContainerRef}>
-          <TextCarousel texts={textContent}/>
+      <div className={classes["leader_text"]}>
+        <div
+          className={classes["leader_text__container"]}
+          ref={leaderTextContainerRef}
+        >
+          <TextCarousel texts={textContent} />
         </div>
       </div>
-      
     </div>
   );
 }

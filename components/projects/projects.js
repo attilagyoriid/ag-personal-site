@@ -51,7 +51,7 @@ export default function Projects() {
     <section className={classes["main-projects"]}>
       <TitleSection
         title="PUBLIC PROJECTS"
-        subText="Seasoned Software Developer with more than 17 years experience and passion for visual design and creative creation"
+        subText="Seasoned Software Developer with more than 19 years experience and passion for visual design and creative creation"
         className="lead--deep-dark-color"
       />
       <div className={classes["projects-section"]}>
@@ -93,10 +93,7 @@ export default function Projects() {
           </div>
         </div>
       </div>
-      <ParticlesBkg
-        presetName="bubble"
-        elementId="projectsParticlesBkg"
-      />
+      <ParticlesBkg presetName="bubble" elementId="projectsParticlesBkg" />
     </section>
   );
 }
