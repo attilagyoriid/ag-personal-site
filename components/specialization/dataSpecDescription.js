@@ -11,13 +11,14 @@ const cardList = [
       emulateTouch: true,
       showStatus: false,
       autoPlay: false,
-      preventMovementUntilSwipeScrollTolerance:true,
+      preventMovementUntilSwipeScrollTolerance: true,
       swipeScrollTolerance: 50,
     },
     text: [
       `I have extensive experience in the fields of software test automation and software quality assurance, 
       having successfully held multiple positions as a software development engineer in testing for nearly 20 years.
-      I am a Development Team Lead for more then 5 years.`,`I love quality assurance, 
+      I am a Development Team Lead for more then 7 years.`,
+      `I love quality assurance, 
       the systematic process of getting into the details and determining whether a product meets the specified requirements.  
       At its heart, the QA process is all about connection and communication between all parts of the development team, 
       from project management to design to the external clients at large.`,
@@ -39,7 +40,7 @@ const cardList = [
       emulateTouch: true,
       showStatus: false,
       autoPlay: false,
-      preventMovementUntilSwipeScrollTolerance:true,
+      preventMovementUntilSwipeScrollTolerance: true,
       swipeScrollTolerance: 50,
     },
     text: [
@@ -75,7 +76,7 @@ const cardList = [
       emulateTouch: true,
       showStatus: false,
       autoPlay: false,
-      preventMovementUntilSwipeScrollTolerance:true,
+      preventMovementUntilSwipeScrollTolerance: true,
       swipeScrollTolerance: 50,
     },
     text: [

@@ -60,15 +60,15 @@ export default function Layout({
 
 Layout.defaultProps = {
   title:
-    "Attila Győri | SDET & Software Developer, Development Team Lead, Visual Design and Photographer enthusiast",
+    "Attila Győri | SDET & Software Developer, Development Team Lead, Graphic Designer",
   keywords:
     "development, developer, software, software developer, software engineer, coding, programming, design, graphic, illustration, animation, qa, sdet, test automation, software test automation, software development engineer in test, Attila Győri, AG, Attila Gyori, Gyori Attila, Győri Attila",
   description: "Attila Győri Developer personal site",
   ogTitle:
-    "Attila Győri | SDET & Software Developer, Development Team Lead, Visual Design and Photography enthusiast",
+    "Attila Győri | SDET & Software Developer, Automation expert, Development Team Lead, Graphic Designer",
   ogType: "website",
   ogUlr: "https://attila-gyori.com/home",
   ogImage: "",
   ogDescription:
-    "Attila Győri Software Developer personal site: Software Developer, Designer, Software Development Engineer in Test, Engineering Manager",
+    "Attila Győri Software Developer personal site: Software Developer, Designer, Staff Software Development Engineer in Test",
 };

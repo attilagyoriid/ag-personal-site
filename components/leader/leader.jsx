@@ -7,7 +7,7 @@ import TextCarousel from "../text-carousel/textCarousel";
 import { chunkSubstrBySegments } from "../../utils/textManipulator";
 export default function Leader() {
   const leader_animation = JSON.parse(JSON.stringify(leader_animation_data));
-  const text = `At this point in my career, I have been working as a development team lead for more than 7 years.   I have always been a natural-born leader, and people have organically looked to me 
+  const text = `At this point in my career, I have been working as a development team lead for more than 7 years.   I have always been a kind of "leader", and people have organically looked to me 
   for leadership since I was in primary school.  I currently lead a team of test automation framework engineers.  In my role as team lead, I establish code standards, 
   perform coding and code review, mentor team members, give feedback and recommendations on architectural issues, facilitate scrum ceremonies, and performing general, behind-the-scenes tasks.  
               

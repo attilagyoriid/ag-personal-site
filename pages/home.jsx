@@ -47,7 +47,7 @@ function Home() {
   return (
     <Layout
       title="Attila Győri | Home"
-      description="Attila Győri Developer personal site | Home. Software Developer, Designer, Software Development Engineer in Test, Engineering Manager"
+      description="Attila Győri Developer personal site | Home. Software Developer, Designer, Software Development Engineer in Test, Test Automation expert"
       keywords="Attila Győri, Attila Gyori, Győri Attila, Gyori Attila, AG, development, developer, software, software developer, software engineer, software quality, software testing, software test automation, coding, programming, design, graphic, illustration, animation, qa, sdet, test automation, software test automation, software development engineer in test, team lead, development lead, engineering manager, portfolio, personal site"
     >
       <Element name="home">
