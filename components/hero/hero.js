@@ -95,7 +95,7 @@ export default function Hero({ posts }) {
     });
 
     const typed = new Typed(typeEl.current, {
-      strings: ["Test Automation expert","SDET", "Developer", "Creative", "Team Leader"],
+      strings: ["Test Automation specialist","SDET", "Full Stack Developer", "Creative", "Team Lead"],
       startDelay: 300,
       typeSpeed: 250,
       backSpeed: 250,
