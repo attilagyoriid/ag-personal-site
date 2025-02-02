@@ -47,7 +47,7 @@ function TimelineSchool() {
       </VerticalTimeline>
       <div className={classes["button-container"]}>
         <div className={classes["btn-light__container"]}>
-          <Link href="/doc/Attila_Gyori_2024_7s.pdf">
+          <Link href="/doc/Attila_Gyori_2025_1st.pdf">
             <a className={classes["btn-dark--outline"]} target="_blank">
               Resume
             </a>
