@@ -88,8 +88,8 @@ export default function VideoIntro({ title, keywords, description, children }) {
 }
 
 VideoIntro.defaultProps = {
-  title: "Attila Győri | SDET & Developer, Designer and Photographer",
+  title: "Attila Győri | SDET | Test Automation specialis & Full Stack Developer, Designer",
   keywords:
     "development, coding, programming, design, graphic, illustration, animation, qa, sdet, test automation",
-  description: "Attila Győri Developer personal site",
+  description: "Attila Győri Software Developer personal site",
 };
